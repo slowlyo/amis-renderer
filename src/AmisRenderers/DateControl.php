@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Date日期选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/date
  *
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class DateControl extends BaseRenderer
 {
@@ -253,6 +253,30 @@ class DateControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
+    }
+
+    /**
+     * 日程点击展示
+     */
+    public function scheduleAction($value = '')
+    {
+        return $this->set('scheduleAction', $value);
+    }
+
+    /**
+     * 日程显示颜色自定义
+     */
+    public function scheduleClassNames($value = '')
+    {
+        return $this->set('scheduleClassNames', $value);
+    }
+
+    /**
+     * 日程
+     */
+    public function schedules($value = '')
+    {
+        return $this->set('schedules', $value);
     }
 
     /**

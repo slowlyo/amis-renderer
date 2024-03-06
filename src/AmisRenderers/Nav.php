@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
  *
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class Nav extends BaseRenderer
 {

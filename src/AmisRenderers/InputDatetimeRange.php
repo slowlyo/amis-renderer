@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputDatetimeRange 日期时间范围
  *
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class InputDatetimeRange extends BaseRenderer
 {

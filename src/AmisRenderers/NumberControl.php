@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/number
  *
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class NumberControl extends BaseRenderer
 {

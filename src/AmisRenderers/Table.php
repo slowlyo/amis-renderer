@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Table 表格渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/table
  *
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class Table extends BaseRenderer
 {

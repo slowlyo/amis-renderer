@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * EmailAction
  *
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class EmailAction extends BaseRenderer
 {
