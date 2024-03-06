@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Card 卡片渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class Card extends BaseRenderer
 {
@@ -127,14 +127,6 @@ class Card extends BaseRenderer
     public function type($value = 'card')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 卡片内容区的表单项label是否使用Card内部的样式，默认为true
-     */
-    public function useCardLabel($value = true)
-    {
-        return $this->set('useCardLabel', $value);
     }
 
     /**

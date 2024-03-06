@@ -3,26 +3,17 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Button Toolar 渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/button-toolbar
+ * Base
  * 
  * @author slowlyo
  * @version v2.1.0
  */
-class ButtonToolbar extends BaseRenderer
+class Base extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'button-toolbar');
+        
 
-
-    }
-
-    /**
-     * 
-     */
-    public function buttons($value = '')
-    {
-        return $this->set('buttons', $value);
     }
 
     /**
@@ -82,9 +73,9 @@ class ButtonToolbar extends BaseRenderer
     }
 
     /**
-     * 指定为按钮工具集合类型
+     * 
      */
-    public function type($value = 'button-toolbar')
+    public function type($value = '')
     {
         return $this->set('type', $value);
     }

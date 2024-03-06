@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Form 表单渲染器。说明：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/index
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class Form extends BaseRenderer
 {
@@ -255,14 +255,6 @@ class Form extends BaseRenderer
     public function labelAlign($value = '')
     {
         return $this->set('labelAlign', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**

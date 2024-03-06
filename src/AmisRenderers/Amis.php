@@ -69,9 +69,9 @@ class Amis
         return Barcode::make();
     }
 
-    public function BaseApi()
+    public function Base()
     {
-        return BaseApi::make();
+        return Base::make();
     }
 
     public function BaseRenderer()
@@ -112,21 +112,6 @@ class Amis
     public function ButtonToolbar()
     {
         return ButtonToolbar::make();
-    }
-
-    public function CRUD2Cards()
-    {
-        return CRUD2Cards::make();
-    }
-
-    public function CRUD2List()
-    {
-        return CRUD2List::make();
-    }
-
-    public function CRUD2Table()
-    {
-        return CRUD2Table::make();
     }
 
     public function CRUDCards()

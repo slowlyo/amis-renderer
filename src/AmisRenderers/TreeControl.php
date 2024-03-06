@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class TreeControl extends BaseRenderer
 {
@@ -234,14 +234,6 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 需要高亮的字符串
-     */
-    public function highlightTxt($value = '')
-    {
-        return $this->set('highlightTxt', $value);
-    }
-
-    /**
      * 输入提示，聚焦的时候显示
      */
     public function hint($value = '')
@@ -335,14 +327,6 @@ class TreeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**

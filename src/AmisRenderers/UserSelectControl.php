@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UserSelect 移动端人员选择。
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class UserSelectControl extends BaseRenderer
 {
@@ -295,14 +295,6 @@ class UserSelectControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**

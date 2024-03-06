@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Month 月份选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/Month
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class MonthControl extends BaseRenderer
 {
@@ -199,14 +199,6 @@ class MonthControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
