@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Service 服务类控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/service
  * 
  * @author slowlyo
- * @version v2.7.0
+ * @version v2.7.1
  */
 class Service extends BaseRenderer
 {

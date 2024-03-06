@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * MultilineText
  * 
  * @author slowlyo
- * @version v2.7.0
+ * @version v2.7.1
  */
 class MultilineText extends BaseRenderer
 {

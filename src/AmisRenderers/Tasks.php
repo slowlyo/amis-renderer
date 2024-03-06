@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tasks 渲染器，格式说明 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tasks
  * 
  * @author slowlyo
- * @version v2.7.0
+ * @version v2.7.1
  */
 class Tasks extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Expandable
  * 
  * @author slowlyo
- * @version v2.7.0
+ * @version v2.7.1
  */
 class Expandable extends BaseRenderer
 {
