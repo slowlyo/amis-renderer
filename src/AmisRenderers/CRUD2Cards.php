@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2Cards
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class CRUD2Cards extends BaseRenderer
 {

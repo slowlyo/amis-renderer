@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class Tabs extends BaseRenderer
 {

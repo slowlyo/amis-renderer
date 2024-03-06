@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputArray 数组输入框。 combo 的别名。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/array
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class ArrayControl extends BaseRenderer
 {
@@ -39,6 +39,14 @@ class ArrayControl extends BaseRenderer
     public function addable($value = true)
     {
         return $this->set('addable', $value);
+    }
+
+    /**
+     * Add at top
+     */
+    public function addattop($value = true)
+    {
+        return $this->set('addattop', $value);
     }
 
     /**

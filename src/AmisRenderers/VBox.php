@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 垂直布局控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/vbox
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class VBox extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RangeControl
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class RangeControl extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2Table
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class CRUD2Table extends BaseRenderer
 {
@@ -231,6 +231,14 @@ class CRUD2Table extends BaseRenderer
     public function loading($value = '')
     {
         return $this->set('loading', $value);
+    }
+
+    /**
+     * 批量操作最大限制数
+     */
+    public function maxKeepItemSelectionLength($value = '')
+    {
+        return $this->set('maxKeepItemSelectionLength', $value);
     }
 
     /**

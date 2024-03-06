@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/transfer-picker
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class TransferPickerControl extends BaseRenderer
 {
@@ -599,6 +599,14 @@ class TransferPickerControl extends BaseRenderer
     public function source($value = '')
     {
         return $this->set('source', $value);
+    }
+
+    /**
+     * 统计数字
+     */
+    public function statistics($value = true)
+    {
+        return $this->set('statistics', $value);
     }
 
     /**

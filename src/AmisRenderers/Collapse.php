@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Collapse 折叠渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/collapse
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class Collapse extends BaseRenderer
 {

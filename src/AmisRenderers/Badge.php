@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Badge 角标。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/badge
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class Badge extends BaseRenderer
 {
