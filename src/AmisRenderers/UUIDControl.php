@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UUID 功能性组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/uuid
  * 
  * @author slowlyo
- * @version v3.5.1
+ * @version 3.5.2
  */
 class UUIDControl extends BaseRenderer
 {

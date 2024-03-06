@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UserSelect 移动端人员选择。
  * 
  * @author slowlyo
- * @version v3.5.1
+ * @version 3.5.2
  */
 class UserSelectControl extends BaseRenderer
 {

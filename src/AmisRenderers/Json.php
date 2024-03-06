@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON 数据展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/json
  * 
  * @author slowlyo
- * @version v3.5.1
+ * @version 3.5.2
  */
 class Json extends BaseRenderer
 {

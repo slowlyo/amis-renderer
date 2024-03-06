@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Color 颜色选择框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/color
  * 
  * @author slowlyo
- * @version v3.5.1
+ * @version 3.5.2
  */
 class InputColorControl extends BaseRenderer
 {
