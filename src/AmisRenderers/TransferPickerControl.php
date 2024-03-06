@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/transfer-picker
  * 
  * @author slowlyo
- * @version v2.4.0
+ * @version v2.5.0
  */
 class TransferPickerControl extends BaseRenderer
 {
@@ -287,6 +287,14 @@ class TransferPickerControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
+    }
+
+    /**
+     * 单个选项的高度，主要用于虚拟渲染
+     */
+    public function itemHeight($value = '')
+    {
+        return $this->set('itemHeight', $value);
     }
 
     /**
@@ -727,6 +735,14 @@ class TransferPickerControl extends BaseRenderer
     public function valueTpl($value = '')
     {
         return $this->set('valueTpl', $value);
+    }
+
+    /**
+     * 在选项数量达到多少时开启虚拟渲染
+     */
+    public function virtualThreshold($value = '')
+    {
+        return $this->set('virtualThreshold', $value);
     }
 
     /**

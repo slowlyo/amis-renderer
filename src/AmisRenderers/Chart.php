@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Chart 图表渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/carousel
  * 
  * @author slowlyo
- * @version v2.4.0
+ * @version v2.5.0
  */
 class Chart extends BaseRenderer
 {
@@ -143,6 +143,30 @@ class Chart extends BaseRenderer
     public function interval($value = '')
     {
         return $this->set('interval', $value);
+    }
+
+    /**
+     * 加载百度地图
+     */
+    public function loadBaiduMap($value = true)
+    {
+        return $this->set('loadBaiduMap', $value);
+    }
+
+    /**
+     * 地图名称
+     */
+    public function mapName($value = '')
+    {
+        return $this->set('mapName', $value);
+    }
+
+    /**
+     * 获取 geo json 文件的地址
+     */
+    public function mapURL($value = '')
+    {
+        return $this->set('mapURL', $value);
     }
 
     /**

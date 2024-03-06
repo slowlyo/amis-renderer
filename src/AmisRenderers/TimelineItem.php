@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TimelineItem
  * 
  * @author slowlyo
- * @version v2.4.0
+ * @version v2.5.0
  */
 class TimelineItem extends BaseRenderer
 {
@@ -94,6 +94,14 @@ class TimelineItem extends BaseRenderer
     public function icon($value = '')
     {
         return $this->set('icon', $value);
+    }
+
+    /**
+     * 图标的CSS类名
+     */
+    public function iconClassName($value = '')
+    {
+        return $this->set('iconClassName', $value);
     }
 
     /**

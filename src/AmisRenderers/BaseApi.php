@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * BaseApi
  * 
  * @author slowlyo
- * @version v2.4.0
+ * @version v2.5.0
  */
 class BaseApi extends BaseRenderer
 {
@@ -78,6 +78,14 @@ class BaseApi extends BaseRenderer
     public function headers($value = '')
     {
         return $this->set('headers', $value);
+    }
+
+    /**
+     * 提示信息
+     */
+    public function messages($value = '')
+    {
+        return $this->set('messages', $value);
     }
 
     /**
