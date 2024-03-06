@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 提示渲染器，默认会显示个小图标，鼠标放上来的时候显示配置的内容。
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Remark extends BaseRenderer
 {

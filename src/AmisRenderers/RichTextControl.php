@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RichText 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-rich-text
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class RichTextControl extends BaseRenderer
 {

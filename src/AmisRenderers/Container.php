@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Container 容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/container
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Container extends BaseRenderer
 {
@@ -175,6 +175,14 @@ class Container extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
+    }
+
+    /**
+     * 是否需要对body加一层div包裹，默认为 true
+     */
+    public function wrapperBody($value = true)
+    {
+        return $this->set('wrapperBody', $value);
     }
 
     /**

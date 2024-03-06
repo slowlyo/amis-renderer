@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * amis Page 渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/page
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Page extends BaseRenderer
 {
@@ -199,6 +199,14 @@ class Page extends BaseRenderer
     public function interval($value = '')
     {
         return $this->set('interval', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**

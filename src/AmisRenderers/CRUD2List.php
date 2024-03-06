@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2List
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class CRUD2List extends BaseRenderer
 {
@@ -232,6 +232,14 @@ $this->set('type', 'crud2');
     public function loadType($value = '')
     {
         return $this->set('loadType', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**

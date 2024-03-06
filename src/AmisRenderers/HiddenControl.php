@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Hidden 隐藏域。功能性组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/hidden
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class HiddenControl extends BaseRenderer
 {
