@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version v2.5.0
+ * @version v2.5.1
  */
 class TableControl extends BaseRenderer
 {
