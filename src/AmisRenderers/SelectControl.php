@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version v2.0.0
+ * @version v2.0.2
  */
 class SelectControl extends BaseRenderer
 {
@@ -575,6 +575,14 @@ class SelectControl extends BaseRenderer
     public function selectMode($value = '')
     {
         return $this->set('selectMode', $value);
+    }
+
+    /**
+     * 当在value值未匹配到当前options中的选项时，是否value值对应文本飘红显示
+     */
+    public function showInvalidMatch($value = true)
+    {
+        return $this->set('showInvalidMatch', $value);
     }
 
     /**

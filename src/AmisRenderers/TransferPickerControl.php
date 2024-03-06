@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/transfer-picker
  * 
  * @author slowlyo
- * @version v2.0.0
+ * @version v2.0.2
  */
 class TransferPickerControl extends BaseRenderer
 {
