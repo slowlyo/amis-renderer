@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tag
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class Tag extends BaseRenderer
 {

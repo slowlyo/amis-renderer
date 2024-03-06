@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Calendar
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class Calendar extends BaseRenderer
 {

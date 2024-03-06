@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RowSelection
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class RowSelection extends BaseRenderer
 {

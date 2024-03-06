@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TextArea 多行文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/textarea
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class TextareaControl extends BaseRenderer
 {

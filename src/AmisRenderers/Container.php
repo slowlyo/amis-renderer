@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Container 容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/container
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class Container extends BaseRenderer
 {
