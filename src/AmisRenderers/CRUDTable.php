@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  *
  * @author slowlyo
- * @version 1.6.0
+ * @version 1.6.1
  */
 class CRUDTable extends BaseRenderer
 {

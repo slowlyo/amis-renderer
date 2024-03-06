@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 季度选择控件
  *
  * @author slowlyo
- * @version 1.6.0
+ * @version 1.6.1
  */
 class QuarterControl extends BaseRenderer
 {
