@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Combo 组合输入框类型 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/combo
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class ComboControl extends BaseRenderer
 {
@@ -503,6 +503,22 @@ class ComboControl extends BaseRenderer
     public function strictMode($value = true)
     {
         return $this->set('strictMode', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
+    }
+
+    /**
+     * 如果是水平排版，这个属性可以细化水平排版的左右宽度占比。
+     */
+    public function subFormHorizontal($value = '')
+    {
+        return $this->set('subFormHorizontal', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * GridNav 宫格导航
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class GridNav extends BaseRenderer
 {

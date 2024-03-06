@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 视频播放器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/video
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Video extends BaseRenderer
 {
@@ -250,7 +250,7 @@ class Video extends BaseRenderer
     }
 
     /**
-     * 
+     * 组件样式
      */
     public function style($value = '')
     {

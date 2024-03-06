@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputGroup 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-group
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class InputGroupControl extends BaseRenderer
 {
@@ -303,6 +303,14 @@ class InputGroupControl extends BaseRenderer
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

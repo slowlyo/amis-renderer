@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavItem
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class NavItem extends BaseRenderer
 {
@@ -153,6 +153,14 @@ class NavItem extends BaseRenderer
     }
 
     /**
+     * 
+     */
+    public function popupClassName($value = '')
+    {
+        return $this->set('popupClassName', $value);
+    }
+
+    /**
      * 是否静态展示
      */
     public function static($value = true)
@@ -206,6 +214,14 @@ class NavItem extends BaseRenderer
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

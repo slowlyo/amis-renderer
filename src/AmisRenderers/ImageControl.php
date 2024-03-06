@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * Image 图片上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/image
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class ImageControl extends BaseRenderer
 {
@@ -550,6 +550,14 @@ class ImageControl extends BaseRenderer
     }
 
     /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
+    }
+
+    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -579,6 +587,14 @@ class ImageControl extends BaseRenderer
     public function type($value = 'input-image')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 上传按钮文案
+     */
+    public function uploadBtnText($value = '')
+    {
+        return $this->set('uploadBtnText', $value);
     }
 
     /**

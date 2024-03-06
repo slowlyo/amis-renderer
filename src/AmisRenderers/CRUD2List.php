@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2List
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class CRUD2List extends BaseRenderer
 {
@@ -448,6 +448,14 @@ $this->set('type', 'crud2');
     public function stopAutoRefreshWhen($value = '')
     {
         return $this->set('stopAutoRefreshWhen', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tasks 渲染器，格式说明 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tasks
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Tasks extends BaseRenderer
 {
@@ -295,6 +295,14 @@ class Tasks extends BaseRenderer
     public function statusTextMap($value = '')
     {
         return $this->set('statusTextMap', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

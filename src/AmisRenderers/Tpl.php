@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * tpl 渲染器
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Tpl extends BaseRenderer
 {
@@ -186,7 +186,7 @@ class Tpl extends BaseRenderer
     }
 
     /**
-     * 指定为模板渲染器。文档：https://aisuda.bce.baidu.com/amis/zh-CN/concepts/template 可选值: tpl | html
+     * 指定为模板渲染器。文档：https://aisuda.bce.baidu.com/amis/zh-CN/docs/concepts/template 可选值: tpl | html
      */
     public function type($value = '')
     {

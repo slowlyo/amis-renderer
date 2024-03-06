@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CopyAction
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class CopyAction extends BaseRenderer
 {
@@ -344,6 +344,14 @@ $this->set('actionType', 'copy');
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**
