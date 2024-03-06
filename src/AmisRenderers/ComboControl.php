@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Combo 组合输入框类型 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/combo
  * 
  * @author slowlyo
- * @version 3.4.3
+ * @version v3.5.0
  */
 class ComboControl extends BaseRenderer
 {

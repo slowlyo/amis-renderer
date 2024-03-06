@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DrawerAction
  * 
  * @author slowlyo
- * @version 3.4.3
+ * @version v3.5.0
  */
 class DrawerAction extends BaseRenderer
 {

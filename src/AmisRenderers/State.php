@@ -3,18 +3,25 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Calendar
+ * State
  * 
  * @author slowlyo
  * @version v3.5.0
  */
-class Calendar extends BaseRenderer
+class State extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'calendar');
+        
 
+    }
 
+    /**
+     * 内容
+     */
+    public function body($value = '')
+    {
+        return $this->set('body', $value);
     }
 
     /**
@@ -74,43 +81,11 @@ class Calendar extends BaseRenderer
     }
 
     /**
-     * 是否开启放大模式
-     */
-    public function largeMode($value = true)
-    {
-        return $this->set('largeMode', $value);
-    }
-
-    /**
      * 事件动作配置
      */
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 日程点击展示
-     */
-    public function scheduleAction($value = '')
-    {
-        return $this->set('scheduleAction', $value);
-    }
-
-    /**
-     * 日程显示颜色自定义
-     */
-    public function scheduleClassNames($value = '')
-    {
-        return $this->set('scheduleClassNames', $value);
-    }
-
-    /**
-     * 日程
-     */
-    public function schedules($value = '')
-    {
-        return $this->set('schedules', $value);
     }
 
     /**
@@ -178,19 +153,11 @@ class Calendar extends BaseRenderer
     }
 
     /**
-     * 今日激活时的自定义样式
+     * 状态标题
      */
-    public function todayActiveStyle($value = '')
+    public function title($value = '')
     {
-        return $this->set('todayActiveStyle', $value);
-    }
-
-    /**
-     * 指定为日历选择控件
-     */
-    public function type($value = 'calendar')
-    {
-        return $this->set('type', $value);
+        return $this->set('title', $value);
     }
 
     /**
@@ -210,7 +177,7 @@ class Calendar extends BaseRenderer
     }
 
     /**
-     * 是否显示表达式
+     * 显示条件
      */
     public function visibleOn($value = '')
     {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * List 列表展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version 3.4.3
+ * @version v3.5.0
  */
 class ListRenderer extends BaseRenderer
 {
