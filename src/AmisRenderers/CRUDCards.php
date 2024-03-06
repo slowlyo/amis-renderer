@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDCards
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class CRUDCards extends BaseRenderer
 {
@@ -432,6 +432,14 @@ $this->set('type', 'crud');
     public function orderField($value = '')
     {
         return $this->set('orderField', $value);
+    }
+
+    /**
+     * 设置分页方向的字段名。单位简单分页时清楚时向前还是向后翻页。
+     */
+    public function pageDirectionField($value = '')
+    {
+        return $this->set('pageDirectionField', $value);
     }
 
     /**

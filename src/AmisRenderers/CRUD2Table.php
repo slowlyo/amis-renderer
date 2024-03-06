@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2Table
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class CRUD2Table extends BaseRenderer
 {
@@ -346,7 +346,7 @@ class CRUD2Table extends BaseRenderer
     }
 
     /**
-     * 设置ID字段名 作用同keyFiled 兼容原CURD属性
+     * 行标识符，默认为id
      */
     public function primaryField($value = '')
     {

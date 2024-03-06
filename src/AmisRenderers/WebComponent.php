@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Web Component
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class WebComponent extends BaseRenderer
 {

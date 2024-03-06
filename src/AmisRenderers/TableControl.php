@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class TableControl extends BaseRenderer
 {
@@ -727,6 +727,14 @@ class TableControl extends BaseRenderer
     public function tableClassName($value = '')
     {
         return $this->set('tableClassName', $value);
+    }
+
+    /**
+     * table layout 可选值: fixed | auto
+     */
+    public function tableLayout($value = '')
+    {
+        return $this->set('tableLayout', $value);
     }
 
     /**
