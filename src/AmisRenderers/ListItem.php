@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListItem
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class ListItem extends BaseRenderer
 {
@@ -118,6 +118,62 @@ class ListItem extends BaseRenderer
     public function remark($value = '')
     {
         return $this->set('remark', $value);
+    }
+
+    /**
+     * 是否静态展示
+     */
+    public function static($value = true)
+    {
+        return $this->set('static', $value);
+    }
+
+    /**
+     * 静态展示表单项类名
+     */
+    public function staticClassName($value = '')
+    {
+        return $this->set('staticClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Value类名
+     */
+    public function staticInputClassName($value = '')
+    {
+        return $this->set('staticInputClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Label类名
+     */
+    public function staticLabelClassName($value = '')
+    {
+        return $this->set('staticLabelClassName', $value);
+    }
+
+    /**
+     * 是否静态展示表达式
+     */
+    public function staticOn($value = '')
+    {
+        return $this->set('staticOn', $value);
+    }
+
+    /**
+     * 静态展示空值占位
+     */
+    public function staticPlaceholder($value = '')
+    {
+        return $this->set('staticPlaceholder', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticSchema($value = '')
+    {
+        return $this->set('staticSchema', $value);
     }
 
     /**

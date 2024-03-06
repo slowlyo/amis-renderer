@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 提示渲染器，默认会显示个小图标，鼠标放上来的时候显示配置的内容。
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class Remark extends BaseRenderer
 {
@@ -119,6 +119,62 @@ class Remark extends BaseRenderer
     public function shape($value = '')
     {
         return $this->set('shape', $value);
+    }
+
+    /**
+     * 是否静态展示
+     */
+    public function static($value = true)
+    {
+        return $this->set('static', $value);
+    }
+
+    /**
+     * 静态展示表单项类名
+     */
+    public function staticClassName($value = '')
+    {
+        return $this->set('staticClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Value类名
+     */
+    public function staticInputClassName($value = '')
+    {
+        return $this->set('staticInputClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Label类名
+     */
+    public function staticLabelClassName($value = '')
+    {
+        return $this->set('staticLabelClassName', $value);
+    }
+
+    /**
+     * 是否静态展示表达式
+     */
+    public function staticOn($value = '')
+    {
+        return $this->set('staticOn', $value);
+    }
+
+    /**
+     * 静态展示空值占位
+     */
+    public function staticPlaceholder($value = '')
+    {
+        return $this->set('staticPlaceholder', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticSchema($value = '')
+    {
+        return $this->set('staticSchema', $value);
     }
 
     /**

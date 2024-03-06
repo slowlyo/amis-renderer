@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Barcode 条形码 https://aisuda.bce.baidu.com/amis/zh-CN/components/barcode
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class Barcode extends BaseRenderer
 {

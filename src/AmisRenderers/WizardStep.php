@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class WizardStep extends BaseRenderer
 {
@@ -422,6 +422,62 @@ class WizardStep extends BaseRenderer
     public function silentPolling($value = true)
     {
         return $this->set('silentPolling', $value);
+    }
+
+    /**
+     * 展示态时的className
+     */
+    public function static($value = true)
+    {
+        return $this->set('static', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticClassName($value = '')
+    {
+        return $this->set('staticClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Value类名
+     */
+    public function staticInputClassName($value = '')
+    {
+        return $this->set('staticInputClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Label类名
+     */
+    public function staticLabelClassName($value = '')
+    {
+        return $this->set('staticLabelClassName', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticOn($value = '')
+    {
+        return $this->set('staticOn', $value);
+    }
+
+    /**
+     * 静态展示空值占位
+     */
+    public function staticPlaceholder($value = '')
+    {
+        return $this->set('staticPlaceholder', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticSchema($value = '')
+    {
+        return $this->set('staticSchema', $value);
     }
 
     /**
