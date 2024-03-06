@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ConditionGroupValue
  * 
  * @author slowlyo
- * @version v3.1.1
+ * @version 3.2.0
  */
 class ConditionGroupValue extends BaseRenderer
 {

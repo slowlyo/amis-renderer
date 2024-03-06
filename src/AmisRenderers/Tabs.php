@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version v3.1.1
+ * @version 3.2.0
  */
 class Tabs extends BaseRenderer
 {
@@ -287,6 +287,14 @@ class Tabs extends BaseRenderer
     public function subFormMode($value = '')
     {
         return $this->set('subFormMode', $value);
+    }
+
+    /**
+     * 是否滑动切换只在移动端生效
+     */
+    public function swipeable($value = true)
+    {
+        return $this->set('swipeable', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavItem
  * 
  * @author slowlyo
- * @version v3.1.1
+ * @version 3.2.0
  */
 class NavItem extends BaseRenderer
 {
@@ -14,14 +14,6 @@ class NavItem extends BaseRenderer
     {
         
 
-    }
-
-    /**
-     * 
-     */
-    public function accordion($value = true)
-    {
-        return $this->set('accordion', $value);
     }
 
     /**
@@ -150,14 +142,6 @@ class NavItem extends BaseRenderer
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 
-     */
-    public function popupClassName($value = '')
-    {
-        return $this->set('popupClassName', $value);
     }
 
     /**

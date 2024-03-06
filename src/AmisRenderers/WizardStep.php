@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version v3.1.1
+ * @version 3.2.0
  */
 class WizardStep extends BaseRenderer
 {
