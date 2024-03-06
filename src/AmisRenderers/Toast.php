@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Toast 轻提示
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class Toast extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class TableControl extends BaseRenderer
 {
@@ -311,6 +311,14 @@ class TableControl extends BaseRenderer
     public function editorSetting($value = '')
     {
         return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 是否开启 static 状态切换
+     */
+    public function enableStaticTransform($value = true)
+    {
+        return $this->set('enableStaticTransform', $value);
     }
 
     /**

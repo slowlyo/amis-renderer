@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Location 选点组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/location
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class LocationControl extends BaseRenderer
 {

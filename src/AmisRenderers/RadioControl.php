@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Radio 单选框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/radios
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class RadioControl extends BaseRenderer
 {
