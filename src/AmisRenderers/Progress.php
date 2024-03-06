@@ -6,13 +6,16 @@ namespace Slowlyo\AmisRenderers;
  * 进度展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/progress
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Progress extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'progress');
+        $this->set('mode', 'line');
+
+
     }
 
     /**
@@ -48,6 +51,22 @@ class Progress extends BaseRenderer
     }
 
     /**
+     * 仪表盘进度条缺口角度，可取值 0 ~ 295
+     */
+    public function gapDegree($value = '')
+    {
+        return $this->set('gapDegree', $value);
+    }
+
+    /**
+     * 仪表盘进度条缺口位置 可选值: top | bottom | left | right
+     */
+    public function gapPosition($value = '')
+    {
+        return $this->set('gapPosition', $value);
+    }
+
+    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -69,6 +88,14 @@ class Progress extends BaseRenderer
     public function map($value = '')
     {
         return $this->set('map', $value);
+    }
+
+    /**
+     * 进度条类型。 可选值: line | circle | dashboard
+     */
+    public function mode($value = '')
+    {
+        return $this->set('mode', $value);
     }
 
     /**
@@ -120,11 +147,27 @@ class Progress extends BaseRenderer
     }
 
     /**
+     * 圆形进度条线的宽度
+     */
+    public function strokeWidth($value = '')
+    {
+        return $this->set('strokeWidth', $value);
+    }
+
+    /**
      *
      */
     public function type($value = 'progress')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 内容的模板函数
+     */
+    public function valueTpl($value = '')
+    {
+        return $this->set('valueTpl', $value);
     }
 
     /**

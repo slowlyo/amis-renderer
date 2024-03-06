@@ -3,41 +3,32 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * ListItem
+ * CollapseGroup 折叠渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/collapse
  *
- * @author slowlyo
+ * @author  slowlyo
  * @version 1.5.2
  */
-class ListItem extends BaseRenderer
+class CollapseGroup extends BaseRenderer
 {
     public function __construct()
     {
-
-
+        $this->set('type', 'collapse-group');
     }
 
     /**
-     *
+     * 手风琴模式
      */
-    public function actions($value = '')
+    public function accordion($value = true)
     {
-        return $this->set('actions', $value);
+        return $this->set('accordion', $value);
     }
 
     /**
-     * 操作位置，默认在右侧，可以设置成左侧。 可选值: left | right
+     * 激活面板
      */
-    public function actionsPosition($value = '')
+    public function activeKey($value = '')
     {
-        return $this->set('actionsPosition', $value);
-    }
-
-    /**
-     * 图片地址
-     */
-    public function avatar($value = '')
-    {
-        return $this->set('avatar', $value);
+        return $this->set('activeKey', $value);
     }
 
     /**
@@ -57,14 +48,6 @@ class ListItem extends BaseRenderer
     }
 
     /**
-     * 描述
-     */
-    public function desc($value = '')
-    {
-        return $this->set('desc', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -78,6 +61,22 @@ class ListItem extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 自定义切换图标
+     */
+    public function expandIcon($value = '')
+    {
+        return $this->set('expandIcon', $value);
+    }
+
+    /**
+     * 设置图标位置 可选值: left | right
+     */
+    public function expandIconPosition($value = '')
+    {
+        return $this->set('expandIconPosition', $value);
     }
 
     /**
@@ -97,27 +96,11 @@ class ListItem extends BaseRenderer
     }
 
     /**
-     * tooltip 说明
+     * 指定为折叠器类型
      */
-    public function remark($value = '')
+    public function type($value = 'collapse-group')
     {
-        return $this->set('remark', $value);
-    }
-
-    /**
-     * 副标题
-     */
-    public function subTitle($value = '')
-    {
-        return $this->set('subTitle', $value);
-    }
-
-    /**
-     * 标题
-     */
-    public function title($value = '')
-    {
-        return $this->set('title', $value);
+        return $this->set('type', $value);
     }
 
     /**

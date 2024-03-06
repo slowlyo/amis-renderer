@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DialogAction
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class DialogAction extends BaseRenderer
 {
@@ -56,6 +56,14 @@ class DialogAction extends BaseRenderer
     public function block($value = true)
     {
         return $this->set('block', $value);
+    }
+
+    /**
+     * 子内容
+     */
+    public function body($value = '')
+    {
+        return $this->set('body', $value);
     }
 
     /**
@@ -171,6 +179,14 @@ class DialogAction extends BaseRenderer
     }
 
     /**
+     * 主要用于用户行为跟踪里区分是哪个按钮
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 按钮文字
      */
     public function label($value = '')
@@ -187,6 +203,22 @@ class DialogAction extends BaseRenderer
     }
 
     /**
+     * loading 上的css 类名
+     */
+    public function loadingClassName($value = '')
+    {
+        return $this->set('loadingClassName', $value);
+    }
+
+    /**
+     * 是否显示loading效果
+     */
+    public function loadingOn($value = '')
+    {
+        return $this->set('loadingOn', $value);
+    }
+
+    /**
      * 是否将弹框中数据 merge 到父级作用域。
      */
     public function mergeData($value = true)
@@ -200,6 +232,14 @@ class DialogAction extends BaseRenderer
     public function nextCondition($value = '')
     {
         return $this->set('nextCondition', $value);
+    }
+
+    /**
+     * 自定义事件处理函数
+     */
+    public function onClick($value = '')
+    {
+        return $this->set('onClick', $value);
     }
 
     /**

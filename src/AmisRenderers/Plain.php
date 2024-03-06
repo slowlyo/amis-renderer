@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Plain 纯文本渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/plain
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Plain extends BaseRenderer
 {

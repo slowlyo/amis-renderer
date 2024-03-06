@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class CRUDTable extends BaseRenderer
 {
@@ -45,6 +45,22 @@ class CRUDTable extends BaseRenderer
     public function api($value = '')
     {
         return $this->set('api', $value);
+    }
+
+    /**
+     * 内容区域占满屏幕剩余空间
+     */
+    public function autoFillHeight($value = true)
+    {
+        return $this->set('autoFillHeight', $value);
+    }
+
+    /**
+     * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
+     */
+    public function autoGenerateFilter($value = true)
+    {
+        return $this->set('autoGenerateFilter', $value);
     }
 
     /**
@@ -285,6 +301,14 @@ class CRUDTable extends BaseRenderer
     public function itemActions($value = '')
     {
         return $this->set('itemActions', $value);
+    }
+
+    /**
+     * 行角标
+     */
+    public function itemBadge($value = '')
+    {
+        return $this->set('itemBadge', $value);
     }
 
     /**

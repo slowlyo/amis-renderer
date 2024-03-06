@@ -204,6 +204,11 @@ class Amis
         return Collapse::make();
     }
 
+    public function CollapseGroup()
+    {
+        return CollapseGroup::make();
+    }
+
     public function Color()
     {
         return Color::make();
@@ -879,6 +884,16 @@ class Amis
         return Plain::make();
     }
 
+    public function Portlet()
+    {
+        return Portlet::make();
+    }
+
+    public function PortletTab()
+    {
+        return PortletTab::make();
+    }
+
     public function Progress()
     {
         return Progress::make();
@@ -1189,6 +1204,21 @@ class Amis
         return $instance;
     }
 
+    public function TabsTransferPickerControl($name = '', $label = '')
+    {
+        $instance = TabsTransferPickerControl::make();
+
+        if ($name !== '') {
+            $instance->name($name);
+        }
+
+        if ($label !== '') {
+            $instance->label($label);
+        }
+
+        return $instance;
+    }
+
     public function TagControl($name = '', $label = '')
     {
         $instance = TagControl::make();
@@ -1267,6 +1297,21 @@ class Amis
     public function TransferControl($name = '', $label = '')
     {
         $instance = TransferControl::make();
+
+        if ($name !== '') {
+            $instance->name($name);
+        }
+
+        if ($label !== '') {
+            $instance->label($label);
+        }
+
+        return $instance;
+    }
+
+    public function TransferPickerControl($name = '', $label = '')
+    {
+        $instance = TransferPickerControl::make();
 
         if ($name !== '') {
             $instance->name($name);

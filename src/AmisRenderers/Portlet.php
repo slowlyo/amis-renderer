@@ -3,16 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
+ * Portlet
  *
- * @author slowlyo
+ * @author  slowlyo
  * @version 1.5.2
  */
-class Tabs extends BaseRenderer
+class Portlet extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'tabs');
+        $this->set('type', 'portlet');
     }
 
     /**
@@ -32,6 +32,14 @@ class Tabs extends BaseRenderer
     }
 
     /**
+     * 标题右侧的描述
+     */
+    public function description($value = '')
+    {
+        return $this->set('description', $value);
+    }
+
+    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -48,6 +56,14 @@ class Tabs extends BaseRenderer
     }
 
     /**
+     * header和内容是否展示分割线
+     */
+    public function divider($value = true)
+    {
+        return $this->set('divider', $value);
+    }
+
+    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -61,6 +77,14 @@ class Tabs extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
+    }
+
+    /**
+     * 隐藏头部
+     */
+    public function hideHeader($value = true)
+    {
+        return $this->set('hideHeader', $value);
     }
 
     /**
@@ -96,23 +120,15 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 如果是水平排版，这个属性可以细化水平排版的左右宽度占比。
+     * 自定义样式
      */
-    public function subFormHorizontal($value = '')
+    public function style($value = '')
     {
-        return $this->set('subFormHorizontal', $value);
+        return $this->set('style', $value);
     }
 
     /**
-     * 配置子表单项默认的展示方式。 可选值: normal | inline | horizontal
-     */
-    public function subFormMode($value = '')
-    {
-        return $this->set('subFormMode', $value);
-    }
-
-    /**
-     * 选项卡成员。当配置了 source 时，选项卡成员，将会根据目标数据进行重复。
+     *
      */
     public function tabs($value = '')
     {
@@ -136,7 +152,7 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 可以在右侧配置点其他功能按钮。
+     * 可以在右侧配置点其他功能按钮。不会随着tab切换
      */
     public function toolbar($value = '')
     {
@@ -144,9 +160,9 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     *
+     * 指定为 portlet 类型
      */
-    public function type($value = 'tabs')
+    public function type($value = 'portlet')
     {
         return $this->set('type', $value);
     }

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nested Select 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/nested-select
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class NestedSelectControl extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaPopOver
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class SchemaPopOver extends BaseRenderer
 {

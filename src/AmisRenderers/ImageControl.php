@@ -6,9 +6,9 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
 
 /**
  * Image 图片上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/image
- *
+ * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class ImageControl extends BaseRenderer
 {
@@ -86,7 +86,7 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function compress($value = true)
     {
@@ -94,7 +94,7 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function compressOptions($value = '')
     {
@@ -102,7 +102,7 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function crop($value = '')
     {
@@ -134,7 +134,7 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -486,7 +486,7 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

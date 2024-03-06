@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class TableControl extends BaseRenderer
 {
@@ -61,6 +61,14 @@ class TableControl extends BaseRenderer
     public function affixRow($value = '')
     {
         return $this->set('affixRow', $value);
+    }
+
+    /**
+     * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
+     */
+    public function autoGenerateFilter($value = true)
+    {
+        return $this->set('autoGenerateFilter', $value);
     }
 
     /**
@@ -357,6 +365,14 @@ class TableControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
+    }
+
+    /**
+     * 行角标
+     */
+    public function itemBadge($value = '')
+    {
+        return $this->set('itemBadge', $value);
     }
 
     /**

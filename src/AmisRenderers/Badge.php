@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Badge 角标。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/badge
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Badge extends BaseRenderer
 {
@@ -65,7 +65,7 @@ class Badge extends BaseRenderer
     }
 
     /**
-     * 提示类型 可选值: info | warning | success | danger
+     * 提示类型
      */
     public function level($value = '')
     {
@@ -73,7 +73,7 @@ class Badge extends BaseRenderer
     }
 
     /**
-     * 角标类型 可选值: text | dot
+     * 角标类型 可选值: text | dot | ribbon
      */
     public function mode($value = '')
     {
@@ -126,14 +126,6 @@ class Badge extends BaseRenderer
     public function text($value = '')
     {
         return $this->set('text', $value);
-    }
-
-    /**
-     *
-     */
-    public function type($value = '')
-    {
-        return $this->set('type', $value);
     }
 
     /**

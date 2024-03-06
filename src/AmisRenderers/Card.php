@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Card 卡片渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  *
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Card extends BaseRenderer
 {
@@ -77,6 +77,14 @@ class Card extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
+    }
+
+    /**
+     * 工具栏按钮
+     */
+    public function toolbar($value = '')
+    {
+        return $this->set('toolbar', $value);
     }
 
     /**
