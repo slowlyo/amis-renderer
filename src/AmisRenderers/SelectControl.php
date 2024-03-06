@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class SelectControl extends BaseRenderer
 {
@@ -31,6 +31,14 @@ class SelectControl extends BaseRenderer
     public function addControls($value = '')
     {
         return $this->set('addControls', $value);
+    }
+
+    /**
+     * 控制新增弹框设置项
+     */
+    public function addDialog($value = '')
+    {
+        return $this->set('addDialog', $value);
     }
 
     /**
@@ -226,6 +234,14 @@ class SelectControl extends BaseRenderer
     }
 
     /**
+     * 控制编辑弹框设置项
+     */
+    public function editDialog($value = '')
+    {
+        return $this->set('editDialog', $value);
+    }
+
+    /**
      * 是否可以编辑
      */
     public function editable($value = true)
@@ -367,6 +383,14 @@ class SelectControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -567,6 +591,14 @@ class SelectControl extends BaseRenderer
     public function selectMode($value = '')
     {
         return $this->set('selectMode', $value);
+    }
+
+    /**
+     * 当在value值未匹配到当前options中的选项时，是否value值对应文本飘红显示
+     */
+    public function showInvalidMatch($value = true)
+    {
+        return $this->set('showInvalidMatch', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表格列，不指定类型时默认为文本类型。
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class TableColumn extends BaseRenderer
 {
@@ -30,6 +30,14 @@ class TableColumn extends BaseRenderer
     public function breakpoint($value = '')
     {
         return $this->set('breakpoint', $value);
+    }
+
+    /**
+     * 表格列单元格是否可以获取父级数据域值，默认为true，该配置对当前列内单元格生效
+     */
+    public function canAccessSuperData($value = true)
+    {
+        return $this->set('canAccessSuperData', $value);
     }
 
     /**

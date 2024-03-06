@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class TableControl extends BaseRenderer
 {
@@ -63,6 +63,14 @@ class TableControl extends BaseRenderer
     public function affixRow($value = '')
     {
         return $this->set('affixRow', $value);
+    }
+
+    /**
+     * 表格自动计算高度
+     */
+    public function autoFillHeight($value = '')
+    {
+        return $this->set('autoFillHeight', $value);
     }
 
     /**
@@ -418,6 +426,14 @@ class TableControl extends BaseRenderer
     }
 
     /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -618,7 +634,7 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 表单项类型
+     * 
      */
     public function type($value = 'input-table')
     {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Button Toolar 渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/button-toolbar
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class ButtonToolbar extends BaseRenderer
 {

@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * Image 图片上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/image
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class ImageControl extends BaseRenderer
 {
@@ -174,6 +174,14 @@ class ImageControl extends BaseRenderer
     }
 
     /**
+     * 图片上传完毕是否进入裁剪模式
+     */
+    public function dropCrop($value = true)
+    {
+        return $this->set('dropCrop', $value);
+    }
+
+    /**
      * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
      */
     public function extractValue($value = true)
@@ -270,6 +278,14 @@ class ImageControl extends BaseRenderer
     }
 
     /**
+     * 初始化时是否打开裁剪模式
+     */
+    public function initCrop($value = true)
+    {
+        return $this->set('initCrop', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -323,6 +339,14 @@ class ImageControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

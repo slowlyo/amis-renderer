@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class WizardStep extends BaseRenderer
 {
@@ -118,6 +118,14 @@ class WizardStep extends BaseRenderer
     public function debug($value = true)
     {
         return $this->set('debug', $value);
+    }
+
+    /**
+     * Debug面板配置
+     */
+    public function debugConfig($value = '')
+    {
+        return $this->set('debugConfig', $value);
     }
 
     /**
@@ -278,6 +286,14 @@ class WizardStep extends BaseRenderer
     public function labelAlign($value = '')
     {
         return $this->set('labelAlign', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

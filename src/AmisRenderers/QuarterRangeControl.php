@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * QuarterRange 季度范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-quarter-range
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class QuarterRangeControl extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class QuarterRangeControl extends BaseRenderer
         $this->set('type', 'input-quarter-range');
 
 
+    }
+
+    /**
+     * 是否启用游标动画，默认开启
+     */
+    public function animation($value = true)
+    {
+        return $this->set('animation', $value);
     }
 
     /**
@@ -215,6 +223,14 @@ class QuarterRangeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

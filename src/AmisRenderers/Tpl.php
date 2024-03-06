@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * tpl 渲染器
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Tpl extends BaseRenderer
 {
@@ -103,14 +103,6 @@ class Tpl extends BaseRenderer
     public function raw($value = '')
     {
         return $this->set('raw', $value);
-    }
-
-    /**
-     * 是否设置外层DOM节点的title属性为文本内容
-     */
-    public function showNativeTitle($value = true)
-    {
-        return $this->set('showNativeTitle', $value);
     }
 
     /**

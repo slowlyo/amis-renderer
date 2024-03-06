@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Calendar
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Calendar extends BaseRenderer
 {
@@ -66,6 +66,14 @@ class Calendar extends BaseRenderer
     }
 
     /**
+     * 是否开启放大模式
+     */
+    public function largeMode($value = true)
+    {
+        return $this->set('largeMode', $value);
+    }
+
+    /**
      * 事件动作配置
      */
     public function onEvent($value = '')
@@ -95,6 +103,14 @@ class Calendar extends BaseRenderer
     public function schedules($value = '')
     {
         return $this->set('schedules', $value);
+    }
+
+    /**
+     * 今日激活时的自定义样式
+     */
+    public function todayActiveStyle($value = '')
+    {
+        return $this->set('todayActiveStyle', $value);
     }
 
     /**

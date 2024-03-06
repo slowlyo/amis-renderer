@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * QRCodeImageSettings
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class QRCodeImageSettings extends BaseRenderer
 {

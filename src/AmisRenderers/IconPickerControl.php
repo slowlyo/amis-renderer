@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图标选择器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/icon-picker
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class IconPickerControl extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class IconPickerControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

@@ -3,17 +3,17 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * CRUDCards
+ * CRUD2List
  * 
  * @author slowlyo
  * @version v2.2.0
  */
-class CRUDCards extends BaseRenderer
+class CRUD2List extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('mode', 'cards');
-$this->set('type', 'crud');
+        $this->set('mode', 'list');
+$this->set('type', 'crud2');
 
 
     }
@@ -27,14 +27,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 默认只有当分页数大于 1 是才显示，如果总是想显示请配置。
-     */
-    public function alwaysShowPagination($value = true)
-    {
-        return $this->set('alwaysShowPagination', $value);
-    }
-
-    /**
      * 初始化数据 API
      */
     public function api($value = '')
@@ -45,17 +37,9 @@ $this->set('type', 'crud');
     /**
      * 内容区域占满屏幕剩余空间
      */
-    public function autoFillHeight($value = '')
+    public function autoFillHeight($value = true)
     {
         return $this->set('autoFillHeight', $value);
-    }
-
-    /**
-     * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
-     */
-    public function autoGenerateFilter($value = true)
-    {
-        return $this->set('autoGenerateFilter', $value);
     }
 
     /**
@@ -64,22 +48,6 @@ $this->set('type', 'crud');
     public function autoJumpToTopOnPagerChange($value = true)
     {
         return $this->set('autoJumpToTopOnPagerChange', $value);
-    }
-
-    /**
-     * 批量操作
-     */
-    public function bulkActions($value = '')
-    {
-        return $this->set('bulkActions', $value);
-    }
-
-    /**
-     * 
-     */
-    public function card($value = '')
-    {
-        return $this->set('card', $value);
     }
 
     /**
@@ -99,14 +67,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 可以默认给定初始参数如： {"perPage": 24}
-     */
-    public function defaultParams($value = '')
-    {
-        return $this->set('defaultParams', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -123,54 +83,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 是否可通过拖拽排序
-     */
-    public function draggable($value = true)
-    {
-        return $this->set('draggable', $value);
-    }
-
-    /**
-     * 是否可通过拖拽排序，通过表达式来配置
-     */
-    public function draggableOn($value = '')
-    {
-        return $this->set('draggableOn', $value);
-    }
-
-    /**
-     * 如果时内嵌模式，可以通过这个来配置默认的展开选项。
-     */
-    public function expandConfig($value = '')
-    {
-        return $this->set('expandConfig', $value);
-    }
-
-    /**
-     * 过滤器表单
-     */
-    public function filter($value = '')
-    {
-        return $this->set('filter', $value);
-    }
-
-    /**
-     * 
-     */
-    public function filterDefaultVisible($value = true)
-    {
-        return $this->set('filterDefaultVisible', $value);
-    }
-
-    /**
-     * 
-     */
-    public function filterTogglable($value = true)
-    {
-        return $this->set('filterTogglable', $value);
-    }
-
-    /**
      * 底部区域
      */
     public function footer($value = '')
@@ -179,7 +91,7 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 底部 CSS 类名
+     * 底部区域类名
      */
     public function footerClassName($value = '')
     {
@@ -187,7 +99,7 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 底部工具栏
+     * 底部区域
      */
     public function footerToolbar($value = '')
     {
@@ -203,7 +115,7 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 头部 CSS 类名
+     * 顶部区域类名
      */
     public function headerClassName($value = '')
     {
@@ -211,7 +123,7 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 顶部工具栏
+     * 顶部区域
      */
     public function headerToolbar($value = '')
     {
@@ -259,30 +171,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 初始是否拉取
-     */
-    public function initFetch($value = true)
-    {
-        return $this->set('initFetch', $value);
-    }
-
-    /**
-     * 初始是否拉取，用表达式来配置。
-     */
-    public function initFetchOn($value = '')
-    {
-        return $this->set('initFetchOn', $value);
-    }
-
-    /**
-     * 配置内部 DOM 的 className
-     */
-    public function innerClassName($value = '')
-    {
-        return $this->set('innerClassName', $value);
-    }
-
-    /**
      * 设置自动刷新时间
      */
     public function interval($value = '')
@@ -291,11 +179,11 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 单条操作
+     * 点击列表项的行为
      */
-    public function itemActions($value = '')
+    public function itemAction($value = '')
     {
-        return $this->set('itemActions', $value);
+        return $this->set('itemAction', $value);
     }
 
     /**
@@ -307,14 +195,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 卡片 CSS 类名
-     */
-    public function itemClassName($value = '')
-    {
-        return $this->set('itemClassName', $value);
-    }
-
-    /**
      * 配置某项是否可拖拽排序，前提是要开启拖拽功能
      */
     public function itemDraggableOn($value = '')
@@ -323,7 +203,7 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 分页的时候是否保留用户选择。
+     * 翻页时是否保留用户已选的数据
      */
     public function keepItemSelectionOnPageChange($value = true)
     {
@@ -331,11 +211,11 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 当配置 keepItemSelectionOnPageChange 时有用，用来配置已勾选项的文案。
+     * 单条数据展示内容配置
      */
-    public function labelTpl($value = '')
+    public function listItem($value = '')
     {
-        return $this->set('labelTpl', $value);
+        return $this->set('listItem', $value);
     }
 
     /**
@@ -347,35 +227,27 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 在开启loadDataOnce时，filter时是否去重新请求api
+     * 数据展示模式 无限加载 or 分页 可选值: more | pagination
      */
-    public function loadDataOnceFetchOnFilter($value = true)
+    public function loadType($value = '')
     {
-        return $this->set('loadDataOnceFetchOnFilter', $value);
-    }
-
-    /**
-     * 是否为瀑布流布局？
-     */
-    public function masonryLayout($value = true)
-    {
-        return $this->set('masonryLayout', $value);
-    }
-
-    /**
-     * 
-     */
-    public function messages($value = '')
-    {
-        return $this->set('messages', $value);
+        return $this->set('loadType', $value);
     }
 
     /**
      * 指定内容区的展示模式。
      */
-    public function mode($value = 'cards')
+    public function mode($value = 'list')
     {
         return $this->set('mode', $value);
+    }
+
+    /**
+     * 是否可以多选数据，仅当selectable为 true 时生效
+     */
+    public function multiple($value = true)
+    {
+        return $this->set('multiple', $value);
     }
 
     /**
@@ -395,30 +267,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 默认排序字段
-     */
-    public function orderBy($value = '')
-    {
-        return $this->set('orderBy', $value);
-    }
-
-    /**
-     * 默认排序方向 可选值: asc | desc
-     */
-    public function orderDir($value = '')
-    {
-        return $this->set('orderDir', $value);
-    }
-
-    /**
-     * 设置用来确定位置的字段名，设置后新的顺序将被赋值到该字段中。
-     */
-    public function orderField($value = '')
-    {
-        return $this->set('orderField', $value);
-    }
-
-    /**
      * 设置分页页码字段名。
      */
     public function pageField($value = '')
@@ -427,19 +275,11 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 每页个数，默认为 10，如果不是请设置。
+     * 无限加载时，根据此项设置其每页加载数量，可以不限制
      */
     public function perPage($value = '')
     {
         return $this->set('perPage', $value);
-    }
-
-    /**
-     * 每页显示多少个空间成员的配置如： [10, 20, 50, 100]。
-     */
-    public function perPageAvailable($value = true)
-    {
-        return $this->set('perPageAvailable', $value);
     }
 
     /**
@@ -483,6 +323,14 @@ $this->set('type', 'crud');
     }
 
     /**
+     * 是否可以选择数据，外部事件动作
+     */
+    public function selectable($value = true)
+    {
+        return $this->set('selectable', $value);
+    }
+
+    /**
      * 是否显示底部
      */
     public function showFooter($value = true)
@@ -499,11 +347,27 @@ $this->set('type', 'crud');
     }
 
     /**
+     * 是否展示已选数据区域，仅当selectable为 true 时生效
+     */
+    public function showSelection($value = true)
+    {
+        return $this->set('showSelection', $value);
+    }
+
+    /**
      * 静默拉取
      */
     public function silentPolling($value = true)
     {
         return $this->set('silentPolling', $value);
+    }
+
+    /**
+     * 大小 可选值: sm | base
+     */
+    public function size($value = '')
+    {
+        return $this->set('size', $value);
     }
 
     /**
@@ -520,14 +384,6 @@ $this->set('type', 'crud');
     public function stopAutoRefreshWhen($value = '')
     {
         return $this->set('stopAutoRefreshWhen', $value);
-    }
-
-    /**
-     * 
-     */
-    public function stopAutoRefreshWhenModalIsOpen($value = true)
-    {
-        return $this->set('stopAutoRefreshWhenModalIsOpen', $value);
     }
 
     /**
@@ -555,9 +411,9 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 指定为 CRUD 渲染器。
+     * 指定为 CRUD2 渲染器。
      */
-    public function type($value = 'crud')
+    public function type($value = 'crud2')
     {
         return $this->set('type', $value);
     }

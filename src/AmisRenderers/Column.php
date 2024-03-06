@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Column
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Column extends BaseRenderer
 {
@@ -75,9 +75,9 @@ class Column extends BaseRenderer
     /**
      * 指定列唯一标识
      */
-    public function key($value = '')
+    public function name($value = '')
     {
-        return $this->set('key', $value);
+        return $this->set('name', $value);
     }
 
     /**

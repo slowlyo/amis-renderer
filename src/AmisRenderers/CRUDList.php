@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDList
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class CRUDList extends BaseRenderer
 {
@@ -45,7 +45,7 @@ $this->set('type', 'crud');
     /**
      * 内容区域占满屏幕剩余空间
      */
-    public function autoFillHeight($value = true)
+    public function autoFillHeight($value = '')
     {
         return $this->set('autoFillHeight', $value);
     }

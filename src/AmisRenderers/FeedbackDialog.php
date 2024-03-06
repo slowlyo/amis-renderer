@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FeedbackDialog
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class FeedbackDialog extends BaseRenderer
 {
@@ -110,6 +110,14 @@ class FeedbackDialog extends BaseRenderer
     public function headerClassName($value = '')
     {
         return $this->set('headerClassName', $value);
+    }
+
+    /**
+     * Dialog 高度
+     */
+    public function height($value = '')
+    {
+        return $this->set('height', $value);
     }
 
     /**
@@ -222,6 +230,14 @@ class FeedbackDialog extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
+    }
+
+    /**
+     * Dialog 宽度
+     */
+    public function width($value = '')
+    {
+        return $this->set('width', $value);
     }
 
 

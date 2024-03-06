@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class CRUDTable extends BaseRenderer
 {
@@ -52,7 +52,7 @@ class CRUDTable extends BaseRenderer
     /**
      * 内容区域占满屏幕剩余空间
      */
-    public function autoFillHeight($value = true)
+    public function autoFillHeight($value = '')
     {
         return $this->set('autoFillHeight', $value);
     }
@@ -79,6 +79,14 @@ class CRUDTable extends BaseRenderer
     public function bulkActions($value = '')
     {
         return $this->set('bulkActions', $value);
+    }
+
+    /**
+     * 表格是否可以获取父级数据域值，默认为false
+     */
+    public function canAccessSuperData($value = true)
+    {
+        return $this->set('canAccessSuperData', $value);
     }
 
     /**

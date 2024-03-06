@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RangeControl
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class RangeControl extends BaseRenderer
 {
@@ -31,6 +31,14 @@ class RangeControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
+    }
+
+    /**
+     * 输入框是否可清除
+     */
+    public function clearable($value = true)
+    {
+        return $this->set('clearable', $value);
     }
 
     /**
@@ -175,6 +183,14 @@ class RangeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

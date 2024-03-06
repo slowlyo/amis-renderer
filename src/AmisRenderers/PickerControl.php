@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Picker 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/picker
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class PickerControl extends BaseRenderer
 {
@@ -31,6 +31,14 @@ class PickerControl extends BaseRenderer
     public function addControls($value = '')
     {
         return $this->set('addControls', $value);
+    }
+
+    /**
+     * 控制新增弹框设置项
+     */
+    public function addDialog($value = '')
+    {
+        return $this->set('addDialog', $value);
     }
 
     /**
@@ -167,6 +175,14 @@ class PickerControl extends BaseRenderer
     public function editControls($value = '')
     {
         return $this->set('editControls', $value);
+    }
+
+    /**
+     * 控制编辑弹框设置项
+     */
+    public function editDialog($value = '')
+    {
+        return $this->set('editDialog', $value);
     }
 
     /**
@@ -319,6 +335,14 @@ class PickerControl extends BaseRenderer
     public function labelTpl($value = '')
     {
         return $this->set('labelTpl', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**
