@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableSchema2
  * 
  * @author slowlyo
- * @version v3.6.2
+ * @version v3.6.3
  */
 class TableSchema2 extends BaseRenderer
 {

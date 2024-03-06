@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDList
  * 
  * @author slowlyo
- * @version v3.6.2
+ * @version v3.6.3
  */
 class CRUDList extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DateRange 展示渲染器。
  * 
  * @author slowlyo
- * @version v3.6.2
+ * @version v3.6.3
  */
 class DateRange extends BaseRenderer
 {
