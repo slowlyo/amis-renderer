@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TooltipWrapper
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TooltipWrapper extends BaseRenderer
 {
@@ -119,6 +119,14 @@ class TooltipWrapper extends BaseRenderer
     public function offset($value = '')
     {
         return $this->set('offset', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

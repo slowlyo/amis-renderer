@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Table 表格渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/table
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Table extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class Table extends BaseRenderer
     public function itemBadge($value = '')
     {
         return $this->set('itemBadge', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

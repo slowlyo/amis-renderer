@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/transfer-picker
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TransferPickerControl extends BaseRenderer
 {
@@ -290,6 +290,14 @@ class TransferPickerControl extends BaseRenderer
     }
 
     /**
+     * 描述标题
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
+    }
+
+    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -354,7 +362,7 @@ class TransferPickerControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 事件动作配置
      */
     public function onEvent($value = '')
     {
@@ -434,6 +442,30 @@ class TransferPickerControl extends BaseRenderer
     }
 
     /**
+     * 结果面板是否追踪显示
+     */
+    public function resultListModeFollowSelect($value = true)
+    {
+        return $this->set('resultListModeFollowSelect', $value);
+    }
+
+    /**
+     * 右侧列表搜索框提示
+     */
+    public function resultSearchPlaceholder($value = '')
+    {
+        return $this->set('resultSearchPlaceholder', $value);
+    }
+
+    /**
+     * 结果（右则）列表的检索功能，当设置为true时，可以通过输入检索模糊匹配检索内容
+     */
+    public function resultSearchable($value = true)
+    {
+        return $this->set('resultSearchable', $value);
+    }
+
+    /**
      * 右侧结果的标题文字
      */
     public function resultTitle($value = '')
@@ -455,6 +487,14 @@ class TransferPickerControl extends BaseRenderer
     public function searchApi($value = '')
     {
         return $this->set('searchApi', $value);
+    }
+
+    /**
+     * 左侧列表搜索框提示
+     */
+    public function searchPlaceholder($value = '')
+    {
+        return $this->set('searchPlaceholder', $value);
     }
 
     /**

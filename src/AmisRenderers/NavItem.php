@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavItem
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NavItem extends BaseRenderer
 {
@@ -110,6 +110,14 @@ class NavItem extends BaseRenderer
     public function label($value = '')
     {
         return $this->set('label', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

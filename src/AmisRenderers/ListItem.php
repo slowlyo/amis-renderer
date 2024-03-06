@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListItem
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListItem extends BaseRenderer
 {
@@ -102,6 +102,14 @@ class ListItem extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

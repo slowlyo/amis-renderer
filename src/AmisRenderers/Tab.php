@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tab
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Tab extends BaseRenderer
 {
@@ -134,6 +134,14 @@ class Tab extends BaseRenderer
     public function mountOnEnter($value = true)
     {
         return $this->set('mountOnEnter', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

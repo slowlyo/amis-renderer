@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Drawer extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class Drawer extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tasks 渲染器，格式说明 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tasks
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Tasks extends BaseRenderer
 {
@@ -151,6 +151,14 @@ class Tasks extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

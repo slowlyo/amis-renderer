@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * IFrame 渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/iframe
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class IFrame extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class IFrame extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

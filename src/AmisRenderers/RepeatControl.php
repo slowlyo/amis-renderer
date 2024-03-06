@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Repeat 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/repeat
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class RepeatControl extends BaseRenderer
 {
@@ -138,6 +138,14 @@ class RepeatControl extends BaseRenderer
     }
 
     /**
+     * 描述标题
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
+    }
+
+    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -170,7 +178,7 @@ class RepeatControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 事件动作配置
      */
     public function onEvent($value = '')
     {

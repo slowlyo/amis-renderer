@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Each 循环功能渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/each
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Each extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class Each extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

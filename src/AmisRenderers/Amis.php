@@ -959,6 +959,11 @@ class Amis
         return QRCode::make();
     }
 
+    public function QRCodeImageSettings()
+    {
+        return QRCodeImageSettings::make();
+    }
+
     public function QuarterControl($name = '', $label = '')
     {
         $instance = QuarterControl::make();
@@ -1457,6 +1462,21 @@ class Amis
     public function UrlAction()
     {
         return UrlAction::make();
+    }
+
+    public function UserSelectControl($name = '', $label = '')
+    {
+        $instance = UserSelectControl::make();
+
+        if($name !== ''){
+            $instance->name($name);
+        }
+
+        if($label !== ''){
+            $instance->label($label);
+        }
+
+        return $instance;
     }
 
     public function VBox()

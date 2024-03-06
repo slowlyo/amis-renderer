@@ -3,26 +3,42 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Time 时间选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/time
+ * UserSelect 移动端人员选择。
  * 
  * @author slowlyo
  * @version 1.10.0
  */
-class TimeControl extends BaseRenderer
+class UserSelectControl extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'input-time');
+        $this->set('type', 'users-select');
 
 
     }
 
     /**
-     * 边框模式，全边框，还是半边框，或者没边框。 可选值: full | half | none
+     * 添加时调用的接口
      */
-    public function borderMode($value = '')
+    public function addApi($value = '')
     {
-        return $this->set('borderMode', $value);
+        return $this->set('addApi', $value);
+    }
+
+    /**
+     * 新增时的表单项。
+     */
+    public function addControls($value = '')
+    {
+        return $this->set('addControls', $value);
+    }
+
+    /**
+     * 自动填充，当选项被选择的时候，将选项中的其他值同步设置到表单内。
+     */
+    public function autoFill($value = '')
+    {
+        return $this->set('autoFill', $value);
     }
 
     /**
@@ -42,11 +58,59 @@ class TimeControl extends BaseRenderer
     }
 
     /**
-     * 是否显示清除按钮
+     * 是否可清除。
      */
     public function clearable($value = true)
     {
         return $this->set('clearable', $value);
+    }
+
+    /**
+     * 是否可以新增
+     */
+    public function creatable($value = true)
+    {
+        return $this->set('creatable', $value);
+    }
+
+    /**
+     * 新增文字
+     */
+    public function createBtnLabel($value = '')
+    {
+        return $this->set('createBtnLabel', $value);
+    }
+
+    /**
+     * 延时加载的 API，当选项中有 defer: true 的选项时，点开会通过此接口扩充。
+     */
+    public function deferApi($value = '')
+    {
+        return $this->set('deferApi', $value);
+    }
+
+    /**
+     * 选项删除 API
+     */
+    public function deleteApi($value = '')
+    {
+        return $this->set('deleteApi', $value);
+    }
+
+    /**
+     * 选项删除提示文字。
+     */
+    public function deleteConfirmText($value = '')
+    {
+        return $this->set('deleteConfirmText', $value);
+    }
+
+    /**
+     * 分割符
+     */
+    public function delimiter($value = '')
+    {
+        return $this->set('delimiter', $value);
     }
 
     /**
@@ -90,19 +154,35 @@ class TimeControl extends BaseRenderer
     }
 
     /**
-     * 是否为内联模式？
+     * 编辑时调用的 API
      */
-    public function emebed($value = true)
+    public function editApi($value = '')
     {
-        return $this->set('emebed', $value);
+        return $this->set('editApi', $value);
     }
 
     /**
-     * 日期存储格式
+     * 选项修改的表单项
      */
-    public function format($value = '')
+    public function editControls($value = '')
     {
-        return $this->set('format', $value);
+        return $this->set('editControls', $value);
+    }
+
+    /**
+     * 是否可以编辑
+     */
+    public function editable($value = true)
+    {
+        return $this->set('editable', $value);
+    }
+
+    /**
+     * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
+     */
+    public function extractValue($value = true)
+    {
+        return $this->set('extractValue', $value);
     }
 
     /**
@@ -146,6 +226,22 @@ class TimeControl extends BaseRenderer
     }
 
     /**
+     * 配置 source 接口初始拉不拉取。
+     */
+    public function initFetch($value = true)
+    {
+        return $this->set('initFetch', $value);
+    }
+
+    /**
+     * 用表达式来配置 source 接口初始要不要拉取
+     */
+    public function initFetchOn($value = '')
+    {
+        return $this->set('initFetchOn', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -162,11 +258,11 @@ class TimeControl extends BaseRenderer
     }
 
     /**
-     * 日期展示格式
+     * 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。
      */
-    public function inputFormat($value = '')
+    public function joinValues($value = true)
     {
-        return $this->set('inputFormat', $value);
+        return $this->set('joinValues', $value);
     }
 
     /**
@@ -210,6 +306,14 @@ class TimeControl extends BaseRenderer
     }
 
     /**
+     * 是否为多选模式
+     */
+    public function multiple($value = true)
+    {
+        return $this->set('multiple', $value);
+    }
+
+    /**
      * 字段名，表单提交时的 key，支持多层级，用.连接，如： a.b.c
      */
     public function name($value = '')
@@ -223,6 +327,14 @@ class TimeControl extends BaseRenderer
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 选项集合
+     */
+    public function options($value = '')
+    {
+        return $this->set('options', $value);
     }
 
     /**
@@ -258,11 +370,35 @@ class TimeControl extends BaseRenderer
     }
 
     /**
+     * 是否可删除
+     */
+    public function removable($value = true)
+    {
+        return $this->set('removable', $value);
+    }
+
+    /**
      * 是否为必填
      */
     public function required($value = true)
     {
         return $this->set('required', $value);
+    }
+
+    /**
+     * 点清除按钮时，将表单项设置成当前配置的值。
+     */
+    public function resetValue($value = '')
+    {
+        return $this->set('resetValue', $value);
+    }
+
+    /**
+     * 默认选择选项第一个值。
+     */
+    public function selectFirst($value = true)
+    {
+        return $this->set('selectFirst', $value);
     }
 
     /**
@@ -274,6 +410,14 @@ class TimeControl extends BaseRenderer
     }
 
     /**
+     * 可用来通过 API 拉取 options。
+     */
+    public function source($value = '')
+    {
+        return $this->set('source', $value);
+    }
+
+    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -282,35 +426,11 @@ class TimeControl extends BaseRenderer
     }
 
     /**
-     * 时间输入范围限制
+     * 表单项类型
      */
-    public function timeConstraints($value = '')
-    {
-        return $this->set('timeConstraints', $value);
-    }
-
-    /**
-     * 时间的格式。
-     */
-    public function timeFormat($value = '')
-    {
-        return $this->set('timeFormat', $value);
-    }
-
-    /**
-     * 指定为日期时间选择控件
-     */
-    public function type($value = 'input-time')
+    public function type($value = 'users-select')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 设定是否存储 utc 时间。
-     */
-    public function utc($value = true)
-    {
-        return $this->set('utc', $value);
     }
 
     /**

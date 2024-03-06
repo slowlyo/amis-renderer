@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class SelectControl extends BaseRenderer
 {
@@ -66,6 +66,22 @@ class SelectControl extends BaseRenderer
     }
 
     /**
+     * 可多选条件下，是否可全选
+     */
+    public function checkAll($value = true)
+    {
+        return $this->set('checkAll', $value);
+    }
+
+    /**
+     * 可多选条件下，全选项文案，默认 ”全选“
+     */
+    public function checkAllLabel($value = '')
+    {
+        return $this->set('checkAllLabel', $value);
+    }
+
+    /**
      * 容器 css 类名
      */
     public function className($value = '')
@@ -111,6 +127,14 @@ class SelectControl extends BaseRenderer
     public function createBtnLabel($value = '')
     {
         return $this->set('createBtnLabel', $value);
+    }
+
+    /**
+     * 可多选条件下，是否默认全选中所有值
+     */
+    public function defaultCheckAll($value = true)
+    {
+        return $this->set('defaultCheckAll', $value);
     }
 
     /**
@@ -290,6 +314,14 @@ class SelectControl extends BaseRenderer
     }
 
     /**
+     * 单个选项的高度，主要用于虚拟渲染
+     */
+    public function itemHeight($value = '')
+    {
+        return $this->set('itemHeight', $value);
+    }
+
+    /**
      * 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。
      */
     public function joinValues($value = true)
@@ -303,6 +335,14 @@ class SelectControl extends BaseRenderer
     public function label($value = '')
     {
         return $this->set('label', $value);
+    }
+
+    /**
+     * 描述标题
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
     }
 
     /**
@@ -346,6 +386,14 @@ class SelectControl extends BaseRenderer
     }
 
     /**
+     * 标签的最大展示数量，超出数量后以收纳浮层的方式展示，仅在多选模式开启后生效
+     */
+    public function maxTagCount($value = '')
+    {
+        return $this->set('maxTagCount', $value);
+    }
+
+    /**
      * 可以自定义菜单展示。
      */
     public function menuTpl($value = '')
@@ -378,11 +426,19 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 事件动作配置
      */
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 选项的自定义CSS类名
+     */
+    public function optionClassName($value = '')
+    {
+        return $this->set('optionClassName', $value);
     }
 
     /**
@@ -391,6 +447,14 @@ class SelectControl extends BaseRenderer
     public function options($value = '')
     {
         return $this->set('options', $value);
+    }
+
+    /**
+     * 收纳标签的Popover配置
+     */
+    public function overflowTagPopover($value = '')
+    {
+        return $this->set('overflowTagPopover', $value);
     }
 
     /**
@@ -583,6 +647,14 @@ class SelectControl extends BaseRenderer
     public function valueField($value = '')
     {
         return $this->set('valueField', $value);
+    }
+
+    /**
+     * 在选项数量达到多少时开启虚拟渲染
+     */
+    public function virtualThreshold($value = '')
+    {
+        return $this->set('virtualThreshold', $value);
     }
 
     /**

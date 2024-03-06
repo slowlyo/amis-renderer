@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 二维码展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/qrcode
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class QRCode extends BaseRenderer
 {
@@ -90,6 +90,14 @@ class QRCode extends BaseRenderer
     }
 
     /**
+     * 图片配置
+     */
+    public function imageSettings($value = '')
+    {
+        return $this->set('imageSettings', $value);
+    }
+
+    /**
      * 二维码复杂级别 可选值: L | M | Q | H
      */
     public function level($value = '')
@@ -103,6 +111,14 @@ class QRCode extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

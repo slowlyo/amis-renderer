@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Plain 纯文本渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/plain
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Plain extends BaseRenderer
 {
@@ -71,6 +71,14 @@ class Plain extends BaseRenderer
     public function inline($value = true)
     {
         return $this->set('inline', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

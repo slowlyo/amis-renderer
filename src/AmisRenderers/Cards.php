@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Cards 卡片集合渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Cards extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class Cards extends BaseRenderer
     public function masonryLayout($value = true)
     {
         return $this->set('masonryLayout', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

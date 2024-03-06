@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class FileControl extends BaseRenderer
 {
@@ -174,6 +174,22 @@ class FileControl extends BaseRenderer
     }
 
     /**
+     * 说明文档链接配置
+     */
+    public function documentLink($value = '')
+    {
+        return $this->set('documentLink', $value);
+    }
+
+    /**
+     * 说明文档内容配置
+     */
+    public function documentation($value = '')
+    {
+        return $this->set('documentation', $value);
+    }
+
+    /**
      * 默认显示文件路径的时候会支持直接下载， 可以支持加前缀如：`http://xx.dom/filename=` ， 如果不希望这样，可以把当前配置项设置为 `false`。1.1.6 版本开始将支持变量 ${xxx} 来自己拼凑个下载地址，并且支持配置成 post.
      */
     public function downloadUrl($value = '')
@@ -294,6 +310,14 @@ class FileControl extends BaseRenderer
     }
 
     /**
+     * 描述标题
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
+    }
+
+    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -358,7 +382,7 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 事件动作配置
      */
     public function onEvent($value = '')
     {

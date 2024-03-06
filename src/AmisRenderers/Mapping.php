@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Mapping 映射展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/mapping
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Mapping extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class Mapping extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

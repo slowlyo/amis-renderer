@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * List 列表展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListRenderer extends BaseRenderer
 {
@@ -151,6 +151,14 @@ class ListRenderer extends BaseRenderer
     public function listItem($value = '')
     {
         return $this->set('listItem', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

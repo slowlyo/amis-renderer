@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表单向导 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wizard
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Wizard extends BaseRenderer
 {
@@ -151,6 +151,14 @@ class Wizard extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

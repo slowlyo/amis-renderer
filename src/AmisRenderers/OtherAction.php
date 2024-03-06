@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * OtherAction
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class OtherAction extends BaseRenderer
 {
@@ -224,6 +224,14 @@ $this->set('actionType', 'prev');
     public function onClick($value = '')
     {
         return $this->set('onClick', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**
