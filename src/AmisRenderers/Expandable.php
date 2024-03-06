@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Expandable
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class Expandable extends BaseRenderer
 {
@@ -54,6 +54,14 @@ class Expandable extends BaseRenderer
     public function keyField($value = '')
     {
         return $this->set('keyField', $value);
+    }
+
+    /**
+     * 对应渲染器类型
+     */
+    public function type($value = '')
+    {
+        return $this->set('type', $value);
     }
 
 

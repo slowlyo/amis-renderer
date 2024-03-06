@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Log 实时日志
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class Log extends BaseRenderer
 {

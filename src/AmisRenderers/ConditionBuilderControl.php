@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 条件组合控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/condition-builder
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class ConditionBuilderControl extends BaseRenderer
 {
@@ -87,6 +87,14 @@ class ConditionBuilderControl extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 内嵌模式，默认为 true
+     */
+    public function embed($value = true)
+    {
+        return $this->set('embed', $value);
     }
 
     /**
@@ -194,6 +202,14 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -215,6 +231,14 @@ class ConditionBuilderControl extends BaseRenderer
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 非内嵌模式时 弹窗触发icon
+     */
+    public function pickerIcon($value = '')
+    {
+        return $this->set('pickerIcon', $value);
     }
 
     /**

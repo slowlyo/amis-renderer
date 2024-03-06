@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class TableControl extends BaseRenderer
 {
@@ -418,6 +418,14 @@ class TableControl extends BaseRenderer
     }
 
     /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -618,7 +626,7 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 表单项类型
+     * 
      */
     public function type($value = 'input-table')
     {

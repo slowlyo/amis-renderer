@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDCards
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class CRUDCards extends BaseRenderer
 {

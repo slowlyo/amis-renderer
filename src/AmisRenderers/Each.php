@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Each 循环功能渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/each
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class Each extends BaseRenderer
 {
