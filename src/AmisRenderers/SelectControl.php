@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class SelectControl extends BaseRenderer
 {
@@ -487,6 +487,14 @@ class SelectControl extends BaseRenderer
     public function overflowTagPopover($value = '')
     {
         return $this->set('overflowTagPopover', $value);
+    }
+
+    /**
+     * 下拉框 Popover 设置
+     */
+    public function overlay($value = '')
+    {
+        return $this->set('overlay', $value);
     }
 
     /**

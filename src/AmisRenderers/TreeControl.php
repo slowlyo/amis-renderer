@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class TreeControl extends BaseRenderer
 {
@@ -207,6 +207,14 @@ class TreeControl extends BaseRenderer
     public function editable($value = true)
     {
         return $this->set('editable', $value);
+    }
+
+    /**
+     * 是否为选项添加默认的Icon，默认值为true
+     */
+    public function enableDefaultIcon($value = true)
+    {
+        return $this->set('enableDefaultIcon', $value);
     }
 
     /**
@@ -503,6 +511,22 @@ class TreeControl extends BaseRenderer
     public function rootValue($value = '')
     {
         return $this->set('rootValue', $value);
+    }
+
+    /**
+     * 搜索框的配置
+     */
+    public function searchConfig($value = '')
+    {
+        return $this->set('searchConfig', $value);
+    }
+
+    /**
+     * 是否开启搜索
+     */
+    public function searchable($value = true)
+    {
+        return $this->set('searchable', $value);
     }
 
     /**

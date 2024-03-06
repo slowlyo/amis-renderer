@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class TableControl extends BaseRenderer
 {
@@ -314,6 +314,14 @@ class TableControl extends BaseRenderer
     }
 
     /**
+     * 底部新增按钮配置
+     */
+    public function footerAddBtn($value = '')
+    {
+        return $this->set('footerAddBtn', $value);
+    }
+
+    /**
      * 底部外层 CSS 类名
      */
     public function footerClassName($value = '')
@@ -570,19 +578,19 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 显示新增按钮
-     */
-    public function showAddBtn($value = true)
-    {
-        return $this->set('showAddBtn', $value);
-    }
-
-    /**
      * 是否显示底部
      */
     public function showFooter($value = true)
     {
         return $this->set('showFooter', $value);
+    }
+
+    /**
+     * 是否显示底部新增按钮
+     */
+    public function showFooterAddBtn($value = true)
+    {
+        return $this->set('showFooterAddBtn', $value);
     }
 
     /**
@@ -599,6 +607,14 @@ class TableControl extends BaseRenderer
     public function showIndex($value = true)
     {
         return $this->set('showIndex', $value);
+    }
+
+    /**
+     * 是否显示表格操作栏新增按钮
+     */
+    public function showTableAddBtn($value = true)
+    {
+        return $this->set('showTableAddBtn', $value);
     }
 
     /**

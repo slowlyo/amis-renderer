@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * IconItem
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class IconItem extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * QuarterRange 季度范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-quarter-range
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class QuarterRangeControl extends BaseRenderer
 {

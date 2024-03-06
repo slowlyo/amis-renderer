@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 状态展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/status
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class Status extends BaseRenderer
 {
@@ -95,6 +95,14 @@ class Status extends BaseRenderer
     public function placeholder($value = '')
     {
         return $this->set('placeholder', $value);
+    }
+
+    /**
+     * 新版配置映射源的字段 可以兼容新版icon并且配置颜色 2.8.0 新增
+     */
+    public function source($value = '')
+    {
+        return $this->set('source', $value);
     }
 
     /**

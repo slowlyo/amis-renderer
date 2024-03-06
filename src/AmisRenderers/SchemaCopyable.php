@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaCopyable
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class SchemaCopyable extends BaseRenderer
 {
@@ -30,6 +30,14 @@ class SchemaCopyable extends BaseRenderer
     public function icon($value = '')
     {
         return $this->set('icon', $value);
+    }
+
+    /**
+     * 提示文字内容
+     */
+    public function tooltip($value = '')
+    {
+        return $this->set('tooltip', $value);
     }
 
 
