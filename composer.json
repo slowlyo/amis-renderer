@@ -1,0 +1,33 @@
+{
+  "name": "slowlyo/amis-renderer",
+  "description": "Amis Renderer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Slowlyo",
+      "email": "slowlyo_email@qq.com",
+      "homepage": "https://github.com/slowlyo"
+    }
+  ],
+  "homepage": "https://github.com/slowlyo/amis-renderer",
+  "support": {
+    "email": "slowlyo_email@qq.com",
+    "issues": "https://github.com/Slowlyo/amis-renderer/issues",
+    "forum": "https://github.com/Slowlyo/amis-renderer/discussions"
+  },
+  "keywords": [
+    "Amis"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slowlyo\\AmisRenderers\\": "src/AmisRenderers/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}
