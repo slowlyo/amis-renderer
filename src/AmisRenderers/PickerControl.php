@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Picker 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/picker
  * 
  * @author slowlyo
- * @version v3.6.1
+ * @version v3.6.2
  */
 class PickerControl extends BaseRenderer
 {
