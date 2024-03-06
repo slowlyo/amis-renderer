@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * CopyAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class CopyAction extends BaseRenderer
@@ -14,6 +14,8 @@ class CopyAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'copy');
+
+
     }
 
     /**

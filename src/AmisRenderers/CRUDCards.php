@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * CRUDCards
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class CRUDCards extends BaseRenderer
@@ -14,6 +14,8 @@ class CRUDCards extends BaseRenderer
     {
         $this->set('mode', 'cards');
         $this->set('type', 'crud');
+
+
     }
 
     /**

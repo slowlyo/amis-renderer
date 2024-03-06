@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * SparkLine
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class SparkLine extends BaseRenderer

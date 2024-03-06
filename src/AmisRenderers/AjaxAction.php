@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * AjaxAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class AjaxAction extends BaseRenderer
@@ -14,6 +14,8 @@ class AjaxAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'ajax');
+
+
     }
 
     /**

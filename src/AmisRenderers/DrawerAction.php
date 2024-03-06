@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * DrawerAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class DrawerAction extends BaseRenderer
@@ -14,6 +14,8 @@ class DrawerAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'drawer');
+
+
     }
 
     /**

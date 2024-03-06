@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Option
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Option extends BaseRenderer

@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * AnchorNavSection 锚点区域渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/anchor-nav
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class AnchorNavSection extends BaseRenderer

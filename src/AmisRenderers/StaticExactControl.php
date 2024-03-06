@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Static 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/static
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class StaticExactControl extends BaseRenderer

@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * UrlAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class UrlAction extends BaseRenderer
@@ -14,6 +14,8 @@ class UrlAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'url');
+
+
     }
 
     /**

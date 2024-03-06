@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Icon 图表渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/icon
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Icon extends BaseRenderer

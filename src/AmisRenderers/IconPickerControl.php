@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * 图标选择器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/icon-picker
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class IconPickerControl extends BaseRenderer

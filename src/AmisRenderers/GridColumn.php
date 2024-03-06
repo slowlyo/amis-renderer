@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * GridColumn
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class GridColumn extends BaseRenderer

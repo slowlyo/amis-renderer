@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * ListItem
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class ListItem extends BaseRenderer

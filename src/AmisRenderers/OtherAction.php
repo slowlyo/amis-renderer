@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * OtherAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class OtherAction extends BaseRenderer
@@ -14,6 +14,8 @@ class OtherAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'prev');
+
+
     }
 
     /**

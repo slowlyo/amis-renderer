@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Editor 代码编辑器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/editor
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class EditorControl extends BaseRenderer

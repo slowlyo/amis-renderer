@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Checkbox 勾选框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/checkbox
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class CheckboxControl extends BaseRenderer

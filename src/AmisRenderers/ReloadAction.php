@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * ReloadAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class ReloadAction extends BaseRenderer
@@ -14,6 +14,8 @@ class ReloadAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'reload');
+
+
     }
 
     /**

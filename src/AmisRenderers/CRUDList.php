@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * CRUDList
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class CRUDList extends BaseRenderer
@@ -14,6 +14,8 @@ class CRUDList extends BaseRenderer
     {
         $this->set('mode', 'list');
         $this->set('type', 'crud');
+
+
     }
 
     /**

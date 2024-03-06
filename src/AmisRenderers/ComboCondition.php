@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * ComboCondition
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class ComboCondition extends BaseRenderer

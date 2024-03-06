@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * EmailAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class EmailAction extends BaseRenderer
@@ -14,6 +14,8 @@ class EmailAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'email');
+
+
     }
 
     /**

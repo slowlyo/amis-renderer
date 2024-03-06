@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * 进度展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/progress
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Progress extends BaseRenderer

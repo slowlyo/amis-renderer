@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * tpl 渲染器
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Tpl extends BaseRenderer

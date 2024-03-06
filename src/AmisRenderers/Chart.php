@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Chart 图表渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/carousel
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Chart extends BaseRenderer

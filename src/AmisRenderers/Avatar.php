@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Avatar 用户头像显示 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/avatar
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Avatar extends BaseRenderer

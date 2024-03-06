@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class Drawer extends BaseRenderer

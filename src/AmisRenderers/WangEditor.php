@@ -7,7 +7,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
 /**
  * WangEditor
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class WangEditor extends BaseRenderer

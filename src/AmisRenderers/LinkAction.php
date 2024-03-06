@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * LinkAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class LinkAction extends BaseRenderer
@@ -14,6 +14,8 @@ class LinkAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'link');
+
+
     }
 
     /**

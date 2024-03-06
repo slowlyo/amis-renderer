@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * DialogAction
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class DialogAction extends BaseRenderer
@@ -14,6 +14,8 @@ class DialogAction extends BaseRenderer
     {
         $this->set('type', 'button');
         $this->set('actionType', 'dialog');
+
+
     }
 
     /**

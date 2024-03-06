@@ -5,7 +5,7 @@ namespace Slowlyo\AmisRenderers;
 /**
  * Table View 表格展现
  *
- * @author  slowlyo
+ * @author slowlyo
  * @version 1.4.0
  */
 class TableView extends BaseRenderer
