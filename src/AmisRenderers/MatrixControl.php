@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Matrix 选择控件。适合做权限勾选。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/matrix
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class MatrixControl extends BaseRenderer
 {
@@ -383,6 +383,14 @@ class MatrixControl extends BaseRenderer
     public function type($value = 'matrix-checkboxes')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

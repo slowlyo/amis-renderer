@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * MonthRange 月范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/month-range
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class MonthRangeControl extends BaseRenderer
 {
@@ -95,6 +95,14 @@ class MonthRangeControl extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 用来配置显示的时间格式（新：同inputFormat）
+     */
+    public function displayFormat($value = '')
+    {
+        return $this->set('displayFormat', $value);
     }
 
     /**
@@ -458,6 +466,14 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
+    }
+
+    /**
      * 远端校验表单项接口
      */
     public function validateApi($value = '')
@@ -495,6 +511,14 @@ class MonthRangeControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
+    }
+
+    /**
+     * 用来提交的时间格式。更多格式类型请参考 moment.（新：同format）
+     */
+    public function valueFormat($value = '')
+    {
+        return $this->set('valueFormat', $value);
     }
 
     /**

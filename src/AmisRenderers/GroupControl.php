@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Group 表单集合渲染器，能让多个表单在一行显示 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/group
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class GroupControl extends BaseRenderer
 {
@@ -375,6 +375,14 @@ class GroupControl extends BaseRenderer
     public function type($value = 'group')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

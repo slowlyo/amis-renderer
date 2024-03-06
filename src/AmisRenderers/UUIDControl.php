@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UUID 功能性组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/uuid
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class UUIDControl extends BaseRenderer
 {
@@ -343,6 +343,14 @@ class UUIDControl extends BaseRenderer
     public function type($value = 'uuid')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

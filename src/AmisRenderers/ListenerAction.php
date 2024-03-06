@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListenerAction
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class ListenerAction extends BaseRenderer
 {
@@ -86,6 +86,14 @@ class ListenerAction extends BaseRenderer
     public function expression($value = '')
     {
         return $this->set('expression', $value);
+    }
+
+    /**
+     * 
+     */
+    public function ignoreError($value = true)
+    {
+        return $this->set('ignoreError', $value);
     }
 
     /**

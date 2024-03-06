@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class TableControl extends BaseRenderer
 {
@@ -730,14 +730,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 配置 table-layout 属性 可选值: auto | fixed
-     */
-    public function tableLayout($value = '')
-    {
-        return $this->set('tableLayout', $value);
-    }
-
-    /**
      * 标题
      */
     public function title($value = '')
@@ -767,6 +759,14 @@ class TableControl extends BaseRenderer
     public function updateApi($value = '')
     {
         return $this->set('updateApi', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Each 循环功能渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/each
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Each extends BaseRenderer
 {
@@ -183,6 +183,14 @@ class Each extends BaseRenderer
     public function type($value = 'each')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

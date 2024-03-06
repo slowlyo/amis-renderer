@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FieldSet 表单项集合 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/fieldset
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class FieldSetControl extends BaseRenderer
 {
@@ -488,6 +488,14 @@ $this->set('titlePosition', 'top');
     public function unmountOnExit($value = true)
     {
         return $this->set('unmountOnExit', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

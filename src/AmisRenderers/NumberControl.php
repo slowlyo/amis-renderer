@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-number
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class NumberControl extends BaseRenderer
 {
@@ -439,6 +439,14 @@ class NumberControl extends BaseRenderer
     public function unitOptions($value = '')
     {
         return $this->set('unitOptions', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

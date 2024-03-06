@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图标选择器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/icon-picker
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class IconPickerControl extends BaseRenderer
 {
@@ -335,6 +335,14 @@ class IconPickerControl extends BaseRenderer
     public function type($value = 'icon-picker')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

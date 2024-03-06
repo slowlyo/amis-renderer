@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Control 表单项包裹 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/control
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class FormControl extends BaseRenderer
 {
@@ -343,6 +343,14 @@ class FormControl extends BaseRenderer
     public function type($value = 'control')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

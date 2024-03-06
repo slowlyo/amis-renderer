@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Picker 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/picker
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class PickerControl extends BaseRenderer
 {
@@ -418,6 +418,14 @@ class PickerControl extends BaseRenderer
     }
 
     /**
+     * 开启最大标签展示数量的相关配置
+     */
+    public function overflowConfig($value = '')
+    {
+        return $this->set('overflowConfig', $value);
+    }
+
+    /**
      * 弹窗选择框详情。
      */
     public function pickerSchema($value = '')
@@ -586,6 +594,14 @@ class PickerControl extends BaseRenderer
     }
 
     /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
+    }
+
+    /**
      * 远端校验表单项接口
      */
     public function validateApi($value = '')
@@ -631,6 +647,14 @@ class PickerControl extends BaseRenderer
     public function valueField($value = '')
     {
         return $this->set('valueField', $value);
+    }
+
+    /**
+     * 多选模式，值太多时是否避免折行
+     */
+    public function valuesNoWrap($value = true)
+    {
+        return $this->set('valuesNoWrap', $value);
     }
 
     /**
