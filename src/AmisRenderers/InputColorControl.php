@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Color 颜色选择框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/color
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class InputColorControl extends BaseRenderer
 {
@@ -95,6 +95,22 @@ class InputColorControl extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavOverflow
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class NavOverflow extends BaseRenderer
 {
@@ -86,14 +86,6 @@ class NavOverflow extends BaseRenderer
     public function overflowSuffix($value = '')
     {
         return $this->set('overflowSuffix', $value);
-    }
-
-    /**
-     * 菜单DOM挂载点
-     */
-    public function popOverContainer($value = '')
-    {
-        return $this->set('popOverContainer', $value);
     }
 
     /**

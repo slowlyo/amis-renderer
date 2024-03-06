@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON 数据展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/json
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Json extends BaseRenderer
 {
@@ -47,6 +47,14 @@ class Json extends BaseRenderer
     public function displayDataTypes($value = true)
     {
         return $this->set('displayDataTypes', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

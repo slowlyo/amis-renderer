@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * VanillaAction
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class VanillaAction extends BaseRenderer
 {
@@ -127,6 +127,14 @@ class VanillaAction extends BaseRenderer
     public function disabledTip($value = '')
     {
         return $this->set('disabledTip', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

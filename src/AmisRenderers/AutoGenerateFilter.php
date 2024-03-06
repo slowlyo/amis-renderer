@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AutoGenerateFilter
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class AutoGenerateFilter extends BaseRenderer
 {
@@ -22,6 +22,14 @@ class AutoGenerateFilter extends BaseRenderer
     public function columnsNum($value = '')
     {
         return $this->set('columnsNum', $value);
+    }
+
+    /**
+     * 是否默认收起
+     */
+    public function defaultCollapsed($value = true)
+    {
+        return $this->set('defaultCollapsed', $value);
     }
 
     /**

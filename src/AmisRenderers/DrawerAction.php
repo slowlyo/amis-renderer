@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DrawerAction
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class DrawerAction extends BaseRenderer
 {
@@ -144,6 +144,14 @@ $this->set('actionType', 'drawer');
     public function drawer($value = '')
     {
         return $this->set('drawer', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

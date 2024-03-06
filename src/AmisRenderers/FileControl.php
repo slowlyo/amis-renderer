@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class FileControl extends BaseRenderer
 {
@@ -203,6 +203,22 @@ class FileControl extends BaseRenderer
     public function drag($value = true)
     {
         return $this->set('drag', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
     }
 
     /**

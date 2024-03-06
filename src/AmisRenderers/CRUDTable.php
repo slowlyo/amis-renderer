@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class CRUDTable extends BaseRenderer
 {
@@ -175,6 +175,14 @@ class CRUDTable extends BaseRenderer
     public function draggableOn($value = '')
     {
         return $this->set('draggableOn', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -647,6 +655,14 @@ class CRUDTable extends BaseRenderer
     public function tableClassName($value = '')
     {
         return $this->set('tableClassName', $value);
+    }
+
+    /**
+     * 配置 table-layout 属性 可选值: auto | fixed
+     */
+    public function tableLayout($value = '')
+    {
+        return $this->set('tableLayout', $value);
     }
 
     /**

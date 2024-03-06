@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Column
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Column extends BaseRenderer
 {
@@ -78,6 +78,14 @@ class Column extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 配置快速编辑功能
+     */
+    public function quickEdit($value = '')
+    {
+        return $this->set('quickEdit', $value);
     }
 
     /**

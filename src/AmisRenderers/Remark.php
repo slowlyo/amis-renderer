@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 提示渲染器，默认会显示个小图标，鼠标放上来的时候显示配置的内容。
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Remark extends BaseRenderer
 {
@@ -47,6 +47,14 @@ class Remark extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Collapse 折叠渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/collapse
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Collapse extends BaseRenderer
 {
@@ -87,6 +87,14 @@ class Collapse extends BaseRenderer
     public function divideLine($value = true)
     {
         return $this->set('divideLine', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 进度展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/progress
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Progress extends BaseRenderer
 {
@@ -48,6 +48,14 @@ $this->set('mode', 'line');
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

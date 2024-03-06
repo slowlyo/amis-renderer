@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UserSelect 移动端人员选择。
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class UserSelectControl extends BaseRenderer
 {
@@ -191,6 +191,22 @@ class UserSelectControl extends BaseRenderer
     public function editable($value = true)
     {
         return $this->set('editable', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
     }
 
     /**
