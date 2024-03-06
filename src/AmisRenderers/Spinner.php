@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Spinner
  * 
  * @author slowlyo
- * @version 6.1.0
+ * @version 6.2.2
  */
 class Spinner extends BaseRenderer
 {
