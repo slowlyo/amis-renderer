@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Service 服务类控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/service
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class Service extends BaseRenderer
 {
@@ -175,6 +175,14 @@ class Service extends BaseRenderer
     public function schemaApi($value = '')
     {
         return $this->set('schemaApi', $value);
+    }
+
+    /**
+     * 是否以Alert的形式显示api接口响应的错误信息，默认展示
+     */
+    public function showErrorMsg($value = true)
+    {
+        return $this->set('showErrorMsg', $value);
     }
 
     /**

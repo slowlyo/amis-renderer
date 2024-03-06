@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表格列，不指定类型时默认为文本类型。
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class TableColumn extends BaseRenderer
 {
@@ -78,6 +78,14 @@ class TableColumn extends BaseRenderer
     public function fixed($value = '')
     {
         return $this->set('fixed', $value);
+    }
+
+    /**
+     * 单元格内部组件自定义样式 style作为单元格自定义样式的配置
+     */
+    public function innerStyle($value = '')
+    {
+        return $this->set('innerStyle', $value);
     }
 
     /**

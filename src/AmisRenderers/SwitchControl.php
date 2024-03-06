@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Switch 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/switch
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class SwitchControl extends BaseRenderer
 {

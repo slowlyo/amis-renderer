@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Carousel 轮播图渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/carousel
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class Carousel extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class Carousel extends BaseRenderer
         $this->set('type', 'carousel');
 
 
+    }
+
+    /**
+     * 是否一直显示箭头
+     */
+    public function alwaysShowArrow($value = true)
+    {
+        return $this->set('alwaysShowArrow', $value);
     }
 
     /**
@@ -106,6 +114,14 @@ class Carousel extends BaseRenderer
     }
 
     /**
+     * 自定义箭头图标
+     */
+    public function icons($value = '')
+    {
+        return $this->set('icons', $value);
+    }
+
+    /**
      * 组件唯一 id，主要用于日志采集
      */
     public function id($value = '')
@@ -127,6 +143,14 @@ class Carousel extends BaseRenderer
     public function itemSchema($value = '')
     {
         return $this->set('itemSchema', $value);
+    }
+
+    /**
+     * 多图模式配置项
+     */
+    public function multiple($value = '')
+    {
+        return $this->set('multiple', $value);
     }
 
     /**
