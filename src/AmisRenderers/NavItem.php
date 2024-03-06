@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavItem
  * 
  * @author slowlyo
- * @version v3.1.0
+ * @version v3.1.1
  */
 class NavItem extends BaseRenderer
 {
