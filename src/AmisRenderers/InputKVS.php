@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputKVS 键值对象
  * 
  * @author slowlyo
- * @version v3.5.0
+ * @version v3.5.1
  */
 class InputKVS extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AjaxAction
  * 
  * @author slowlyo
- * @version v3.5.0
+ * @version v3.5.1
  */
 class AjaxAction extends BaseRenderer
 {

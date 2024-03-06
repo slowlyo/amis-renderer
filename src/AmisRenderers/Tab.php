@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tab
  * 
  * @author slowlyo
- * @version v3.5.0
+ * @version v3.5.1
  */
 class Tab extends BaseRenderer
 {
