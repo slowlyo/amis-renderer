@@ -714,6 +714,11 @@ class Amis
         return ListRenderer::make();
     }
 
+    public function ListenerAction()
+    {
+        return ListenerAction::make();
+    }
+
     public function LocationControl($name = '', $label = '')
     {
         $instance = LocationControl::make();
@@ -1302,6 +1307,11 @@ class Amis
     public function Toast()
     {
         return Toast::make();
+    }
+
+    public function ToastAction()
+    {
+        return ToastAction::make();
     }
 
     public function Tpl()

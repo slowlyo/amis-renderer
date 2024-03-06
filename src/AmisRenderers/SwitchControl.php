@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Switch 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/switch
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class SwitchControl extends BaseRenderer
 {
@@ -170,7 +170,7 @@ class SwitchControl extends BaseRenderer
     }
 
     /**
-     * 关闭时显示的文本
+     * 关闭时显示的内容
      */
     public function offText($value = '')
     {
@@ -178,7 +178,15 @@ class SwitchControl extends BaseRenderer
     }
 
     /**
-     * 开启时显示的文本
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 开启时显示的内容
      */
     public function onText($value = '')
     {

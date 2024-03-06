@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class Drawer extends BaseRenderer
 {
@@ -42,7 +42,7 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 容器 css 类名
+     * 配置 外层 className
      */
     public function className($value = '')
     {
@@ -98,11 +98,35 @@ class Drawer extends BaseRenderer
     }
 
     /**
+     * 配置 头部 容器 className
+     */
+    public function footerClassName($value = '')
+    {
+        return $this->set('footerClassName', $value);
+    }
+
+    /**
      * 头部
      */
     public function header($value = '')
     {
         return $this->set('header', $value);
+    }
+
+    /**
+     * 配置 头部 容器 className
+     */
+    public function headerClassName($value = '')
+    {
+        return $this->set('headerClassName', $value);
+    }
+
+    /**
+     * 抽屉的高度 （当position为top | bottom时生效）
+     */
+    public function height($value = '')
+    {
+        return $this->set('height', $value);
     }
 
     /**
@@ -154,6 +178,14 @@ class Drawer extends BaseRenderer
     }
 
     /**
+     * 是否展示关闭按钮 当值为false时，默认开启closeOnOutside
+     */
+    public function showCloseButton($value = true)
+    {
+        return $this->set('showCloseButton', $value);
+    }
+
+    /**
      * 是否显示错误信息
      */
     public function showErrorMsg($value = true)
@@ -199,6 +231,14 @@ class Drawer extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
+    }
+
+    /**
+     * 抽屉的宽度 （当position为left | right时生效）
+     */
+    public function width($value = '')
+    {
+        return $this->set('width', $value);
     }
 
 

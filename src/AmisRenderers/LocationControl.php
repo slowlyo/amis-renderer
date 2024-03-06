@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Location 选点组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/location
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class LocationControl extends BaseRenderer
 {
@@ -167,6 +167,14 @@ class LocationControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

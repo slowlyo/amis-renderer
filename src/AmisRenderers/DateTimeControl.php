@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Datetime日期时间选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/datetime
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class DateTimeControl extends BaseRenderer
 {
@@ -215,6 +215,14 @@ class DateTimeControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

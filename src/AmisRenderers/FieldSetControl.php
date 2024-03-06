@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FieldSet 表单项集合 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/fieldset
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class FieldSetControl extends BaseRenderer
 {
@@ -256,6 +256,14 @@ $this->set('titlePosition', 'top');
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

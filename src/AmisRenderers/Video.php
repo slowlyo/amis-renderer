@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 视频播放器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/video
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class Video extends BaseRenderer
 {
@@ -167,6 +167,14 @@ class Video extends BaseRenderer
     public function src($value = '')
     {
         return $this->set('src', $value);
+    }
+
+    /**
+     * 默认播放的时候到了下一帧会继续播放，同时高亮下一帧。 如果配置这个则会停止播放，等待用户选择新的区间再播放。
+     */
+    public function stopOnNextFrame($value = true)
+    {
+        return $this->set('stopOnNextFrame', $value);
     }
 
     /**

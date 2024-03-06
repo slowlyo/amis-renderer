@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaCopyable
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class SchemaCopyable extends BaseRenderer
 {
