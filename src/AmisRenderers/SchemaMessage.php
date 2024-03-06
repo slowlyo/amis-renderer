@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 消息文案配置，记住这个优先级是最低的，如果你的接口返回了 msg，接口返回的优先。
  * 
  * @author slowlyo
- * @version v2.5.1
+ * @version untagged-f5310659bf54075f577b
  */
 class SchemaMessage extends BaseRenderer
 {

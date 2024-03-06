@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 条件组合控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/condition-builder
  * 
  * @author slowlyo
- * @version v2.5.1
+ * @version untagged-f5310659bf54075f577b
  */
 class ConditionBuilderControl extends BaseRenderer
 {

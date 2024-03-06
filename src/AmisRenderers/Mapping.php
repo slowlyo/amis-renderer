@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Mapping 映射展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/mapping
  * 
  * @author slowlyo
- * @version v2.5.1
+ * @version untagged-f5310659bf54075f577b
  */
 class Mapping extends BaseRenderer
 {
@@ -63,6 +63,22 @@ class Mapping extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 自定义渲染映射值，支持html或schema
+     */
+    public function itemSchema($value = '')
+    {
+        return $this->set('itemSchema', $value);
+    }
+
+    /**
+     * map或source为对象数组时，作为label值的字段名
+     */
+    public function labelField($value = '')
+    {
+        return $this->set('labelField', $value);
     }
 
     /**
@@ -167,6 +183,14 @@ class Mapping extends BaseRenderer
     public function type($value = '')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * map或source为对象数组时，作为value值的字段名
+     */
+    public function valueField($value = '')
+    {
+        return $this->set('valueField', $value);
     }
 
     /**
