@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Pagination
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class Pagination extends BaseRenderer
 {

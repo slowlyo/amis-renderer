@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavOverflow
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class NavOverflow extends BaseRenderer
 {

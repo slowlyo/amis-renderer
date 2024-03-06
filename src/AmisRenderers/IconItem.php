@@ -3,12 +3,12 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * IconChecked
+ * IconItem
  * 
  * @author slowlyo
  * @version v2.7.0
  */
-class IconChecked extends BaseRenderer
+class IconItem extends BaseRenderer
 {
     public function __construct()
     {
@@ -19,17 +19,17 @@ class IconChecked extends BaseRenderer
     /**
      * 
      */
-    public function id($value = '')
+    public function icon($value = '')
     {
-        return $this->set('id', $value);
+        return $this->set('icon', $value);
     }
 
     /**
      * 
      */
-    public function name($value = '')
+    public function position($value = '')
     {
-        return $this->set('name', $value);
+        return $this->set('position', $value);
     }
 
 

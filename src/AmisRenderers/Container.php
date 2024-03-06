@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Container 容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/container
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class Container extends BaseRenderer
 {
@@ -55,6 +55,22 @@ class Container extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 是否开启容器拖拽
+     */
+    public function draggable($value = true)
+    {
+        return $this->set('draggable', $value);
+    }
+
+    /**
+     * 是否开启容器拖拽配置
+     */
+    public function draggableConfig($value = '')
+    {
+        return $this->set('draggableConfig', $value);
     }
 
     /**

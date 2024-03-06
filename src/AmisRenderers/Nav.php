@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class Nav extends BaseRenderer
 {
@@ -18,11 +18,27 @@ class Nav extends BaseRenderer
     }
 
     /**
+     * 角标
+     */
+    public function badge($value = '')
+    {
+        return $this->set('badge', $value);
+    }
+
+    /**
      * 容器 css 类名
      */
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 控制仅展示指定key菜单下的子菜单项
+     */
+    public function collapsed($value = true)
+    {
+        return $this->set('collapsed', $value);
     }
 
     /**
@@ -63,6 +79,22 @@ class Nav extends BaseRenderer
     public function draggable($value = true)
     {
         return $this->set('draggable', $value);
+    }
+
+    /**
+     * 自定义展开图标
+     */
+    public function expandIcon($value = '')
+    {
+        return $this->set('expandIcon', $value);
+    }
+
+    /**
+     * 自定义展开图标位置 默认在前面 before after
+     */
+    public function expandPosition($value = '')
+    {
+        return $this->set('expandPosition', $value);
     }
 
     /**
@@ -114,11 +146,27 @@ class Nav extends BaseRenderer
     }
 
     /**
+     * 最多展示多少层级
+     */
+    public function level($value = '')
+    {
+        return $this->set('level', $value);
+    }
+
+    /**
      * 链接地址集合
      */
     public function links($value = '')
     {
         return $this->set('links', $value);
+    }
+
+    /**
+     * 垂直模式 非折叠状态下 控制菜单打开方式 可选值: float | inline
+     */
+    public function mode($value = '')
+    {
+        return $this->set('mode', $value);
     }
 
     /**
@@ -146,6 +194,14 @@ class Nav extends BaseRenderer
     }
 
     /**
+     * 控制仅展示指定key菜单下的子菜单项
+     */
+    public function showKey($value = '')
+    {
+        return $this->set('showKey', $value);
+    }
+
+    /**
      * 可以通过 API 拉取。
      */
     public function source($value = '')
@@ -154,7 +210,7 @@ class Nav extends BaseRenderer
     }
 
     /**
-     * true 为垂直排列，false 为水平排列类似如 tabs。
+     * true 为垂直排列，false 为水平排列类似如 tabs。 可选值: 1 | 
      */
     public function stacked($value = true)
     {

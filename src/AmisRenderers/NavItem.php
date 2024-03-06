@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * NavItem
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class NavItem extends BaseRenderer
 {
@@ -14,6 +14,14 @@ class NavItem extends BaseRenderer
     {
         
 
+    }
+
+    /**
+     * 
+     */
+    public function accordion($value = true)
+    {
+        return $this->set('accordion', $value);
     }
 
     /**
@@ -33,7 +41,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     * 容器 css 类名
+     * 
      */
     public function className($value = '')
     {
@@ -57,7 +65,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     * 是否禁用
+     * 
      */
     public function disabled($value = true)
     {
@@ -70,6 +78,14 @@ class NavItem extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 
+     */
+    public function disabledTip($value = '')
+    {
+        return $this->set('disabledTip', $value);
     }
 
     /**
@@ -102,6 +118,14 @@ class NavItem extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 
+     */
+    public function key($value = '')
+    {
+        return $this->set('key', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Diff 编辑器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/diff
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class DiffControl extends BaseRenderer
 {

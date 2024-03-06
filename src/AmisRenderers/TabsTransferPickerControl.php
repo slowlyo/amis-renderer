@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TabsTransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tabs-transfer-picker
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class TabsTransferPickerControl extends BaseRenderer
 {
@@ -575,6 +575,14 @@ class TabsTransferPickerControl extends BaseRenderer
     public function showArrow($value = true)
     {
         return $this->set('showArrow', $value);
+    }
+
+    /**
+     * 当在value值未匹配到当前options中的选项时，是否value值对应文本飘红显示
+     */
+    public function showInvalidMatch($value = true)
+    {
+        return $this->set('showInvalidMatch', $value);
     }
 
     /**
