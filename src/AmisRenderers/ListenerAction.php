@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListenerAction
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class ListenerAction extends BaseRenderer
 {
@@ -38,6 +38,14 @@ class ListenerAction extends BaseRenderer
     public function componentId($value = '')
     {
         return $this->set('componentId', $value);
+    }
+
+    /**
+     * 
+     */
+    public function componentName($value = '')
+    {
+        return $this->set('componentName', $value);
     }
 
     /**

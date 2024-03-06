@@ -3,74 +3,26 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
+ * Radio 单选框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/radios
  * 
  * @author slowlyo
  * @version v3.1.0
  */
-class TextControl extends BaseRenderer
+class RadioControl extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'input-text');
+        $this->set('type', 'radio');
 
 
     }
 
     /**
-     * 添加时调用的接口
+     * 角标
      */
-    public function addApi($value = '')
+    public function badge($value = '')
     {
-        return $this->set('addApi', $value);
-    }
-
-    /**
-     * 新增时的表单项。
-     */
-    public function addControls($value = '')
-    {
-        return $this->set('addControls', $value);
-    }
-
-    /**
-     * 控制新增弹框设置项
-     */
-    public function addDialog($value = '')
-    {
-        return $this->set('addDialog', $value);
-    }
-
-    /**
-     * 
-     */
-    public function addOn($value = '')
-    {
-        return $this->set('addOn', $value);
-    }
-
-    /**
-     * 自动完成 API，当输入部分文字的时候，会将这些文字通过 ${term} 可以取到，发送给接口。 接口可以返回匹配到的选项，帮助用户输入。
-     */
-    public function autoComplete($value = '')
-    {
-        return $this->set('autoComplete', $value);
-    }
-
-    /**
-     * 自动填充，当选项被选择的时候，将选项中的其他值同步设置到表单内。
-     */
-    public function autoFill($value = '')
-    {
-        return $this->set('autoFill', $value);
-    }
-
-    /**
-     * 边框模式，全边框，还是半边框，或者没边框。 可选值: full | half | none
-     */
-    public function borderMode($value = '')
-    {
-        return $this->set('borderMode', $value);
+        return $this->set('badge', $value);
     }
 
     /**
@@ -82,75 +34,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 在内容为空的时候清除值
-     */
-    public function clearValueOnEmpty($value = true)
-    {
-        return $this->set('clearValueOnEmpty', $value);
-    }
-
-    /**
      * 表单项隐藏时，是否在当前 Form 中删除掉该表单项值。注意同名的未隐藏的表单项值也会删掉
      */
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
-    }
-
-    /**
-     * 是否可清除。
-     */
-    public function clearable($value = true)
-    {
-        return $this->set('clearable', $value);
-    }
-
-    /**
-     * 是否可以新增
-     */
-    public function creatable($value = true)
-    {
-        return $this->set('creatable', $value);
-    }
-
-    /**
-     * 新增文字
-     */
-    public function createBtnLabel($value = '')
-    {
-        return $this->set('createBtnLabel', $value);
-    }
-
-    /**
-     * 延时加载的 API，当选项中有 defer: true 的选项时，点开会通过此接口扩充。
-     */
-    public function deferApi($value = '')
-    {
-        return $this->set('deferApi', $value);
-    }
-
-    /**
-     * 选项删除 API
-     */
-    public function deleteApi($value = '')
-    {
-        return $this->set('deleteApi', $value);
-    }
-
-    /**
-     * 选项删除提示文字。
-     */
-    public function deleteConfirmText($value = '')
-    {
-        return $this->set('deleteConfirmText', $value);
-    }
-
-    /**
-     * 分割符
-     */
-    public function delimiter($value = '')
-    {
-        return $this->set('delimiter', $value);
     }
 
     /**
@@ -194,43 +82,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 编辑时调用的 API
+     * 未勾选值
      */
-    public function editApi($value = '')
+    public function falseValue($value = '')
     {
-        return $this->set('editApi', $value);
-    }
-
-    /**
-     * 选项修改的表单项
-     */
-    public function editControls($value = '')
-    {
-        return $this->set('editControls', $value);
-    }
-
-    /**
-     * 控制编辑弹框设置项
-     */
-    public function editDialog($value = '')
-    {
-        return $this->set('editDialog', $value);
-    }
-
-    /**
-     * 是否可以编辑
-     */
-    public function editable($value = true)
-    {
-        return $this->set('editable', $value);
-    }
-
-    /**
-     * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
-     */
-    public function extractValue($value = true)
-    {
-        return $this->set('extractValue', $value);
+        return $this->set('falseValue', $value);
     }
 
     /**
@@ -274,22 +130,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 配置 source 接口初始拉不拉取。
-     */
-    public function initFetch($value = true)
-    {
-        return $this->set('initFetch', $value);
-    }
-
-    /**
-     * 用表达式来配置 source 接口初始要不要拉取
-     */
-    public function initFetchOn($value = '')
-    {
-        return $this->set('initFetchOn', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -303,22 +143,6 @@ class TextControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
-    }
-
-    /**
-     * control节点的CSS类名
-     */
-    public function inputControlClassName($value = '')
-    {
-        return $this->set('inputControlClassName', $value);
-    }
-
-    /**
-     * 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。
-     */
-    public function joinValues($value = true)
-    {
-        return $this->set('joinValues', $value);
     }
 
     /**
@@ -362,35 +186,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 限制文字最大输入个数
-     */
-    public function maxLength($value = '')
-    {
-        return $this->set('maxLength', $value);
-    }
-
-    /**
-     * 限制文字最小输入个数
-     */
-    public function minLength($value = '')
-    {
-        return $this->set('minLength', $value);
-    }
-
-    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
     {
         return $this->set('mode', $value);
-    }
-
-    /**
-     * 是否为多选模式
-     */
-    public function multiple($value = true)
-    {
-        return $this->set('multiple', $value);
     }
 
     /**
@@ -402,14 +202,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 原生input标签的CSS类名
-     */
-    public function nativeInputClassName($value = '')
-    {
-        return $this->set('nativeInputClassName', $value);
-    }
-
-    /**
      * 事件动作配置
      */
     public function onEvent($value = '')
@@ -418,11 +210,27 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 选项集合
+     * 选项说明
      */
-    public function options($value = '')
+    public function option($value = '')
     {
-        return $this->set('options', $value);
+        return $this->set('option', $value);
+    }
+
+    /**
+     *  可选值: default | button
+     */
+    public function optionType($value = '')
+    {
+        return $this->set('optionType', $value);
+    }
+
+    /**
+     * 
+     */
+    public function partial($value = true)
+    {
+        return $this->set('partial', $value);
     }
 
     /**
@@ -431,14 +239,6 @@ class TextControl extends BaseRenderer
     public function placeholder($value = '')
     {
         return $this->set('placeholder', $value);
-    }
-
-    /**
-     * 前缀
-     */
-    public function prefix($value = '')
-    {
-        return $this->set('prefix', $value);
     }
 
     /**
@@ -466,14 +266,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 是否可删除
-     */
-    public function removable($value = true)
-    {
-        return $this->set('removable', $value);
-    }
-
-    /**
      * 是否为必填
      */
     public function required($value = true)
@@ -482,43 +274,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 点清除按钮时，将表单项设置成当前配置的值。
-     */
-    public function resetValue($value = '')
-    {
-        return $this->set('resetValue', $value);
-    }
-
-    /**
-     * 默认选择选项第一个值。
-     */
-    public function selectFirst($value = true)
-    {
-        return $this->set('selectFirst', $value);
-    }
-
-    /**
-     * 是否显示计数
-     */
-    public function showCounter($value = true)
-    {
-        return $this->set('showCounter', $value);
-    }
-
-    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
     {
         return $this->set('size', $value);
-    }
-
-    /**
-     * 可用来通过 API 拉取 options。
-     */
-    public function source($value = '')
-    {
-        return $this->set('source', $value);
     }
 
     /**
@@ -594,33 +354,17 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 后缀
+     * 勾选值
      */
-    public function suffix($value = '')
+    public function trueValue($value = '')
     {
-        return $this->set('suffix', $value);
+        return $this->set('trueValue', $value);
     }
 
     /**
-     * 自动转换值
+     * 指定为多行文本输入框
      */
-    public function transform($value = '')
-    {
-        return $this->set('transform', $value);
-    }
-
-    /**
-     * 是否去除首尾空白文本。
-     */
-    public function trimContents($value = true)
-    {
-        return $this->set('trimContents', $value);
-    }
-
-    /**
-     * 表单项类型 可选值: input-text | input-email | input-url | input-password | native-date | native-time | native-number
-     */
-    public function type($value = '')
+    public function type($value = 'radio')
     {
         return $this->set('type', $value);
     }

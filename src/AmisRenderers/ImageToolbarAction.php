@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ImageToolbarAction
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class ImageToolbarAction extends BaseRenderer
 {
