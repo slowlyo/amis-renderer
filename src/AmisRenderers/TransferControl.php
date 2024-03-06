@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Transfer 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/transfer
  *
  * @author slowlyo
- * @version 1.5.3
+ * @version 1.6.0
  */
 class TransferControl extends BaseRenderer
 {
@@ -304,6 +304,14 @@ class TransferControl extends BaseRenderer
     }
 
     /**
+     * 用来丰富选项展示
+     */
+    public function menuTpl($value = '')
+    {
+        return $this->set('menuTpl', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -541,6 +549,14 @@ class TransferControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
+    }
+
+    /**
+     * 用来丰富值的展示
+     */
+    public function valueTpl($value = '')
+    {
+        return $this->set('valueTpl', $value);
     }
 
     /**

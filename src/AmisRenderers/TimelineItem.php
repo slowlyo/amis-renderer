@@ -3,16 +3,17 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Divider 分割线渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/divider
+ * TimelineItem
  *
- * @author slowlyo
+ * @author  slowlyo
  * @version 1.6.0
  */
-class Divider extends BaseRenderer
+class TimelineItem extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'divider');
+
+
     }
 
     /**
@@ -21,6 +22,38 @@ class Divider extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 时间点圆圈颜色
+     */
+    public function color($value = '')
+    {
+        return $this->set('color', $value);
+    }
+
+    /**
+     * 详细内容
+     */
+    public function detail($value = '')
+    {
+        return $this->set('detail', $value);
+    }
+
+    /**
+     * detail折叠时文案
+     */
+    public function detailCollapsedText($value = '')
+    {
+        return $this->set('detailCollapsedText', $value);
+    }
+
+    /**
+     * detail展开时文案
+     */
+    public function detailExpandedText($value = '')
+    {
+        return $this->set('detailExpandedText', $value);
     }
 
     /**
@@ -56,19 +89,27 @@ class Divider extends BaseRenderer
     }
 
     /**
-     *  可选值: dashed | solid
+     * 图标
      */
-    public function lineStyle($value = '')
+    public function icon($value = '')
     {
-        return $this->set('lineStyle', $value);
+        return $this->set('icon', $value);
     }
 
     /**
-     *
+     * 时间点
      */
-    public function type($value = 'divider')
+    public function time($value = '')
     {
-        return $this->set('type', $value);
+        return $this->set('time', $value);
+    }
+
+    /**
+     * 时间节点标题
+     */
+    public function title($value = '')
+    {
+        return $this->set('title', $value);
     }
 
     /**

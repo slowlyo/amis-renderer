@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Rating 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/rating
  *
  * @author slowlyo
- * @version 1.5.3
+ * @version 1.6.0
  */
 class RatingControl extends BaseRenderer
 {
@@ -24,6 +24,22 @@ class RatingControl extends BaseRenderer
     }
 
     /**
+     * 自定义字符
+     */
+    public function char($value = '')
+    {
+        return $this->set('char', $value);
+    }
+
+    /**
+     * 自定义字符类名
+     */
+    public function charClassName($value = '')
+    {
+        return $this->set('charClassName', $value);
+    }
+
+    /**
      * 容器 css 类名
      */
     public function className($value = '')
@@ -37,6 +53,14 @@ class RatingControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
+    }
+
+    /**
+     * 星星被选中的颜色
+     */
+    public function colors($value = '')
+    {
+        return $this->set('colors', $value);
     }
 
     /**
@@ -125,6 +149,14 @@ class RatingControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
+    }
+
+    /**
+     * 未被选中的星星的颜色
+     */
+    public function inactiveColor($value = '')
+    {
+        return $this->set('inactiveColor', $value);
     }
 
     /**
@@ -229,6 +261,30 @@ class RatingControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
+    }
+
+    /**
+     * 自定义文字类名
+     */
+    public function textClassName($value = '')
+    {
+        return $this->set('textClassName', $value);
+    }
+
+    /**
+     * 文字的位置
+     */
+    public function textPosition($value = '')
+    {
+        return $this->set('textPosition', $value);
+    }
+
+    /**
+     * 星星被选中时的提示文字
+     */
+    public function texts($value = '')
+    {
+        return $this->set('texts', $value);
     }
 
     /**

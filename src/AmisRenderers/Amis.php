@@ -1284,6 +1284,16 @@ class Amis
         return $instance;
     }
 
+    public function Timeline()
+    {
+        return Timeline::make();
+    }
+
+    public function TimelineItem()
+    {
+        return TimelineItem::make();
+    }
+
     public function Toast()
     {
         return Toast::make();

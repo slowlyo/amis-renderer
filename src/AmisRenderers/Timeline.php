@@ -3,16 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Divider 分割线渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/divider
+ * Timeline
  *
- * @author slowlyo
+ * @author  slowlyo
  * @version 1.6.0
  */
-class Divider extends BaseRenderer
+class Timeline extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'divider');
+        $this->set('type', 'timeline');
     }
 
     /**
@@ -21,6 +21,14 @@ class Divider extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 展示方向 可选值: horizontal | vertical
+     */
+    public function direction($value = '')
+    {
+        return $this->set('direction', $value);
     }
 
     /**
@@ -56,17 +64,41 @@ class Divider extends BaseRenderer
     }
 
     /**
-     *  可选值: dashed | solid
+     * 节点数据
      */
-    public function lineStyle($value = '')
+    public function items($value = '')
     {
-        return $this->set('lineStyle', $value);
+        return $this->set('items', $value);
     }
 
     /**
-     *
+     * 文字相对于时间轴展示方向 可选值: left | right | alternate
      */
-    public function type($value = 'divider')
+    public function mode($value = '')
+    {
+        return $this->set('mode', $value);
+    }
+
+    /**
+     * 节点倒序
+     */
+    public function reverse($value = true)
+    {
+        return $this->set('reverse', $value);
+    }
+
+    /**
+     * API 或 数据映射
+     */
+    public function source($value = '')
+    {
+        return $this->set('source', $value);
+    }
+
+    /**
+     * 指定为 Timeline 时间轴渲染器
+     */
+    public function type($value = 'timeline')
     {
         return $this->set('type', $value);
     }

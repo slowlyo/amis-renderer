@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TabsTransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tabs-transfer-picker
  *
  * @author  slowlyo
- * @version 1.5.3
+ * @version 1.6.0
  */
 class TabsTransferPickerControl extends BaseRenderer
 {
@@ -61,6 +61,14 @@ class TabsTransferPickerControl extends BaseRenderer
     public function clearable($value = true)
     {
         return $this->set('clearable', $value);
+    }
+
+    /**
+     * 当 selectMode 为 table 时定义表格列信息。
+     */
+    public function columns($value = '')
+    {
+        return $this->set('columns', $value);
     }
 
     /**
@@ -280,6 +288,30 @@ class TabsTransferPickerControl extends BaseRenderer
     }
 
     /**
+     * 当 selectMode 为 associated 时用来定义左侧的选择模式 可选值: tree | list
+     */
+    public function leftMode($value = '')
+    {
+        return $this->set('leftMode', $value);
+    }
+
+    /**
+     * 当 selectMode 为 associated 时用来定义左侧的选项
+     */
+    public function leftOptions($value = '')
+    {
+        return $this->set('leftOptions', $value);
+    }
+
+    /**
+     * 用来丰富选项展示
+     */
+    public function menuTpl($value = '')
+    {
+        return $this->set('menuTpl', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -309,14 +341,6 @@ class TabsTransferPickerControl extends BaseRenderer
     public function options($value = '')
     {
         return $this->set('options', $value);
-    }
-
-    /**
-     * 弹窗大小 可选值: xs | sm | md | lg | xl | full
-     */
-    public function pickerSize($value = '')
-    {
-        return $this->set('pickerSize', $value);
     }
 
     /**
@@ -376,11 +400,27 @@ class TabsTransferPickerControl extends BaseRenderer
     }
 
     /**
+     * 当 selectMode 为 associated 时用来定义右侧的选择模式 可选值: table | list | tree | chained
+     */
+    public function rightMode($value = '')
+    {
+        return $this->set('rightMode', $value);
+    }
+
+    /**
      * 搜索 API
      */
     public function searchApi($value = '')
     {
         return $this->set('searchApi', $value);
+    }
+
+    /**
+     * 当 searchResultMode 为 table 时定义表格列信息。
+     */
+    public function searchResultColumns($value = '')
+    {
+        return $this->set('searchResultColumns', $value);
     }
 
     /**
@@ -405,6 +445,14 @@ class TabsTransferPickerControl extends BaseRenderer
     public function selectFirst($value = true)
     {
         return $this->set('selectFirst', $value);
+    }
+
+    /**
+     * 勾选展示模式 可选值: table | list | tree | chained | associated
+     */
+    public function selectMode($value = '')
+    {
+        return $this->set('selectMode', $value);
     }
 
     /**
@@ -456,7 +504,7 @@ class TabsTransferPickerControl extends BaseRenderer
     }
 
     /**
-     * 表单项类型
+     *
      */
     public function type($value = 'tabs-transfer-picker')
     {
@@ -501,6 +549,14 @@ class TabsTransferPickerControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
+    }
+
+    /**
+     * 用来丰富值的展示
+     */
+    public function valueTpl($value = '')
+    {
+        return $this->set('valueTpl', $value);
     }
 
     /**
