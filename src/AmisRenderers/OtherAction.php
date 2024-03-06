@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * OtherAction
  *
  * @author slowlyo
- * @version 1.6.1
+ * @version 1.6.2
  */
 class OtherAction extends BaseRenderer
 {
