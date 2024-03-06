@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * MonthRange 月范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/month-range
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class MonthRangeControl extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class MonthRangeControl extends BaseRenderer
         $this->set('type', 'input-month-range');
 
 
+    }
+
+    /**
+     * 边框模式，全边框，还是半边框，或者没边框。 可选值: full | half | none
+     */
+    public function borderMode($value = '')
+    {
+        return $this->set('borderMode', $value);
     }
 
     /**
@@ -90,6 +98,14 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
+     * 日期范围结束时间-占位符
+     */
+    public function endPlaceholder($value = '')
+    {
+        return $this->set('endPlaceholder', $value);
+    }
+
+    /**
      * 默认 `X` 即时间戳格式，用来提交的时间格式。更多格式类型请参考 moment.
      */
     public function format($value = '')
@@ -130,6 +146,14 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -146,7 +170,7 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
-     * 默认 `YYYY-MM` 用来配置显示的时间格式。
+     * 默认 `YYYY-MM-DD` 用来配置显示的时间格式。
      */
     public function inputFormat($value = '')
     {
@@ -250,11 +274,27 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
+     * 日期范围快捷键
+     */
+    public function ranges($value = '')
+    {
+        return $this->set('ranges', $value);
+    }
+
+    /**
      * 是否只读
      */
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -282,6 +322,14 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
+     * 日期范围开始时间-占位符
+     */
+    public function startPlaceholder($value = '')
+    {
+        return $this->set('startPlaceholder', $value);
+    }
+
+    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -290,7 +338,7 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
-     * 指定为日期范围控件
+     * 
      */
     public function type($value = 'input-month-range')
     {

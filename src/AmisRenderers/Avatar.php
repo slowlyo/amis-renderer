@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Avatar
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Avatar extends BaseRenderer
 {
@@ -112,6 +112,14 @@ $this->set('crossOrigin', 'anonymous');
     public function icon($value = '')
     {
         return $this->set('icon', $value);
+    }
+
+    /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
     }
 
     /**

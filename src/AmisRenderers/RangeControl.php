@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RangeControl
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class RangeControl extends BaseRenderer
 {
@@ -111,6 +111,14 @@ class RangeControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
+    }
+
+    /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
     }
 
     /**
@@ -239,6 +247,14 @@ class RangeControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

@@ -69,6 +69,11 @@ class Amis
         return Barcode::make();
     }
 
+    public function Base()
+    {
+        return Base::make();
+    }
+
     public function BaseRenderer()
     {
         return BaseRenderer::make();
@@ -132,6 +137,11 @@ class Amis
     public function Card()
     {
         return Card::make();
+    }
+
+    public function Card2()
+    {
+        return Card2::make();
     }
 
     public function Cards()
@@ -217,6 +227,11 @@ class Amis
     public function Color()
     {
         return Color::make();
+    }
+
+    public function Column()
+    {
+        return Column::make();
     }
 
     public function ComboCondition()
@@ -392,6 +407,11 @@ class Amis
     public function EmailAction()
     {
         return EmailAction::make();
+    }
+
+    public function Expandable()
+    {
+        return Expandable::make();
     }
 
     public function FeedbackDialog()
@@ -659,6 +679,21 @@ class Amis
         return InputYearRange::make();
     }
 
+    public function JSONSchemaEditorControl($name = '', $label = '')
+    {
+        $instance = JSONSchemaEditorControl::make();
+
+        if($name !== ''){
+            $instance->name($name);
+        }
+
+        if($label !== ''){
+            $instance->label($label);
+        }
+
+        return $instance;
+    }
+
     public function Json()
     {
         return Json::make();
@@ -802,6 +837,11 @@ class Amis
     public function NavItem()
     {
         return NavItem::make();
+    }
+
+    public function NavOverflow()
+    {
+        return NavOverflow::make();
     }
 
     public function NestedSelectControl($name = '', $label = '')
@@ -1034,6 +1074,16 @@ class Amis
         return $instance;
     }
 
+    public function RowSelection()
+    {
+        return RowSelection::make();
+    }
+
+    public function RowSelectionOptions()
+    {
+        return RowSelectionOptions::make();
+    }
+
     public function SchemaApi()
     {
         return SchemaApi::make();
@@ -1082,6 +1132,11 @@ class Amis
     public function SparkLine()
     {
         return SparkLine::make();
+    }
+
+    public function Spinner()
+    {
+        return Spinner::make();
     }
 
     public function StaticExactControl($name = '', $label = '')
@@ -1312,6 +1367,11 @@ class Amis
     public function ToastAction()
     {
         return ToastAction::make();
+    }
+
+    public function TooltipWrapper()
+    {
+        return TooltipWrapper::make();
     }
 
     public function Tpl()

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 提示渲染器，默认会显示个小图标，鼠标放上来的时候显示配置的内容。
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Remark extends BaseRenderer
 {
@@ -74,6 +74,14 @@ class Remark extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 
      */
     public function label($value = '')
@@ -95,6 +103,14 @@ class Remark extends BaseRenderer
     public function rootClose($value = true)
     {
         return $this->set('rootClose', $value);
+    }
+
+    /**
+     * icon的形状 可选值: circle | square
+     */
+    public function shape($value = '')
+    {
+        return $this->set('shape', $value);
     }
 
     /**

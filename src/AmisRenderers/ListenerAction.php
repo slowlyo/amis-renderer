@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListenerAction
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class ListenerAction extends BaseRenderer
 {
@@ -51,17 +51,9 @@ class ListenerAction extends BaseRenderer
     /**
      * 
      */
-    public function eventName($value = '')
+    public function expression($value = '')
     {
-        return $this->set('eventName', $value);
-    }
-
-    /**
-     * 
-     */
-    public function execOn($value = '')
-    {
-        return $this->set('execOn', $value);
+        return $this->set('expression', $value);
     }
 
     /**
@@ -78,14 +70,6 @@ class ListenerAction extends BaseRenderer
     public function preventDefault($value = true)
     {
         return $this->set('preventDefault', $value);
-    }
-
-    /**
-     * 
-     */
-    public function script($value = '')
-    {
-        return $this->set('script', $value);
     }
 
     /**
