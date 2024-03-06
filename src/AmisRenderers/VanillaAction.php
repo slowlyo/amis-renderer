@@ -4,19 +4,21 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * VanillaAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class VanillaAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
+
+
     }
 
     /**
-     *
+     * 
      */
     public function actionType($value = '')
     {
@@ -224,7 +226,7 @@ class VanillaAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -280,7 +282,7 @@ class VanillaAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

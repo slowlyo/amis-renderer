@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * SchemaCopyable
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class SchemaCopyable extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

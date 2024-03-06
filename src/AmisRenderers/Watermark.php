@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Watermark
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Watermark extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'custom-watermark');
+
+
     }
 
     /**

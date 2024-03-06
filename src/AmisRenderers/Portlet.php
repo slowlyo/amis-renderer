@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Portlet
- *
- * @author  slowlyo
- * @version 1.6.2
+ * 
+ * @author slowlyo
+ * @version 1.6.3
  */
 class Portlet extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'portlet');
+
+
     }
 
     /**
@@ -128,7 +130,7 @@ class Portlet extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tabs($value = '')
     {

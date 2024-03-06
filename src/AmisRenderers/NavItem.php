@@ -4,20 +4,20 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * NavItem
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class NavItem extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 
     /**
-     *
+     * 
      */
     public function active($value = true)
     {
@@ -25,7 +25,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function children($value = '')
     {
@@ -41,7 +41,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function defer($value = true)
     {
@@ -49,7 +49,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function deferApi($value = '')
     {
@@ -105,7 +105,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function target($value = '')
     {
@@ -113,7 +113,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function to($value = '')
     {
@@ -121,7 +121,7 @@ class NavItem extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function unfolded($value = true)
     {

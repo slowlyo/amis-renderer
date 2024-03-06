@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Nav extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'nav');
+
+
     }
 
     /**
@@ -80,7 +82,7 @@ class Nav extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function indentSize($value = '')
     {

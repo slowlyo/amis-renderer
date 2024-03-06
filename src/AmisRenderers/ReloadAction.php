@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * ReloadAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ReloadAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'reload');
+$this->set('actionType', 'reload');
 
 
     }
@@ -227,7 +227,7 @@ class ReloadAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -283,7 +283,7 @@ class ReloadAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

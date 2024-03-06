@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * MonthRange 月范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/month-range
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class MonthRangeControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-month-range');
+
+
     }
 
     /**
@@ -40,7 +42,7 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -312,7 +314,7 @@ class MonthRangeControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

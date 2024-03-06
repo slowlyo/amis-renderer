@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 图片展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/image
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Image extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'image');
+
+
     }
 
     /**
@@ -32,7 +34,7 @@ class Image extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function caption($value = '')
     {

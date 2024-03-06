@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * CopyAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class CopyAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'copy');
+$this->set('actionType', 'copy');
 
 
     }
@@ -235,7 +235,7 @@ class CopyAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -291,7 +291,7 @@ class CopyAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

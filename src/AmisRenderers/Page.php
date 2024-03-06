@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * amis Page 渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/page
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Page extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'page');
+
+
     }
 
     /**
@@ -104,7 +106,7 @@ class Page extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function definitions($value = '')
     {
@@ -184,7 +186,7 @@ class Page extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function messages($value = '')
     {
@@ -200,7 +202,7 @@ class Page extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {

@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * InputGroup 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-group
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class InputGroupControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-group');
+
+
     }
 
     /**
@@ -40,7 +42,7 @@ class InputGroupControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -248,7 +250,7 @@ class InputGroupControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

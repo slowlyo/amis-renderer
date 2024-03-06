@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * City 城市选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/city
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class InputCityControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-city');
+
+
     }
 
     /**
@@ -64,7 +66,7 @@ class InputCityControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -296,7 +298,7 @@ class InputCityControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

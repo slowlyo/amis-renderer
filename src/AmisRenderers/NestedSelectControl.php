@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Nested Select 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/nested-select
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class NestedSelectControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'nested-select');
+
+
     }
 
     /**
@@ -128,7 +130,7 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -464,7 +466,7 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

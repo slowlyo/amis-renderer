@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Timeline
- *
- * @author  slowlyo
- * @version 1.6.2
+ * 
+ * @author slowlyo
+ * @version 1.6.3
  */
 class Timeline extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'timeline');
+
+
     }
 
     /**

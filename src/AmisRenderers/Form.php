@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Form 表单渲染器。说明：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/index
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Form extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'form');
+
+
     }
 
     /**
@@ -104,7 +106,7 @@ class Form extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function data($value = '')
     {
@@ -144,7 +146,7 @@ class Form extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function fieldSet($value = '')
     {
@@ -256,7 +258,7 @@ class Form extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -312,7 +314,7 @@ class Form extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function redirect($value = '')
     {
@@ -320,7 +322,7 @@ class Form extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function reload($value = '')
     {
@@ -384,7 +386,7 @@ class Form extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tabs($value = '')
     {

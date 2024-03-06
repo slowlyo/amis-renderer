@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Chart 图表渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/carousel
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Chart extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'chart');
+
+
     }
 
     /**
@@ -56,7 +58,7 @@ class Chart extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function dataFilter($value = '')
     {
@@ -136,7 +138,7 @@ class Chart extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -152,7 +154,7 @@ class Chart extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function source($value = '')
     {

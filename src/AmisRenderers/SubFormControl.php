@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * SubForm 子表单 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/subform
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class SubFormControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-sub-form');
+
+
     }
 
     /**
@@ -64,7 +66,7 @@ class SubFormControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -304,7 +306,7 @@ class SubFormControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function scaffold($value = '')
     {
@@ -360,7 +362,7 @@ class SubFormControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

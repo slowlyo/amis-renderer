@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * SchemaApi
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class SchemaApi extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

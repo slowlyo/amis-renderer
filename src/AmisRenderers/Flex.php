@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Flex 布局
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Flex extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'flex');
+
+
     }
 
     /**

@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * SparkLine
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class SparkLine extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'sparkline');
+
+
     }
 
     /**
@@ -88,7 +90,7 @@ class SparkLine extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function type($value = 'sparkline')
     {
@@ -96,7 +98,7 @@ class SparkLine extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function value($value = '')
     {

@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Tabs extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'tabs');
+
+
     }
 
     /**
@@ -144,7 +146,7 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function type($value = 'tabs')
     {

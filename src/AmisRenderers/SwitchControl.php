@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Switch 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/switch
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class SwitchControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'switch');
+
+
     }
 
     /**
@@ -32,7 +34,7 @@ class SwitchControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -280,7 +282,7 @@ class SwitchControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

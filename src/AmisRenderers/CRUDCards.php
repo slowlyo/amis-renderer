@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * CRUDCards
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class CRUDCards extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('mode', 'cards');
-        $this->set('type', 'crud');
+$this->set('type', 'crud');
 
 
     }
@@ -75,7 +75,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function card($value = '')
     {
@@ -155,7 +155,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function filterDefaultVisible($value = true)
     {
@@ -163,7 +163,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function filterTogglable($value = true)
     {
@@ -355,7 +355,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function messages($value = '')
     {
@@ -371,7 +371,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -483,7 +483,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function stopAutoRefreshWhen($value = '')
     {
@@ -491,7 +491,7 @@ class CRUDCards extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function stopAutoRefreshWhenModalIsOpen($value = true)
     {

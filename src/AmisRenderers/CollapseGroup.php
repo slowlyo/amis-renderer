@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * CollapseGroup 折叠渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/collapse
- *
- * @author  slowlyo
- * @version 1.6.2
+ * 
+ * @author slowlyo
+ * @version 1.6.3
  */
 class CollapseGroup extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'collapse-group');
+
+
     }
 
     /**

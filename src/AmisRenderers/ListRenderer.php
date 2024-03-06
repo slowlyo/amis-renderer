@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * List 列表展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ListRenderer extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'list');
+
+
     }
 
     /**

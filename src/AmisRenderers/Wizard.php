@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 表单向导 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wizard
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Wizard extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'wizard');
+
+
     }
 
     /**
@@ -136,7 +138,7 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -160,7 +162,7 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function reload($value = '')
     {
@@ -168,7 +170,7 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function startStep($value = '')
     {
@@ -176,7 +178,7 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function steps($value = '')
     {

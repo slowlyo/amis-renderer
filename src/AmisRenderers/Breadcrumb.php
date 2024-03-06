@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Breadcrumb 面包屑 https://aisuda.bce.baidu.com/amis/zh-CN/components/breadcrumb
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Breadcrumb extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'breadcrumb');
+
+
     }
 
     /**

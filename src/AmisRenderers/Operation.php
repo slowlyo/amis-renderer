@@ -4,19 +4,21 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 操作栏渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/operation
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Operation extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'operation');
+
+
     }
 
     /**
-     *
+     * 
      */
     public function buttons($value = '')
     {

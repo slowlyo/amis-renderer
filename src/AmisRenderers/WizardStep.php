@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * WizardStep
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class WizardStep extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 
@@ -105,7 +105,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function data($value = '')
     {
@@ -145,7 +145,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function fieldSet($value = '')
     {
@@ -257,7 +257,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function label($value = '')
     {
@@ -281,7 +281,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -337,7 +337,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function redirect($value = '')
     {
@@ -345,7 +345,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function reload($value = '')
     {
@@ -409,7 +409,7 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tabs($value = '')
     {

@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 提示渲染器，默认会显示个小图标，鼠标放上来的时候显示配置的内容。
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Remark extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'remark');
+
+
     }
 
     /**
@@ -64,7 +66,7 @@ class Remark extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function icon($value = '')
     {
@@ -72,7 +74,7 @@ class Remark extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function label($value = '')
     {
@@ -104,7 +106,7 @@ class Remark extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltipClassName($value = '')
     {

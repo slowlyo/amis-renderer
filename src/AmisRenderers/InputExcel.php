@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * InputExcel 解析 Excel
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class InputExcel extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-excel');
+
+
     }
 
     /**

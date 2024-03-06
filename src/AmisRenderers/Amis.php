@@ -8,7 +8,7 @@ class Amis
     {
         return new self();
     }
-
+    
     public function Action()
     {
         return Action::make();
@@ -38,11 +38,11 @@ class Amis
     {
         $instance = ArrayControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -93,11 +93,11 @@ class Amis
     {
         $instance = ButtonGroupControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -124,6 +124,11 @@ class Amis
         return CRUDTable::make();
     }
 
+    public function Calendar()
+    {
+        return Calendar::make();
+    }
+
     public function Card()
     {
         return Card::make();
@@ -143,11 +148,11 @@ class Amis
     {
         $instance = ChainedSelectControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -168,11 +173,11 @@ class Amis
     {
         $instance = CheckboxControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -183,11 +188,11 @@ class Amis
     {
         $instance = CheckboxesControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -223,11 +228,11 @@ class Amis
     {
         $instance = ComboControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -243,11 +248,11 @@ class Amis
     {
         $instance = ConditionBuilderControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -278,11 +283,11 @@ class Amis
     {
         $instance = DateControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -293,11 +298,11 @@ class Amis
     {
         $instance = DateRangeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -308,11 +313,11 @@ class Amis
     {
         $instance = DateTimeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -333,11 +338,11 @@ class Amis
     {
         $instance = DiffControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -373,11 +378,11 @@ class Amis
     {
         $instance = EditorControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -398,11 +403,11 @@ class Amis
     {
         $instance = FieldSetControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -413,11 +418,11 @@ class Amis
     {
         $instance = FileControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -438,11 +443,11 @@ class Amis
     {
         $instance = FormControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -453,11 +458,11 @@ class Amis
     {
         $instance = FormulaControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -488,11 +493,11 @@ class Amis
     {
         $instance = GroupControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -513,11 +518,11 @@ class Amis
     {
         $instance = HiddenControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -543,11 +548,11 @@ class Amis
     {
         $instance = IconPickerControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -563,11 +568,11 @@ class Amis
     {
         $instance = ImageControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -583,11 +588,11 @@ class Amis
     {
         $instance = InputCityControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -598,11 +603,11 @@ class Amis
     {
         $instance = InputColorControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -623,11 +628,11 @@ class Amis
     {
         $instance = InputGroupControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -673,11 +678,11 @@ class Amis
     {
         $instance = ListBodyField::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -688,11 +693,11 @@ class Amis
     {
         $instance = ListControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -713,11 +718,11 @@ class Amis
     {
         $instance = LocationControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -743,11 +748,11 @@ class Amis
     {
         $instance = MatrixControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -758,11 +763,11 @@ class Amis
     {
         $instance = MonthControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -773,11 +778,11 @@ class Amis
     {
         $instance = MonthRangeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -798,11 +803,11 @@ class Amis
     {
         $instance = NestedSelectControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -813,11 +818,11 @@ class Amis
     {
         $instance = NumberControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -868,11 +873,11 @@ class Amis
     {
         $instance = PickerControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -913,11 +918,11 @@ class Amis
     {
         $instance = QuarterControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -928,11 +933,11 @@ class Amis
     {
         $instance = QuarterRangeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -943,11 +948,11 @@ class Amis
     {
         $instance = RadiosControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -958,11 +963,11 @@ class Amis
     {
         $instance = RangeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -973,11 +978,11 @@ class Amis
     {
         $instance = RatingControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -998,11 +1003,11 @@ class Amis
     {
         $instance = RepeatControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1013,11 +1018,11 @@ class Amis
     {
         $instance = RichTextControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1053,11 +1058,11 @@ class Amis
     {
         $instance = SelectControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1078,11 +1083,11 @@ class Amis
     {
         $instance = StaticExactControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1108,11 +1113,11 @@ class Amis
     {
         $instance = SubFormControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1128,11 +1133,11 @@ class Amis
     {
         $instance = SwitchControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1153,11 +1158,11 @@ class Amis
     {
         $instance = TableColumn::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1168,11 +1173,11 @@ class Amis
     {
         $instance = TableControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1193,11 +1198,11 @@ class Amis
     {
         $instance = TabsTransferControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1208,11 +1213,11 @@ class Amis
     {
         $instance = TabsTransferPickerControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1223,11 +1228,11 @@ class Amis
     {
         $instance = TagControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1243,11 +1248,11 @@ class Amis
     {
         $instance = TextControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1258,11 +1263,11 @@ class Amis
     {
         $instance = TextareaControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1273,11 +1278,11 @@ class Amis
     {
         $instance = TimeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1308,11 +1313,11 @@ class Amis
     {
         $instance = TransferControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1323,11 +1328,11 @@ class Amis
     {
         $instance = TransferPickerControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1338,11 +1343,11 @@ class Amis
     {
         $instance = TreeControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1353,11 +1358,11 @@ class Amis
     {
         $instance = TreeSelectControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1368,11 +1373,11 @@ class Amis
     {
         $instance = UUIDControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1403,11 +1408,11 @@ class Amis
     {
         $instance = WangEditor::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1433,11 +1438,11 @@ class Amis
     {
         $instance = WizardStep::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 
@@ -1453,11 +1458,11 @@ class Amis
     {
         $instance = YearControl::make();
 
-        if ($name !== '') {
+        if($name !== ''){
             $instance->name($name);
         }
 
-        if ($label !== '') {
+        if($label !== ''){
             $instance->label($label);
         }
 

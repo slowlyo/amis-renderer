@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Icon 图表渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/icon
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Icon extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'icon');
+
+
     }
 
     /**
@@ -72,7 +74,7 @@ class Icon extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function type($value = 'icon')
     {

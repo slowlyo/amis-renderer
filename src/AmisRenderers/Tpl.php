@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * tpl 渲染器
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Tpl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'tpl');
+
+
     }
 
     /**
@@ -64,7 +66,7 @@ class Tpl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function html($value = '')
     {
@@ -80,7 +82,7 @@ class Tpl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function raw($value = '')
     {
@@ -96,7 +98,7 @@ class Tpl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function text($value = '')
     {
@@ -104,7 +106,7 @@ class Tpl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tpl($value = '')
     {

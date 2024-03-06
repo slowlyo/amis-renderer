@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 季度选择控件
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class QuarterControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-quarter');
+
+
     }
 
     /**
@@ -48,7 +50,7 @@ class QuarterControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -288,7 +290,7 @@ class QuarterControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

@@ -4,19 +4,21 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Tasks 渲染器，格式说明 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tasks
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Tasks extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'tasks');
+
+
     }
 
     /**
-     *
+     * 
      */
     public function btnClassName($value = '')
     {
@@ -32,7 +34,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function canRetryStatusCode($value = '')
     {
@@ -72,7 +74,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function errorStatusCode($value = '')
     {
@@ -80,7 +82,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function finishStatusCode($value = '')
     {
@@ -104,7 +106,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function initialStatusCode($value = '')
     {
@@ -120,7 +122,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function items($value = '')
     {
@@ -128,7 +130,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function loadingStatusCode($value = '')
     {
@@ -136,7 +138,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -160,7 +162,7 @@ class Tasks extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function readyStatusCode($value = '')
     {

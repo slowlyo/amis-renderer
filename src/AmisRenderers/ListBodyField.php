@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 不指定类型默认就是文本
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ListBodyField extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

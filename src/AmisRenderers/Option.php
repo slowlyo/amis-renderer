@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Option
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Option extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

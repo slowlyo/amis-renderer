@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * CRUDTable
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class CRUDTable extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'crud');
+
+
     }
 
     /**
@@ -184,7 +186,7 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function filterDefaultVisible($value = true)
     {
@@ -192,7 +194,7 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function filterTogglable($value = true)
     {
@@ -344,7 +346,7 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function messages($value = '')
     {
@@ -360,7 +362,7 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -496,7 +498,7 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function stopAutoRefreshWhen($value = '')
     {
@@ -504,7 +506,7 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function stopAutoRefreshWhenModalIsOpen($value = true)
     {

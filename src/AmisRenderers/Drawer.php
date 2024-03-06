@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Drawer extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'drawer');
+
+
     }
 
     /**
@@ -120,7 +122,7 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -176,7 +178,7 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function type($value = 'drawer')
     {

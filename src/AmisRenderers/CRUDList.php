@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * CRUDList
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class CRUDList extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('mode', 'list');
-        $this->set('type', 'crud');
+$this->set('type', 'crud');
 
 
     }
@@ -147,7 +147,7 @@ class CRUDList extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function filterDefaultVisible($value = true)
     {
@@ -155,7 +155,7 @@ class CRUDList extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function filterTogglable($value = true)
     {
@@ -347,7 +347,7 @@ class CRUDList extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function messages($value = '')
     {
@@ -363,7 +363,7 @@ class CRUDList extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function name($value = '')
     {
@@ -483,7 +483,7 @@ class CRUDList extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function stopAutoRefreshWhen($value = '')
     {
@@ -491,7 +491,7 @@ class CRUDList extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function stopAutoRefreshWhenModalIsOpen($value = true)
     {

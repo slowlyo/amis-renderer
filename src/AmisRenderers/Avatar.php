@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Avatar
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Avatar extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'avatar');
-        $this->set('crossOrigin', 'anonymous');
+$this->set('crossOrigin', 'anonymous');
 
 
     }
@@ -43,7 +43,7 @@ class Avatar extends BaseRenderer
     }
 
     /**
-     * 图片CORS属性 可选值: anonymous | use-credentials |
+     * 图片CORS属性 可选值: anonymous | use-credentials | 
      */
     public function crossOrigin($value = '')
     {
@@ -163,7 +163,7 @@ class Avatar extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function type($value = 'avatar')
     {

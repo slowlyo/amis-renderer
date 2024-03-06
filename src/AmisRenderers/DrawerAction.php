@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * DrawerAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class DrawerAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'drawer');
+$this->set('actionType', 'drawer');
 
 
     }
@@ -251,7 +251,7 @@ class DrawerAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -259,7 +259,7 @@ class DrawerAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function redirect($value = '')
     {
@@ -267,7 +267,7 @@ class DrawerAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function reload($value = '')
     {
@@ -323,7 +323,7 @@ class DrawerAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

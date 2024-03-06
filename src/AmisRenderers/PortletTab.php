@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 栏目容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/portlet
- *
- * @author  slowlyo
- * @version 1.6.2
+ * 
+ * @author slowlyo
+ * @version 1.6.3
  */
 class PortletTab extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

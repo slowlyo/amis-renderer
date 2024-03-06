@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * TimelineItem
- *
- * @author  slowlyo
- * @version 1.6.2
+ * 
+ * @author slowlyo
+ * @version 1.6.3
  */
 class TimelineItem extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

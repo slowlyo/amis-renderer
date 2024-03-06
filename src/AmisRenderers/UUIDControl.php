@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * UUID 功能性组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/uuid
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class UUIDControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'uuid');
+
+
     }
 
     /**
@@ -32,7 +34,7 @@ class UUIDControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -248,7 +250,7 @@ class UUIDControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

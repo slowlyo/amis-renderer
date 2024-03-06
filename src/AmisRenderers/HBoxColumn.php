@@ -4,15 +4,15 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * HBoxColumn
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class HBoxColumn extends BaseRenderer
 {
     public function __construct()
     {
-
+        
 
     }
 

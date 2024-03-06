@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * DialogAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class DialogAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'dialog');
+$this->set('actionType', 'dialog');
 
 
     }
@@ -243,7 +243,7 @@ class DialogAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -251,7 +251,7 @@ class DialogAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function redirect($value = '')
     {
@@ -259,7 +259,7 @@ class DialogAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function reload($value = '')
     {
@@ -315,7 +315,7 @@ class DialogAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Property 属性表
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Property extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'property');
+
+
     }
 
     /**
@@ -40,7 +42,7 @@ class Property extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function items($value = '')
     {

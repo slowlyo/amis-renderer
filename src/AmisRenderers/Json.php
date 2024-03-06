@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * JSON 数据展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/json
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Json extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'json');
+
+
     }
 
     /**

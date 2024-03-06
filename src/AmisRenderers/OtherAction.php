@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * OtherAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class OtherAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'prev');
+$this->set('actionType', 'prev');
 
 
     }
@@ -227,7 +227,7 @@ class OtherAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -283,7 +283,7 @@ class OtherAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

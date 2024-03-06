@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/number
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class NumberControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-number');
+
+
     }
 
     /**
@@ -40,7 +42,7 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -320,7 +322,7 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

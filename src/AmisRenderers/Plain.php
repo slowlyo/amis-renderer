@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Plain 纯文本渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/plain
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Plain extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'plain');
+
+
     }
 
     /**
@@ -72,7 +74,7 @@ class Plain extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function text($value = '')
     {
@@ -80,7 +82,7 @@ class Plain extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tpl($value = '')
     {

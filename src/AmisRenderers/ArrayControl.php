@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * InputArray 数组输入框。 combo 的别名。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/array
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ArrayControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-array');
+
+
     }
 
     /**
@@ -88,7 +90,7 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -480,7 +482,7 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

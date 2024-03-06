@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * InputKVS 键值对象
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class InputKVS extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-kvs');
+
+
     }
 
     /**

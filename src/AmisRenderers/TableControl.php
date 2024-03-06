@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * TableControl
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class TableControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-table');
+
+
     }
 
     /**
@@ -224,7 +226,7 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -624,7 +626,7 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

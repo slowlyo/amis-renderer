@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * LinkAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class LinkAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'link');
+$this->set('actionType', 'link');
 
 
     }
@@ -235,7 +235,7 @@ class LinkAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -291,7 +291,7 @@ class LinkAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

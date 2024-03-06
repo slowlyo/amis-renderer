@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class TextControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-text');
+
+
     }
 
     /**
@@ -32,7 +34,7 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function addOn($value = '')
     {
@@ -136,7 +138,7 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -472,7 +474,7 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {

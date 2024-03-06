@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * RichText 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-rich-text
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class RichTextControl extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'input-rich-text');
+
+
     }
 
     /**
@@ -40,7 +42,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function desc($value = '')
     {
@@ -176,7 +178,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function options($value = '')
     {
@@ -200,7 +202,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function receiver($value = '')
     {
@@ -272,7 +274,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function validations($value = '')
     {
@@ -296,7 +298,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function videoReceiver($value = '')
     {

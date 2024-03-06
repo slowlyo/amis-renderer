@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * AjaxAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class AjaxAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'ajax');
+$this->set('actionType', 'ajax');
 
 
     }
@@ -139,7 +139,7 @@ class AjaxAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function feedback($value = '')
     {
@@ -195,7 +195,7 @@ class AjaxAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function ignoreConfirm($value = true)
     {
@@ -251,7 +251,7 @@ class AjaxAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -259,7 +259,7 @@ class AjaxAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function redirect($value = '')
     {
@@ -267,7 +267,7 @@ class AjaxAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function reload($value = '')
     {
@@ -323,7 +323,7 @@ class AjaxAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {

@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * 垂直布局控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/vbox
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class VBox extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'vbox');
+
+
     }
 
     /**
@@ -64,7 +66,7 @@ class VBox extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function type($value = 'vbox')
     {

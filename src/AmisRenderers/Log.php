@@ -4,15 +4,17 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * Log 实时日志
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Log extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'log');
+
+
     }
 
     /**

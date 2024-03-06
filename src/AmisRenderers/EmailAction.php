@@ -4,16 +4,16 @@ namespace Slowlyo\AmisRenderers;
 
 /**
  * EmailAction
- *
+ * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class EmailAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-        $this->set('actionType', 'email');
+$this->set('actionType', 'email');
 
 
     }
@@ -243,7 +243,7 @@ class EmailAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function primary($value = true)
     {
@@ -315,7 +315,7 @@ class EmailAction extends BaseRenderer
     }
 
     /**
-     *
+     * 
      */
     public function tooltip($value = '')
     {
