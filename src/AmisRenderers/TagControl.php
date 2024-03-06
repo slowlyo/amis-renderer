@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tag 输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tag
  * 
  * @author slowlyo
- * @version v6.0.0
+ * @version 6.1.0
  */
 class TagControl extends BaseRenderer
 {
@@ -279,6 +279,14 @@ class TagControl extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 
+     */
+    public function initAutoFill($value = '')
+    {
+        return $this->set('initAutoFill', $value);
     }
 
     /**

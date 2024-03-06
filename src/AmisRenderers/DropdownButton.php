@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 下拉按钮渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/dropdown-button
  * 
  * @author slowlyo
- * @version v6.0.0
+ * @version 6.1.0
  */
 class DropdownButton extends BaseRenderer
 {
@@ -263,6 +263,14 @@ class DropdownButton extends BaseRenderer
     public function style($value = '')
     {
         return $this->set('style', $value);
+    }
+
+    /**
+     * 
+     */
+    public function testid($value = '')
+    {
+        return $this->set('testid', $value);
     }
 
     /**

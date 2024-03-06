@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DialogAction
  * 
  * @author slowlyo
- * @version v6.0.0
+ * @version 6.1.0
  */
 class DialogAction extends BaseRenderer
 {
@@ -392,6 +392,14 @@ $this->set('actionType', 'dialog');
     public function target($value = '')
     {
         return $this->set('target', $value);
+    }
+
+    /**
+     * 
+     */
+    public function testid($value = '')
+    {
+        return $this->set('testid', $value);
     }
 
     /**
