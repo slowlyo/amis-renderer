@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableSchema2
  * 
  * @author slowlyo
- * @version 3.5.2
+ * @version v3.5.3
  */
 class TableSchema2 extends BaseRenderer
 {
@@ -23,6 +23,14 @@ class TableSchema2 extends BaseRenderer
     public function actions($value = '')
     {
         return $this->set('actions', $value);
+    }
+
+    /**
+     * 表格自动计算高度
+     */
+    public function autoFillHeight($value = '')
+    {
+        return $this->set('autoFillHeight', $value);
     }
 
     /**
