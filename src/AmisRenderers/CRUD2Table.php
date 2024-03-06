@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2Table
  * 
  * @author slowlyo
- * @version 3.4.1
+ * @version 3.4.2
  */
 class CRUD2Table extends BaseRenderer
 {

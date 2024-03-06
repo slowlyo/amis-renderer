@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TabsTransfer 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tabs-transfer
  * 
  * @author slowlyo
- * @version 3.4.1
+ * @version 3.4.2
  */
 class TabsTransferControl extends BaseRenderer
 {

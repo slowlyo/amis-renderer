@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Portlet
  * 
  * @author slowlyo
- * @version 3.4.1
+ * @version 3.4.2
  */
 class Portlet extends BaseRenderer
 {

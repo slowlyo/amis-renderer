@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AnchorNav 锚点导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/anchor-nav
  * 
  * @author slowlyo
- * @version 3.4.1
+ * @version 3.4.2
  */
 class AnchorNav extends BaseRenderer
 {
