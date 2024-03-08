@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Options 选择器表单项
  * 
  * @author slowlyo
- * @version v2.7.0
+ * @version v2.7.1
  */
 class Options extends BaseRenderer
 {

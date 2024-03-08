@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * LinkAction
  * 
  * @author slowlyo
- * @version v2.7.0
+ * @version v2.7.1
  */
 class LinkAction extends BaseRenderer
 {
