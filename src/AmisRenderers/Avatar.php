@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Avatar
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Avatar extends BaseRenderer
 {
@@ -51,14 +51,6 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 默认头像
-     */
-    public function defaultAvatar($value = '')
-    {
-        return $this->set('defaultAvatar', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -80,14 +72,6 @@ $this->set('crossOrigin', 'anonymous');
     public function draggable($value = true)
     {
         return $this->set('draggable', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -131,27 +115,11 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 图片加载失败的是否默认处理，字符串函数
      */
     public function onError($value = '')
     {
         return $this->set('onError', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -179,62 +147,6 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
      * 自定义样式
      */
     public function style($value = '')
@@ -256,14 +168,6 @@ $this->set('crossOrigin', 'anonymous');
     public function type($value = 'avatar')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

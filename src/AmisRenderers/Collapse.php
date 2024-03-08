@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Collapse 折叠渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/collapse
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Collapse extends BaseRenderer
 {
@@ -82,22 +82,6 @@ class Collapse extends BaseRenderer
     }
 
     /**
-     * 标题内容分割线
-     */
-    public function divideLine($value = true)
-    {
-        return $this->set('divideLine', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
      * 自定义切换图标
      */
     public function expandIcon($value = '')
@@ -146,14 +130,6 @@ class Collapse extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 标识
      */
     public function key($value = '')
@@ -167,14 +143,6 @@ class Collapse extends BaseRenderer
     public function mountOnEnter($value = true)
     {
         return $this->set('mountOnEnter', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -194,70 +162,6 @@ class Collapse extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 指定为折叠器类型
      */
     public function type($value = 'collapse')
@@ -271,14 +175,6 @@ class Collapse extends BaseRenderer
     public function unmountOnExit($value = true)
     {
         return $this->set('unmountOnExit', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

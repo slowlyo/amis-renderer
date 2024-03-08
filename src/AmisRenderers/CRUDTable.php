@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class CRUDTable extends BaseRenderer
 {
@@ -15,14 +15,6 @@ class CRUDTable extends BaseRenderer
         $this->set('type', 'crud');
 
 
-    }
-
-    /**
-     * 是否固底
-     */
-    public function affixFooter($value = true)
-    {
-        return $this->set('affixFooter', $value);
     }
 
     /**
@@ -60,7 +52,7 @@ class CRUDTable extends BaseRenderer
     /**
      * 内容区域占满屏幕剩余空间
      */
-    public function autoFillHeight($value = '')
+    public function autoFillHeight($value = true)
     {
         return $this->set('autoFillHeight', $value);
     }
@@ -68,7 +60,7 @@ class CRUDTable extends BaseRenderer
     /**
      * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
      */
-    public function autoGenerateFilter($value = '')
+    public function autoGenerateFilter($value = true)
     {
         return $this->set('autoGenerateFilter', $value);
     }
@@ -87,14 +79,6 @@ class CRUDTable extends BaseRenderer
     public function bulkActions($value = '')
     {
         return $this->set('bulkActions', $value);
-    }
-
-    /**
-     * 表格是否可以获取父级数据域值，默认为false
-     */
-    public function canAccessSuperData($value = true)
-    {
-        return $this->set('canAccessSuperData', $value);
     }
 
     /**
@@ -154,14 +138,6 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * 懒加载 API，当行数据中用 defer: true 标记了，则其孩子节点将会用这个 API 来拉取数据。
-     */
-    public function deferApi($value = '')
-    {
-        return $this->set('deferApi', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -191,14 +167,6 @@ class CRUDTable extends BaseRenderer
     public function draggableOn($value = '')
     {
         return $this->set('draggableOn', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -298,14 +266,6 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 初始是否拉取
      */
     public function initFetch($value = true)
@@ -378,27 +338,11 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * 在开启loadDataOnce时，当修改过滤条件时是否重新请求api如果没有配置，当查询条件表单触发的会重新请求 api，当是列过滤或者是 search-box 触发的则不重新请求 api 如果配置为 true，则不管是什么触发都会重新请求 api 如果配置为 false 则不管是什么触发都不会重新请求 api
+     * 在开启loadDataOnce时，filter时是否去重新请求api
      */
     public function loadDataOnceFetchOnFilter($value = true)
     {
         return $this->set('loadDataOnceFetchOnFilter', $value);
-    }
-
-    /**
-     * 
-     */
-    public function loadingConfig($value = '')
-    {
-        return $this->set('loadingConfig', $value);
-    }
-
-    /**
-     * 自定义搜索匹配函数，当开启loadDataOnce时，会基于该函数计算的匹配结果进行过滤，主要用于处理列字段类型较为复杂或者字段值格式和后端返回不一致的场景
-     */
-    public function matchFunc($value = '')
-    {
-        return $this->set('matchFunc', $value);
     }
 
     /**
@@ -426,30 +370,6 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 默认排序字段
-     */
-    public function orderBy($value = '')
-    {
-        return $this->set('orderBy', $value);
-    }
-
-    /**
-     * 默认排序方向 可选值: asc | desc
-     */
-    public function orderDir($value = '')
-    {
-        return $this->set('orderDir', $value);
-    }
-
-    /**
      * 设置用来确定位置的字段名，设置后新的顺序将被赋值到该字段中。
      */
     public function orderField($value = '')
@@ -458,27 +378,11 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * 设置分页方向的字段名。单位简单分页时清楚时向前还是向后翻页。
-     */
-    public function pageDirectionField($value = '')
-    {
-        return $this->set('pageDirectionField', $value);
-    }
-
-    /**
      * 设置分页页码字段名。
      */
     public function pageField($value = '')
     {
         return $this->set('pageField', $value);
-    }
-
-    /**
-     * 是否开启Query信息转换，开启后将会对url中的Query进行转换，默认开启，默认仅转化布尔值
-     */
-    public function parsePrimitiveQuery($value = '')
-    {
-        return $this->set('parsePrimitiveQuery', $value);
     }
 
     /**
@@ -594,62 +498,6 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
      * 
      */
     public function stopAutoRefreshWhen($value = '')
@@ -663,14 +511,6 @@ class CRUDTable extends BaseRenderer
     public function stopAutoRefreshWhenModalIsOpen($value = true)
     {
         return $this->set('stopAutoRefreshWhenModalIsOpen', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
     }
 
     /**
@@ -698,14 +538,6 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
-     * table layout 可选值: fixed | auto
-     */
-    public function tableLayout($value = '')
-    {
-        return $this->set('tableLayout', $value);
-    }
-
-    /**
      * 标题
      */
     public function title($value = '')
@@ -727,14 +559,6 @@ class CRUDTable extends BaseRenderer
     public function type($value = 'crud')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Drawer extends BaseRenderer
 {
@@ -42,7 +42,7 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 配置 外层 className
+     * 容器 css 类名
      */
     public function className($value = '')
     {
@@ -90,14 +90,6 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
      * 底部
      */
     public function footer($value = '')
@@ -106,35 +98,11 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 配置 头部 容器 className
-     */
-    public function footerClassName($value = '')
-    {
-        return $this->set('footerClassName', $value);
-    }
-
-    /**
      * 头部
      */
     public function header($value = '')
     {
         return $this->set('header', $value);
-    }
-
-    /**
-     * 配置 头部 容器 className
-     */
-    public function headerClassName($value = '')
-    {
-        return $this->set('headerClassName', $value);
-    }
-
-    /**
-     * 抽屉的高度 （当position为top | bottom时生效）
-     */
-    public function height($value = '')
-    {
-        return $this->set('height', $value);
     }
 
     /**
@@ -154,27 +122,11 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -202,14 +154,6 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 是否展示关闭按钮 当值为false时，默认开启closeOnOutside
-     */
-    public function showCloseButton($value = true)
-    {
-        return $this->set('showCloseButton', $value);
-    }
-
-    /**
      * 是否显示错误信息
      */
     public function showErrorMsg($value = true)
@@ -223,78 +167,6 @@ class Drawer extends BaseRenderer
     public function size($value = '')
     {
         return $this->set('size', $value);
-    }
-
-    /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
-     * 
-     */
-    public function testid($value = '')
-    {
-        return $this->set('testid', $value);
     }
 
     /**
@@ -314,14 +186,6 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
-    }
-
-    /**
      * 是否显示
      */
     public function visible($value = true)
@@ -335,14 +199,6 @@ class Drawer extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
-    }
-
-    /**
-     * 抽屉的宽度 （当position为left | right时生效）
-     */
-    public function width($value = '')
-    {
-        return $this->set('width', $value);
     }
 
 

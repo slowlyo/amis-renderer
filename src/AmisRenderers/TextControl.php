@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class TextControl extends BaseRenderer
 {
@@ -31,14 +31,6 @@ class TextControl extends BaseRenderer
     public function addControls($value = '')
     {
         return $this->set('addControls', $value);
-    }
-
-    /**
-     * 控制新增弹框设置项
-     */
-    public function addDialog($value = '')
-    {
-        return $this->set('addDialog', $value);
     }
 
     /**
@@ -82,14 +74,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 在内容为空的时候清除值
-     */
-    public function clearValueOnEmpty($value = true)
-    {
-        return $this->set('clearValueOnEmpty', $value);
-    }
-
-    /**
      * 表单项隐藏时，是否在当前 Form 中删除掉该表单项值。注意同名的未隐藏的表单项值也会删掉
      */
     public function clearValueOnHidden($value = true)
@@ -127,14 +111,6 @@ class TextControl extends BaseRenderer
     public function deferApi($value = '')
     {
         return $this->set('deferApi', $value);
-    }
-
-    /**
-     * 懒加载字段
-     */
-    public function deferField($value = '')
-    {
-        return $this->set('deferField', $value);
     }
 
     /**
@@ -218,35 +194,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 控制编辑弹框设置项
-     */
-    public function editDialog($value = '')
-    {
-        return $this->set('editDialog', $value);
-    }
-
-    /**
      * 是否可以编辑
      */
     public function editable($value = true)
     {
         return $this->set('editable', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
     }
 
     /**
@@ -290,22 +242,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 
-     */
-    public function initAutoFill($value = '')
-    {
-        return $this->set('initAutoFill', $value);
-    }
-
-    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -338,14 +274,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * control节点的CSS类名
-     */
-    public function inputControlClassName($value = '')
-    {
-        return $this->set('inputControlClassName', $value);
-    }
-
-    /**
      * 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。
      */
     public function joinValues($value = true)
@@ -359,14 +287,6 @@ class TextControl extends BaseRenderer
     public function label($value = '')
     {
         return $this->set('label', $value);
-    }
-
-    /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
     }
 
     /**
@@ -386,27 +306,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
-     * 限制文字最大输入个数
+     * 限制文字个数
      */
     public function maxLength($value = '')
     {
         return $this->set('maxLength', $value);
-    }
-
-    /**
-     * 限制文字最小输入个数
-     */
-    public function minLength($value = '')
-    {
-        return $this->set('minLength', $value);
     }
 
     /**
@@ -434,30 +338,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 配置原生 input 的 autoComplete 属性
-     */
-    public function nativeAutoComplete($value = '')
-    {
-        return $this->set('nativeAutoComplete', $value);
-    }
-
-    /**
-     * 原生input标签的CSS类名
-     */
-    public function nativeInputClassName($value = '')
-    {
-        return $this->set('nativeInputClassName', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选项集合
      */
     public function options($value = '')
@@ -474,27 +354,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 前缀
-     */
-    public function prefix($value = '')
-    {
-        return $this->set('prefix', $value);
-    }
-
-    /**
      * 是否只读
      */
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -562,99 +426,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
-    }
-
-    /**
-     * 后缀
-     */
-    public function suffix($value = '')
-    {
-        return $this->set('suffix', $value);
-    }
-
-    /**
-     * 
-     */
-    public function testid($value = '')
-    {
-        return $this->set('testid', $value);
-    }
-
-    /**
-     * 自动转换值
-     */
-    public function transform($value = '')
-    {
-        return $this->set('transform', $value);
     }
 
     /**
@@ -671,14 +447,6 @@ class TextControl extends BaseRenderer
     public function type($value = '')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**
@@ -719,14 +487,6 @@ class TextControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
-    }
-
-    /**
-     * 多选模式，值太多时是否避免折行
-     */
-    public function valuesNoWrap($value = true)
-    {
-        return $this->set('valuesNoWrap', $value);
     }
 
     /**

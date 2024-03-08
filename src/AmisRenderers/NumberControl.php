@@ -3,10 +3,10 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-number
+ * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/number
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class NumberControl extends BaseRenderer
 {
@@ -15,14 +15,6 @@ class NumberControl extends BaseRenderer
         $this->set('type', 'input-number');
 
 
-    }
-
-    /**
-     * 是否是大数，如果是的话输入输出都将是字符串
-     */
-    public function big($value = true)
-    {
-        return $this->set('big', $value);
     }
 
     /**
@@ -90,30 +82,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 输入框为基础输入框还是加强输入框 可选值: base | enhance
-     */
-    public function displayMode($value = '')
-    {
-        return $this->set('displayMode', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -146,14 +114,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -167,14 +127,6 @@ class NumberControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
-    }
-
-    /**
-     * 是否启用键盘行为
-     */
-    public function keyboard($value = true)
-    {
-        return $this->set('keyboard', $value);
     }
 
     /**
@@ -194,14 +146,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -215,14 +159,6 @@ class NumberControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -258,14 +194,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -298,14 +226,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -322,7 +242,7 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 是否显示上下点击按钮
+     * 默认当然是
      */
     public function showSteps($value = true)
     {
@@ -338,75 +258,11 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
      * 步长
      */
     public function step($value = '')
     {
         return $this->set('step', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
     }
 
     /**
@@ -439,14 +295,6 @@ class NumberControl extends BaseRenderer
     public function unitOptions($value = '')
     {
         return $this->set('unitOptions', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ChartRadios 图表单选框
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class ChartRadios extends BaseRenderer
 {

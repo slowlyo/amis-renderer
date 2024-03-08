@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表单向导 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wizard
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Wizard extends BaseRenderer
 {
@@ -74,14 +74,6 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     * 表单区域css类
-     */
-    public function bodyClassName($value = '')
-    {
-        return $this->set('bodyClassName', $value);
-    }
-
-    /**
      * 是否合并后再提交
      */
     public function bulkSubmit($value = true)
@@ -114,22 +106,6 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 底部操作栏的css类
-     */
-    public function footerClassName($value = '')
-    {
-        return $this->set('footerClassName', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -146,27 +122,11 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * Wizard 用来获取初始数据的 api。
      */
     public function initApi($value = '')
     {
         return $this->set('initApi', $value);
-    }
-
-    /**
-     * 
-     */
-    public function loadingConfig($value = '')
-    {
-        return $this->set('loadingConfig', $value);
     }
 
     /**
@@ -183,14 +143,6 @@ class Wizard extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -226,91 +178,11 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * step + body区域css类
-     */
-    public function stepClassName($value = '')
-    {
-        return $this->set('stepClassName', $value);
-    }
-
-    /**
      * 
      */
     public function steps($value = '')
     {
         return $this->set('steps', $value);
-    }
-
-    /**
-     * 步骤条区域css类
-     */
-    public function stepsClassName($value = '')
-    {
-        return $this->set('stepsClassName', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
     }
 
     /**
@@ -330,14 +202,6 @@ class Wizard extends BaseRenderer
     }
 
     /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
-    }
-
-    /**
      * 是否显示
      */
     public function visible($value = true)
@@ -351,14 +215,6 @@ class Wizard extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
-    }
-
-    /**
-     * 是否用panel包裹
-     */
-    public function wrapWithPanel($value = true)
-    {
-        return $this->set('wrapWithPanel', $value);
     }
 
 

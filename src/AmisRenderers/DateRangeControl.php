@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DateRange 日期范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/date-range
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class DateRangeControl extends BaseRenderer
 {
@@ -15,14 +15,6 @@ class DateRangeControl extends BaseRenderer
         $this->set('type', 'input-date-range');
 
 
-    }
-
-    /**
-     * 是否启用游标动画，默认开启
-     */
-    public function animation($value = true)
-    {
-        return $this->set('animation', $value);
     }
 
     /**
@@ -98,43 +90,11 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 用来配置显示的时间格式（新：同inputFormat）
-     */
-    public function displayFormat($value = '')
-    {
-        return $this->set('displayFormat', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
      * 开启后变成非弹出模式，即内联模式。
      */
     public function embed($value = true)
     {
         return $this->set('embed', $value);
-    }
-
-    /**
-     * 日期范围结束时间-占位符
-     */
-    public function endPlaceholder($value = '')
-    {
-        return $this->set('endPlaceholder', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
     }
 
     /**
@@ -178,14 +138,6 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -226,14 +178,6 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -247,14 +191,6 @@ class DateRangeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -306,14 +242,6 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -322,27 +250,11 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 日期范围快捷键
-     */
-    public function ranges($value = '')
-    {
-        return $this->set('ranges', $value);
-    }
-
-    /**
      * 是否只读
      */
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -362,91 +274,11 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 日期范围快捷键
-     */
-    public function shortcuts($value = '')
-    {
-        return $this->set('shortcuts', $value);
-    }
-
-    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
     {
         return $this->set('size', $value);
-    }
-
-    /**
-     * 日期范围开始时间-占位符
-     */
-    public function startPlaceholder($value = '')
-    {
-        return $this->set('startPlaceholder', $value);
-    }
-
-    /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
     }
 
     /**
@@ -458,27 +290,11 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
-     * 日期数据处理函数，用来处理选择日期之后的的值(value: moment.Moment, config: {type: 'start' | 'end'; originValue: moment.Moment, timeFormat: string}, props: any, data: any, moment: moment) => moment.Moment;
-     */
-    public function transform($value = '')
-    {
-        return $this->set('transform', $value);
-    }
-
-    /**
      * 指定为日期范围控件 可选值: input-date-range | input-datetime-range | input-time-range
      */
     public function type($value = '')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**
@@ -519,14 +335,6 @@ class DateRangeControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
-    }
-
-    /**
-     * 用来提交的时间格式。更多格式类型请参考 moment.（新：同format）
-     */
-    public function valueFormat($value = '')
-    {
-        return $this->set('valueFormat', $value);
     }
 
     /**

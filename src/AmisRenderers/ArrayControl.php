@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputArray 数组输入框。 combo 的别名。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/array
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class ArrayControl extends BaseRenderer
 {
@@ -39,14 +39,6 @@ class ArrayControl extends BaseRenderer
     public function addable($value = true)
     {
         return $this->set('addable', $value);
-    }
-
-    /**
-     * Add at top
-     */
-    public function addattop($value = true)
-    {
-        return $this->set('addattop', $value);
     }
 
     /**
@@ -154,22 +146,6 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 是否将结果扁平化(去掉name),只有当controls的length为1且multiple为true的时候才有效
      */
     public function flat($value = true)
@@ -218,14 +194,6 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -266,14 +234,6 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -287,14 +247,6 @@ class ArrayControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -378,14 +330,6 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 没有成员时显示。
      */
     public function placeholder($value = '')
@@ -399,14 +343,6 @@ class ArrayControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -434,7 +370,7 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     * 新增成员时的默认值
+     * 单组表单项初始值。默认为 `{}`
      */
     public function scaffold($value = '')
     {
@@ -450,83 +386,11 @@ class ArrayControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
      * 严格模式，为了性能默认不开的。
      */
     public function strictMode($value = true)
     {
         return $this->set('strictMode', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
-     * 如果是水平排版，这个属性可以细化水平排版的左右宽度占比。
-     */
-    public function subFormHorizontal($value = '')
-    {
-        return $this->set('subFormHorizontal', $value);
     }
 
     /**
@@ -591,22 +455,6 @@ class ArrayControl extends BaseRenderer
     public function typeSwitchable($value = true)
     {
         return $this->set('typeSwitchable', $value);
-    }
-
-    /**
-     * 
-     */
-    public function updatePristineAfterStoreDataReInit($value = true)
-    {
-        return $this->set('updatePristineAfterStoreDataReInit', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

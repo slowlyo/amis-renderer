@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class SelectControl extends BaseRenderer
 {
@@ -31,14 +31,6 @@ class SelectControl extends BaseRenderer
     public function addControls($value = '')
     {
         return $this->set('addControls', $value);
-    }
-
-    /**
-     * 控制新增弹框设置项
-     */
-    public function addDialog($value = '')
-    {
-        return $this->set('addDialog', $value);
     }
 
     /**
@@ -71,22 +63,6 @@ class SelectControl extends BaseRenderer
     public function borderMode($value = '')
     {
         return $this->set('borderMode', $value);
-    }
-
-    /**
-     * 可多选条件下，是否可全选
-     */
-    public function checkAll($value = true)
-    {
-        return $this->set('checkAll', $value);
-    }
-
-    /**
-     * 可多选条件下，全选项文案，默认 ”全选“
-     */
-    public function checkAllLabel($value = '')
-    {
-        return $this->set('checkAllLabel', $value);
     }
 
     /**
@@ -138,27 +114,11 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 可多选条件下，是否默认全选中所有值
-     */
-    public function defaultCheckAll($value = true)
-    {
-        return $this->set('defaultCheckAll', $value);
-    }
-
-    /**
      * 延时加载的 API，当选项中有 defer: true 的选项时，点开会通过此接口扩充。
      */
     public function deferApi($value = '')
     {
         return $this->set('deferApi', $value);
-    }
-
-    /**
-     * 懒加载字段
-     */
-    public function deferField($value = '')
-    {
-        return $this->set('deferField', $value);
     }
 
     /**
@@ -242,35 +202,11 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 控制编辑弹框设置项
-     */
-    public function editDialog($value = '')
-    {
-        return $this->set('editDialog', $value);
-    }
-
-    /**
      * 是否可以编辑
      */
     public function editable($value = true)
     {
         return $this->set('editable', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
     }
 
     /**
@@ -314,22 +250,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 
-     */
-    public function initAutoFill($value = '')
-    {
-        return $this->set('initAutoFill', $value);
-    }
-
-    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -362,14 +282,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 单个选项的高度，主要用于虚拟渲染
-     */
-    public function itemHeight($value = '')
-    {
-        return $this->set('itemHeight', $value);
-    }
-
-    /**
      * 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。
      */
     public function joinValues($value = true)
@@ -383,14 +295,6 @@ class SelectControl extends BaseRenderer
     public function label($value = '')
     {
         return $this->set('label', $value);
-    }
-
-    /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
     }
 
     /**
@@ -418,14 +322,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
      * 当 selectMode 为 associated 时用来定义左侧的选择模式 可选值: tree | list
      */
     public function leftMode($value = '')
@@ -439,22 +335,6 @@ class SelectControl extends BaseRenderer
     public function leftOptions($value = '')
     {
         return $this->set('leftOptions', $value);
-    }
-
-    /**
-     * 
-     */
-    public function loadingConfig($value = '')
-    {
-        return $this->set('loadingConfig', $value);
-    }
-
-    /**
-     * 标签的最大展示数量，超出数量后以收纳浮层的方式展示，仅在多选模式开启后生效
-     */
-    public function maxTagCount($value = '')
-    {
-        return $this->set('maxTagCount', $value);
     }
 
     /**
@@ -490,43 +370,11 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 选项的自定义CSS类名
-     */
-    public function optionClassName($value = '')
-    {
-        return $this->set('optionClassName', $value);
-    }
-
-    /**
      * 选项集合
      */
     public function options($value = '')
     {
         return $this->set('options', $value);
-    }
-
-    /**
-     * 收纳标签的Popover配置
-     */
-    public function overflowTagPopover($value = '')
-    {
-        return $this->set('overflowTagPopover', $value);
-    }
-
-    /**
-     * 下拉框 Popover 设置
-     */
-    public function overlay($value = '')
-    {
-        return $this->set('overlay', $value);
     }
 
     /**
@@ -543,14 +391,6 @@ class SelectControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -642,14 +482,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 当在value值未匹配到当前options中的选项时，是否value值对应文本飘红显示
-     */
-    public function showInvalidMatch($value = true)
-    {
-        return $this->set('showInvalidMatch', $value);
-    }
-
-    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
@@ -666,70 +498,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -743,14 +511,6 @@ class SelectControl extends BaseRenderer
     public function type($value = '')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**
@@ -799,22 +559,6 @@ class SelectControl extends BaseRenderer
     public function valueField($value = '')
     {
         return $this->set('valueField', $value);
-    }
-
-    /**
-     * 多选模式，值太多时是否避免折行
-     */
-    public function valuesNoWrap($value = true)
-    {
-        return $this->set('valuesNoWrap', $value);
-    }
-
-    /**
-     * 在选项数量达到多少时开启虚拟渲染
-     */
-    public function virtualThreshold($value = '')
-    {
-        return $this->set('virtualThreshold', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Table 表格渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/table
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Table extends BaseRenderer
 {
@@ -15,14 +15,6 @@ class Table extends BaseRenderer
         $this->set('type', 'table');
 
 
-    }
-
-    /**
-     * 是否固底
-     */
-    public function affixFooter($value = true)
-    {
-        return $this->set('affixFooter', $value);
     }
 
     /**
@@ -42,27 +34,11 @@ class Table extends BaseRenderer
     }
 
     /**
-     * 表格自动计算高度
-     */
-    public function autoFillHeight($value = '')
-    {
-        return $this->set('autoFillHeight', $value);
-    }
-
-    /**
      * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
      */
-    public function autoGenerateFilter($value = '')
+    public function autoGenerateFilter($value = true)
     {
         return $this->set('autoGenerateFilter', $value);
-    }
-
-    /**
-     * 表格是否可以获取父级数据域值，默认为false
-     */
-    public function canAccessSuperData($value = true)
-    {
-        return $this->set('canAccessSuperData', $value);
     }
 
     /**
@@ -114,14 +90,6 @@ class Table extends BaseRenderer
     }
 
     /**
-     * 懒加载 API，当行数据中用 defer: true 标记了，则其孩子节点将会用这个 API 来拉取数据。
-     */
-    public function deferApi($value = '')
-    {
-        return $this->set('deferApi', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -135,14 +103,6 @@ class Table extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -186,27 +146,11 @@ class Table extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 行角标
      */
     public function itemBadge($value = '')
     {
         return $this->set('itemBadge', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -266,83 +210,11 @@ class Table extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 表格 CSS 类名
      */
     public function tableClassName($value = '')
     {
         return $this->set('tableClassName', $value);
-    }
-
-    /**
-     * table layout 可选值: fixed | auto
-     */
-    public function tableLayout($value = '')
-    {
-        return $this->set('tableLayout', $value);
     }
 
     /**
@@ -367,14 +239,6 @@ class Table extends BaseRenderer
     public function type($value = '')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Chart 图表渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/carousel
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Chart extends BaseRenderer
 {
@@ -90,14 +90,6 @@ class Chart extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
      * 高度设置
      */
     public function height($value = '')
@@ -119,14 +111,6 @@ class Chart extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -154,43 +138,11 @@ class Chart extends BaseRenderer
     }
 
     /**
-     * 加载百度地图
-     */
-    public function loadBaiduMap($value = true)
-    {
-        return $this->set('loadBaiduMap', $value);
-    }
-
-    /**
-     * 地图名称
-     */
-    public function mapName($value = '')
-    {
-        return $this->set('mapName', $value);
-    }
-
-    /**
-     * 获取 geo json 文件的地址
-     */
-    public function mapURL($value = '')
-    {
-        return $this->set('mapURL', $value);
-    }
-
-    /**
      * 
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -207,62 +159,6 @@ class Chart extends BaseRenderer
     public function source($value = '')
     {
         return $this->set('source', $value);
-    }
-
-    /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
     }
 
     /**
@@ -295,14 +191,6 @@ class Chart extends BaseRenderer
     public function unMountOnHidden($value = true)
     {
         return $this->set('unMountOnHidden', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

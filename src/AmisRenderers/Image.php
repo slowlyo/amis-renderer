@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图片展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/image
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Image extends BaseRenderer
 {
@@ -34,7 +34,7 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 图片说明文字
+     * 
      */
     public function caption($value = '')
     {
@@ -74,27 +74,11 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
      * 是否启动放大功能。
      */
     public function enlargeAble($value = true)
     {
         return $this->set('enlargeAble', $value);
-    }
-
-    /**
-     * 放大时是否显示图片集
-     */
-    public function enlargeWithGallary($value = true)
-    {
-        return $this->set('enlargeWithGallary', $value);
     }
 
     /**
@@ -138,14 +122,6 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 图片描述信息
      */
     public function imageCaption($value = '')
@@ -162,27 +138,11 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 放大详情图 CSS 类名
-     */
-    public function imageGallaryClassName($value = '')
-    {
-        return $this->set('imageGallaryClassName', $value);
-    }
-
-    /**
      * 图片展示模式，默认为缩略图模式、可以配置成原图模式 可选值: thumb | original
      */
     public function imageMode($value = '')
     {
         return $this->set('imageMode', $value);
-    }
-
-    /**
-     * 组件内层 css 类名
-     */
-    public function innerClassName($value = '')
-    {
-        return $this->set('innerClassName', $value);
     }
 
     /**
@@ -194,27 +154,11 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 大图地址，不设置用 src
      */
     public function originalSrc($value = '')
     {
         return $this->set('originalSrc', $value);
-    }
-
-    /**
-     * 是否展示图片工具栏
-     */
-    public function showToolbar($value = true)
-    {
-        return $this->set('showToolbar', $value);
     }
 
     /**
@@ -226,71 +170,7 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
-     * 图片缩略图外层 css 类名
+     * 图片缩率图外层 css 类名
      */
     public function thumbClassName($value = '')
     {
@@ -322,27 +202,11 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 工具栏配置
-     */
-    public function toolbarActions($value = '')
-    {
-        return $this->set('toolbarActions', $value);
-    }
-
-    /**
      * 指定为图片展示类型 可选值: image | static-image
      */
     public function type($value = '')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

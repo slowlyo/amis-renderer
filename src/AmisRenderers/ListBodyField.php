@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 不指定类型默认就是文本
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class ListBodyField extends BaseRenderer
 {
@@ -22,14 +22,6 @@ class ListBodyField extends BaseRenderer
     public function copyable($value = true)
     {
         return $this->set('copyable', $value);
-    }
-
-    /**
-     * 内层组件的CSS类名
-     */
-    public function innerClassName($value = '')
-    {
-        return $this->set('innerClassName', $value);
     }
 
     /**

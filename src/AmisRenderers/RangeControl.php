@@ -3,10 +3,10 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * RangeControl
+ * Range 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/range
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class RangeControl extends BaseRenderer
 {
@@ -31,22 +31,6 @@ class RangeControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
-    }
-
-    /**
-     * 输入框是否可清除
-     */
-    public function clearable($value = true)
-    {
-        return $this->set('clearable', $value);
-    }
-
-    /**
-     * 分隔符
-     */
-    public function delimiter($value = '')
-    {
-        return $this->set('delimiter', $value);
     }
 
     /**
@@ -90,22 +74,6 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -138,14 +106,6 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -162,27 +122,11 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 是否通过分隔符连接
-     */
-    public function joinValues($value = true)
-    {
-        return $this->set('joinValues', $value);
-    }
-
-    /**
      * 描述标题
      */
     public function label($value = '')
     {
         return $this->set('label', $value);
-    }
-
-    /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
     }
 
     /**
@@ -199,22 +143,6 @@ class RangeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
-     * 刻度
-     */
-    public function marks($value = '')
-    {
-        return $this->set('marks', $value);
     }
 
     /**
@@ -242,35 +170,11 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 是否为双滑块
-     */
-    public function multiple($value = true)
-    {
-        return $this->set('multiple', $value);
-    }
-
-    /**
      * 字段名，表单提交时的 key，支持多层级，用.连接，如： a.b.c
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 分割块数
-     */
-    public function parts($value = '')
-    {
-        return $this->set('parts', $value);
     }
 
     /**
@@ -290,14 +194,6 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -314,83 +210,11 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 是否展示输入框
-     */
-    public function showInput($value = true)
-    {
-        return $this->set('showInput', $value);
-    }
-
-    /**
-     * 是否展示步长
-     */
-    public function showSteps($value = true)
-    {
-        return $this->set('showSteps', $value);
-    }
-
-    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
     {
         return $this->set('size', $value);
-    }
-
-    /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
     }
 
     /**
@@ -402,35 +226,11 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
-    }
-
-    /**
-     * 标签方向
-     */
-    public function tooltipPlacement($value = '')
-    {
-        return $this->set('tooltipPlacement', $value);
-    }
-
-    /**
-     * 是否展示标签
-     */
-    public function tooltipVisible($value = true)
-    {
-        return $this->set('tooltipVisible', $value);
     }
 
     /**
@@ -447,14 +247,6 @@ class RangeControl extends BaseRenderer
     public function unit($value = '')
     {
         return $this->set('unit', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**
@@ -490,7 +282,7 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 滑块值
+     * 默认值，切记只能是静态值，不支持取变量，跟数据关联是通过设置 name 属性来实现的。
      */
     public function value($value = '')
     {

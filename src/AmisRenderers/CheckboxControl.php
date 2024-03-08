@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Checkbox 勾选框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/checkbox
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class CheckboxControl extends BaseRenderer
 {
@@ -23,14 +23,6 @@ class CheckboxControl extends BaseRenderer
     public function badge($value = '')
     {
         return $this->set('badge', $value);
-    }
-
-    /**
-     * 
-     */
-    public function checked($value = true)
-    {
-        return $this->set('checked', $value);
     }
 
     /**
@@ -90,22 +82,6 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 未勾选值
      */
     public function falseValue($value = '')
@@ -146,14 +122,6 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -178,14 +146,6 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -199,14 +159,6 @@ class CheckboxControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -226,35 +178,11 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选项说明
      */
     public function option($value = '')
     {
         return $this->set('option', $value);
-    }
-
-    /**
-     *  可选值: default | button
-     */
-    public function optionType($value = '')
-    {
-        return $this->set('optionType', $value);
-    }
-
-    /**
-     * 
-     */
-    public function partial($value = true)
-    {
-        return $this->set('partial', $value);
     }
 
     /**
@@ -271,14 +199,6 @@ class CheckboxControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -306,70 +226,6 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -391,14 +247,6 @@ class CheckboxControl extends BaseRenderer
     public function type($value = 'checkbox')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

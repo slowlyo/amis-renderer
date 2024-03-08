@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * Image 图片上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/image
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class ImageControl extends BaseRenderer
 {
@@ -67,14 +67,6 @@ class ImageControl extends BaseRenderer
     public function btnUploadClassName($value = '')
     {
         return $this->set('btnUploadClassName', $value);
-    }
-
-    /**
-     * 可配置移动端的拍照功能，比如配置 `camera` 移动端只能拍照，等
-     */
-    public function capture($value = '')
-    {
-        return $this->set('capture', $value);
     }
 
     /**
@@ -182,46 +174,6 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     * 是否可拖拽排序
-     */
-    public function draggable($value = true)
-    {
-        return $this->set('draggable', $value);
-    }
-
-    /**
-     * 可拖拽排序的提示信息。
-     */
-    public function draggableTip($value = '')
-    {
-        return $this->set('draggableTip', $value);
-    }
-
-    /**
-     * 图片上传完毕是否进入裁剪模式
-     */
-    public function dropCrop($value = true)
-    {
-        return $this->set('dropCrop', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
      */
     public function extractValue($value = true)
@@ -294,35 +246,11 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 默认展示图片的类名
      */
     public function imageClassName($value = '')
     {
         return $this->set('imageClassName', $value);
-    }
-
-    /**
-     * 初始化时是否把其他字段同步到表单内部。
-     */
-    public function initAutoFill($value = true)
-    {
-        return $this->set('initAutoFill', $value);
-    }
-
-    /**
-     * 初始化时是否打开裁剪模式
-     */
-    public function initCrop($value = true)
-    {
-        return $this->set('initCrop', $value);
     }
 
     /**
@@ -358,14 +286,6 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -379,14 +299,6 @@ class ImageControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -438,14 +350,6 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -467,14 +371,6 @@ class ImageControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -534,70 +430,6 @@ class ImageControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -627,22 +459,6 @@ class ImageControl extends BaseRenderer
     public function type($value = 'input-image')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 上传按钮文案
-     */
-    public function uploadBtnText($value = '')
-    {
-        return $this->set('uploadBtnText', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

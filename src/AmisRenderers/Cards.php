@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Cards 卡片集合渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Cards extends BaseRenderer
 {
@@ -15,14 +15,6 @@ class Cards extends BaseRenderer
         $this->set('type', 'cards');
 
 
-    }
-
-    /**
-     * 是否固底
-     */
-    public function affixFooter($value = true)
-    {
-        return $this->set('affixFooter', $value);
     }
 
     /**
@@ -71,14 +63,6 @@ class Cards extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -138,14 +122,6 @@ class Cards extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 配置某项是否可以点选
      */
     public function itemCheckableOn($value = '')
@@ -170,27 +146,11 @@ class Cards extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function loadingConfig($value = '')
-    {
-        return $this->set('loadingConfig', $value);
-    }
-
-    /**
      * 是否为瀑布流布局？
      */
     public function masonryLayout($value = true)
     {
         return $this->set('masonryLayout', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -226,70 +186,6 @@ class Cards extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 标题
      */
     public function title($value = '')
@@ -303,14 +199,6 @@ class Cards extends BaseRenderer
     public function type($value = 'cards')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

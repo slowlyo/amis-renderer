@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class TreeControl extends BaseRenderer
 {
@@ -34,22 +34,6 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 控制新增弹框设置项
-     */
-    public function addDialog($value = '')
-    {
-        return $this->set('addDialog', $value);
-    }
-
-    /**
-     * ui级联关系，true代表级联选中，false代表不级联，默认为true
-     */
-    public function autoCheckChildren($value = true)
-    {
-        return $this->set('autoCheckChildren', $value);
-    }
-
-    /**
      * 自动填充，当选项被选择的时候，将选项中的其他值同步设置到表单内。
      */
     public function autoFill($value = '')
@@ -58,7 +42,7 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 该属性代表数据级联关系，autoCheckChildren为true时生效，默认为false，具体数据级联关系如下： 1.casacde为false，ui行为为级联选中子节点，子节点禁用；值只包含父节点的值 2.cascade为false，withChildren为true，ui行为为级联选中子节点，子节点禁用；值包含父子节点的值 3.cascade为true，ui行为级联选中子节点，子节点可反选，值包含父子节点的值，此时withChildren属性失效 4.cascade不论为true还是false，onlyChildren为true，ui行为级联选中子节点，子节点可反选，值只包含子节点的值
+     * 父子之间是否完全独立。
      */
     public function cascade($value = true)
     {
@@ -106,19 +90,11 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 懒加载接口
+     * 延时加载的 API，当选项中有 defer: true 的选项时，点开会通过此接口扩充。
      */
     public function deferApi($value = '')
     {
         return $this->set('deferApi', $value);
-    }
-
-    /**
-     * 懒加载字段
-     */
-    public function deferField($value = '')
-    {
-        return $this->set('deferField', $value);
     }
 
     /**
@@ -202,35 +178,11 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 控制编辑弹框设置项
-     */
-    public function editDialog($value = '')
-    {
-        return $this->set('editDialog', $value);
-    }
-
-    /**
      * 是否可以编辑
      */
     public function editable($value = true)
     {
         return $this->set('editable', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 是否为选项添加默认的Icon，默认值为true
-     */
-    public function enableDefaultIcon($value = true)
-    {
-        return $this->set('enableDefaultIcon', $value);
     }
 
     /**
@@ -242,27 +194,11 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
      */
     public function extractValue($value = true)
     {
         return $this->set('extractValue', $value);
-    }
-
-    /**
-     * 高度自动增长？
-     */
-    public function heightAuto($value = true)
-    {
-        return $this->set('heightAuto', $value);
     }
 
     /**
@@ -290,14 +226,6 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 需要高亮的字符串
-     */
-    public function highlightTxt($value = '')
-    {
-        return $this->set('highlightTxt', $value);
-    }
-
-    /**
      * 输入提示，聚焦的时候显示
      */
     public function hint($value = '')
@@ -311,22 +239,6 @@ class TreeControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 
-     */
-    public function initAutoFill($value = '')
-    {
-        return $this->set('initAutoFill', $value);
     }
 
     /**
@@ -378,14 +290,6 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -399,14 +303,6 @@ class TreeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -434,27 +330,11 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选父级的时候，是否只把子节点的值包含在内
      */
     public function onlyChildren($value = true)
     {
         return $this->set('onlyChildren', $value);
-    }
-
-    /**
-     * 单选时，只运行选择叶子节点
-     */
-    public function onlyLeaf($value = true)
-    {
-        return $this->set('onlyLeaf', $value);
     }
 
     /**
@@ -487,14 +367,6 @@ class TreeControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -554,30 +426,6 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 搜索 API
-     */
-    public function searchApi($value = '')
-    {
-        return $this->set('searchApi', $value);
-    }
-
-    /**
-     * 搜索框的配置
-     */
-    public function searchConfig($value = '')
-    {
-        return $this->set('searchConfig', $value);
-    }
-
-    /**
-     * 是否开启搜索
-     */
-    public function searchable($value = true)
-    {
-        return $this->set('searchable', $value);
-    }
-
-    /**
      * 默认选择选项第一个值。
      */
     public function selectFirst($value = true)
@@ -618,70 +466,6 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -695,14 +479,6 @@ class TreeControl extends BaseRenderer
     public function type($value = 'input-tree')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**
@@ -743,14 +519,6 @@ class TreeControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
-    }
-
-    /**
-     * 多选模式，值太多时是否避免折行
-     */
-    public function valuesNoWrap($value = true)
-    {
-        return $this->set('valuesNoWrap', $value);
     }
 
     /**

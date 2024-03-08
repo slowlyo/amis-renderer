@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 条件组合控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/condition-builder
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class ConditionBuilderControl extends BaseRenderer
 {
@@ -15,30 +15,6 @@ class ConditionBuilderControl extends BaseRenderer
         $this->set('type', 'condition-builder');
 
 
-    }
-
-    /**
-     * 
-     */
-    public function addBtnVisibleOn($value = '')
-    {
-        return $this->set('addBtnVisibleOn', $value);
-    }
-
-    /**
-     * 表达式：控制按钮“添加条件组”的显示
-     */
-    public function addGroupBtnVisibleOn($value = '')
-    {
-        return $this->set('addGroupBtnVisibleOn', $value);
-    }
-
-    /**
-     * 展现模式 可选值: simple | full
-     */
-    public function builderMode($value = '')
-    {
-        return $this->set('builderMode', $value);
     }
 
     /**
@@ -106,51 +82,11 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 是否可拖拽，默认为 true
-     */
-    public function draggable($value = true)
-    {
-        return $this->set('draggable', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 内嵌模式，默认为 true
-     */
-    public function embed($value = true)
-    {
-        return $this->set('embed', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 字段集合
      */
     public function fields($value = '')
     {
         return $this->set('fields', $value);
-    }
-
-    /**
-     * 将字段输入控件变成公式编辑器。
-     */
-    public function formula($value = '')
-    {
-        return $this->set('formula', $value);
     }
 
     /**
@@ -194,14 +130,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -226,14 +154,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -247,14 +167,6 @@ class ConditionBuilderControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -274,22 +186,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 非内嵌模式时 弹窗触发icon
-     */
-    public function pickerIcon($value = '')
-    {
-        return $this->set('pickerIcon', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -303,14 +199,6 @@ class ConditionBuilderControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -330,14 +218,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 是否显示并或切换键按钮，只在简单模式下有用
-     */
-    public function showANDOR($value = true)
-    {
-        return $this->set('showANDOR', $value);
-    }
-
-    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
@@ -354,70 +234,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -431,14 +247,6 @@ class ConditionBuilderControl extends BaseRenderer
     public function type($value = 'condition-builder')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

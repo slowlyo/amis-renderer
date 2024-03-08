@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaApi
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class SchemaApi extends BaseRenderer
 {
@@ -65,22 +65,6 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * 文件下载时，指定文件名
-     */
-    public function downloadFileName($value = '')
-    {
-        return $this->set('downloadFileName', $value);
-    }
-
-    /**
-     * 强制将数据附加在 query，默认只有 api 地址中没有用变量的时候 crud 查询接口才会 自动附加数据到 query 部分，如果想强制附加请设置这个属性。 对于那种临时加了个变量但是又不想全部参数写一遍的时候配置很有用。
-     */
-    public function forceAppendDataToQuery($value = true)
-    {
-        return $this->set('forceAppendDataToQuery', $value);
-    }
-
-    /**
      * 携带 headers，用法和 data 一样，可以用变量。
      */
     public function headers($value = '')
@@ -89,7 +73,7 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * API 发送类型 可选值: get | post | put | delete | patch | jsonp | js
+     * API 发送类型 可选值: get | post | put | delete | patch | jsonp
      */
     public function method($value = '')
     {
@@ -137,15 +121,7 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * autoFill 是否显示自动填充错误提示
-     */
-    public function silent($value = true)
-    {
-        return $this->set('silent', $value);
-    }
-
-    /**
-     * 当开启自动刷新的时候，默认是 api 的 url 来自动跟踪变量变化的。 如果你希望监控 url 外的变量，请配置 trackExpression。
+     * 当开启自动刷新的时候，默认是 api 的 url 来自动跟踪变量变化的。 如果你希望监控 url 外的变量，请配置 traceExpression。
      */
     public function trackExpression($value = '')
     {

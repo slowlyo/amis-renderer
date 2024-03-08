@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * GridColumn
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class GridColumn extends BaseRenderer
 {
@@ -70,14 +70,6 @@ class GridColumn extends BaseRenderer
     public function sm($value = '')
     {
         return $this->set('sm', $value);
-    }
-
-    /**
-     * 样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
     }
 
     /**

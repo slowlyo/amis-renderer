@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Dialog 弹框渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/dialog
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Dialog extends BaseRenderer
 {
@@ -74,14 +74,6 @@ class Dialog extends BaseRenderer
     }
 
     /**
-     * 弹框类型 confirm 确认弹框
-     */
-    public function dialogType($value = 'confirm')
-    {
-        return $this->set('dialogType', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -95,22 +87,6 @@ class Dialog extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
-    }
-
-    /**
-     * 可拖拽
-     */
-    public function draggable($value = true)
-    {
-        return $this->set('draggable', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -138,14 +114,6 @@ class Dialog extends BaseRenderer
     }
 
     /**
-     * Dialog 高度
-     */
-    public function height($value = '')
-    {
-        return $this->set('height', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -162,35 +130,11 @@ class Dialog extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 是否显示蒙层
-     */
-    public function overlay($value = true)
-    {
-        return $this->set('overlay', $value);
     }
 
     /**
@@ -210,91 +154,11 @@ class Dialog extends BaseRenderer
     }
 
     /**
-     * 是否显示 spinner
-     */
-    public function showLoading($value = true)
-    {
-        return $this->set('showLoading', $value);
-    }
-
-    /**
      * Dialog 大小 可选值: xs | sm | md | lg | xl | full
      */
     public function size($value = '')
     {
         return $this->set('size', $value);
-    }
-
-    /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
-     * 
-     */
-    public function testid($value = '')
-    {
-        return $this->set('testid', $value);
     }
 
     /**
@@ -314,14 +178,6 @@ class Dialog extends BaseRenderer
     }
 
     /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
-    }
-
-    /**
      * 是否显示
      */
     public function visible($value = true)
@@ -335,14 +191,6 @@ class Dialog extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
-    }
-
-    /**
-     * Dialog 宽度
-     */
-    public function width($value = '')
-    {
-        return $this->set('width', $value);
     }
 
 

@@ -54,16 +54,6 @@ class Amis
         return Audio::make();
     }
 
-    public function AutoFillHeight()
-    {
-        return AutoFillHeight::make();
-    }
-
-    public function AutoGenerateFilter()
-    {
-        return AutoGenerateFilter::make();
-    }
-
     public function Avatar()
     {
         return Avatar::make();
@@ -77,11 +67,6 @@ class Amis
     public function Barcode()
     {
         return Barcode::make();
-    }
-
-    public function BaseApi()
-    {
-        return BaseApi::make();
     }
 
     public function BaseRenderer()
@@ -124,21 +109,6 @@ class Amis
         return ButtonToolbar::make();
     }
 
-    public function CRUD2Cards()
-    {
-        return CRUD2Cards::make();
-    }
-
-    public function CRUD2List()
-    {
-        return CRUD2List::make();
-    }
-
-    public function CRUD2Table()
-    {
-        return CRUD2Table::make();
-    }
-
     public function CRUDCards()
     {
         return CRUDCards::make();
@@ -154,19 +124,9 @@ class Amis
         return CRUDTable::make();
     }
 
-    public function Calendar()
-    {
-        return Calendar::make();
-    }
-
     public function Card()
     {
         return Card::make();
-    }
-
-    public function Card2()
-    {
-        return Card2::make();
     }
 
     public function Cards()
@@ -254,11 +214,6 @@ class Amis
         return Color::make();
     }
 
-    public function Column()
-    {
-        return Column::make();
-    }
-
     public function ComboCondition()
     {
         return ComboCondition::make();
@@ -299,11 +254,6 @@ class Amis
         return $instance;
     }
 
-    public function ConditionGroupValue()
-    {
-        return ConditionGroupValue::make();
-    }
-
     public function Container()
     {
         return Container::make();
@@ -337,11 +287,6 @@ class Amis
         }
 
         return $instance;
-    }
-
-    public function DateRange()
-    {
-        return DateRange::make();
     }
 
     public function DateRangeControl($name = '', $label = '')
@@ -442,11 +387,6 @@ class Amis
     public function EmailAction()
     {
         return EmailAction::make();
-    }
-
-    public function Expandable()
-    {
-        return Expandable::make();
     }
 
     public function FeedbackDialog()
@@ -599,16 +539,6 @@ class Amis
         return Icon::make();
     }
 
-    public function IconChecked()
-    {
-        return IconChecked::make();
-    }
-
-    public function IconItem()
-    {
-        return IconItem::make();
-    }
-
     public function IconPickerControl($name = '', $label = '')
     {
         $instance = IconPickerControl::make();
@@ -642,11 +572,6 @@ class Amis
         }
 
         return $instance;
-    }
-
-    public function ImageToolbarAction()
-    {
-        return ImageToolbarAction::make();
     }
 
     public function Images()
@@ -729,21 +654,6 @@ class Amis
         return InputYearRange::make();
     }
 
-    public function JSONSchemaEditorControl($name = '', $label = '')
-    {
-        $instance = JSONSchemaEditorControl::make();
-
-        if($name !== ''){
-            $instance->name($name);
-        }
-
-        if($label !== ''){
-            $instance->label($label);
-        }
-
-        return $instance;
-    }
-
     public function Json()
     {
         return Json::make();
@@ -797,11 +707,6 @@ class Amis
     public function ListRenderer()
     {
         return ListRenderer::make();
-    }
-
-    public function ListenerAction()
-    {
-        return ListenerAction::make();
     }
 
     public function LocationControl($name = '', $label = '')
@@ -879,11 +784,6 @@ class Amis
         return $instance;
     }
 
-    public function MultilineText()
-    {
-        return MultilineText::make();
-    }
-
     public function Nav()
     {
         return Nav::make();
@@ -892,11 +792,6 @@ class Amis
     public function NavItem()
     {
         return NavItem::make();
-    }
-
-    public function NavOverflow()
-    {
-        return NavOverflow::make();
     }
 
     public function NestedSelectControl($name = '', $label = '')
@@ -969,11 +864,6 @@ class Amis
         return Panel::make();
     }
 
-    public function Password()
-    {
-        return Password::make();
-    }
-
     public function PickerControl($name = '', $label = '')
     {
         $instance = PickerControl::make();
@@ -1019,11 +909,6 @@ class Amis
         return QRCode::make();
     }
 
-    public function QRCodeImageSettings()
-    {
-        return QRCodeImageSettings::make();
-    }
-
     public function QuarterControl($name = '', $label = '')
     {
         $instance = QuarterControl::make();
@@ -1042,21 +927,6 @@ class Amis
     public function QuarterRangeControl($name = '', $label = '')
     {
         $instance = QuarterRangeControl::make();
-
-        if($name !== ''){
-            $instance->name($name);
-        }
-
-        if($label !== ''){
-            $instance->label($label);
-        }
-
-        return $instance;
-    }
-
-    public function RadioControl($name = '', $label = '')
-    {
-        $instance = RadioControl::make();
 
         if($name !== ''){
             $instance->name($name);
@@ -1154,16 +1024,6 @@ class Amis
         return $instance;
     }
 
-    public function RowSelection()
-    {
-        return RowSelection::make();
-    }
-
-    public function RowSelectionOptions()
-    {
-        return RowSelectionOptions::make();
-    }
-
     public function SchemaApi()
     {
         return SchemaApi::make();
@@ -1214,16 +1074,6 @@ class Amis
         return SparkLine::make();
     }
 
-    public function Spinner()
-    {
-        return Spinner::make();
-    }
-
-    public function State()
-    {
-        return State::make();
-    }
-
     public function StaticExactControl($name = '', $label = '')
     {
         $instance = StaticExactControl::make();
@@ -1272,11 +1122,6 @@ class Amis
     public function SvgIcon()
     {
         return SvgIcon::make();
-    }
-
-    public function SwitchContainer()
-    {
-        return SwitchContainer::make();
     }
 
     public function SwitchControl($name = '', $label = '')
@@ -1334,11 +1179,6 @@ class Amis
         return $instance;
     }
 
-    public function TableSchema2()
-    {
-        return TableSchema2::make();
-    }
-
     public function TableView()
     {
         return TableView::make();
@@ -1377,11 +1217,6 @@ class Amis
         }
 
         return $instance;
-    }
-
-    public function Tag()
-    {
-        return Tag::make();
     }
 
     public function TagControl($name = '', $label = '')
@@ -1462,16 +1297,6 @@ class Amis
     public function Toast()
     {
         return Toast::make();
-    }
-
-    public function ToastAction()
-    {
-        return ToastAction::make();
-    }
-
-    public function TooltipWrapper()
-    {
-        return TooltipWrapper::make();
     }
 
     public function Tpl()
@@ -1559,21 +1384,6 @@ class Amis
         return UrlAction::make();
     }
 
-    public function UserSelectControl($name = '', $label = '')
-    {
-        $instance = UserSelectControl::make();
-
-        if($name !== ''){
-            $instance->name($name);
-        }
-
-        if($label !== ''){
-            $instance->label($label);
-        }
-
-        return $instance;
-    }
-
     public function VBox()
     {
         return VBox::make();
@@ -1632,11 +1442,6 @@ class Amis
         }
 
         return $instance;
-    }
-
-    public function Words()
-    {
-        return Words::make();
     }
 
     public function Wrapper()

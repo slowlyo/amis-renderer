@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Custom 自定义组件
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class Custom extends BaseRenderer
 {

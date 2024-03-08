@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class WizardStep extends BaseRenderer
 {
@@ -121,22 +121,6 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     * Debug面板配置
-     */
-    public function debugConfig($value = '')
-    {
-        return $this->set('debugConfig', $value);
-    }
-
-    /**
-     * 描述
-     */
-    public function description($value = '')
-    {
-        return $this->set('description', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -150,14 +134,6 @@ class WizardStep extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
     }
 
     /**
@@ -206,22 +182,6 @@ class WizardStep extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 图标
-     */
-    public function icon($value = '')
-    {
-        return $this->set('icon', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -305,22 +265,6 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     * 表单label的对齐方式
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
      * 消息文案配置，记住这个优先级是最低的，如果你的接口返回了 msg，接口返回的优先。
      */
     public function messages($value = '')
@@ -345,14 +289,6 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 配置容器 panel className
      */
     public function panelClassName($value = '')
@@ -366,14 +302,6 @@ class WizardStep extends BaseRenderer
     public function persistData($value = '')
     {
         return $this->set('persistData', $value);
-    }
-
-    /**
-     * 开启本地缓存后限制保存哪些 key
-     */
-    public function persistDataKeys($value = '')
-    {
-        return $this->set('persistDataKeys', $value);
     }
 
     /**
@@ -449,83 +377,11 @@ class WizardStep extends BaseRenderer
     }
 
     /**
-     * 展示态时的className
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
      * 配置停止轮询的条件
      */
     public function stopAutoRefreshWhen($value = '')
     {
         return $this->set('stopAutoRefreshWhen', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
-     * 子标题
-     */
-    public function subTitle($value = '')
-    {
-        return $this->set('subTitle', $value);
     }
 
     /**
@@ -574,22 +430,6 @@ class WizardStep extends BaseRenderer
     public function title($value = '')
     {
         return $this->set('title', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
-    }
-
-    /**
-     * 
-     */
-    public function value($value = '')
-    {
-        return $this->set('value', $value);
     }
 
     /**

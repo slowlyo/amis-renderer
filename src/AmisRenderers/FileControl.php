@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class FileControl extends BaseRenderer
 {
@@ -86,14 +86,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 控制 input 标签的 capture 属性，用于移动端拍照或录像。
-     */
-    public function capture($value = '')
-    {
-        return $this->set('capture', $value);
-    }
-
-    /**
      * 默认 `/api/upload/chunk` 想自己存储时才需要关注。
      */
     public function chunkApi($value = '')
@@ -123,14 +115,6 @@ class FileControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
-    }
-
-    /**
-     * 分块上传的并发数
-     */
-    public function concurrency($value = '')
-    {
-        return $this->set('concurrency', $value);
     }
 
     /**
@@ -182,51 +166,11 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 说明文档链接配置
-     */
-    public function documentLink($value = '')
-    {
-        return $this->set('documentLink', $value);
-    }
-
-    /**
-     * 说明文档内容配置
-     */
-    public function documentation($value = '')
-    {
-        return $this->set('documentation', $value);
-    }
-
-    /**
      * 默认显示文件路径的时候会支持直接下载， 可以支持加前缀如：`http://xx.dom/filename=` ， 如果不希望这样，可以把当前配置项设置为 `false`。1.1.6 版本开始将支持变量 ${xxx} 来自己拼凑个下载地址，并且支持配置成 post.
      */
     public function downloadUrl($value = '')
     {
         return $this->set('downloadUrl', $value);
-    }
-
-    /**
-     * 是否为拖拽上传
-     */
-    public function drag($value = true)
-    {
-        return $this->set('drag', $value);
-    }
-
-    /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
     }
 
     /**
@@ -294,22 +238,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 初始化时是否把其他字段同步到表单内部。
-     */
-    public function initAutoFill($value = true)
-    {
-        return $this->set('initAutoFill', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -342,14 +270,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -363,14 +283,6 @@ class FileControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
@@ -422,14 +334,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -443,14 +347,6 @@ class FileControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -510,70 +406,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
-    }
-
-    /**
      * 当修改完的时候是否提交表单。
      */
     public function submitOnChange($value = true)
@@ -587,14 +419,6 @@ class FileControl extends BaseRenderer
     public function templateUrl($value = '')
     {
         return $this->set('templateUrl', $value);
-    }
-
-    /**
-     * 
-     */
-    public function testid($value = '')
-    {
-        return $this->set('testid', $value);
     }
 
     /**
@@ -619,14 +443,6 @@ class FileControl extends BaseRenderer
     public function useChunk($value = '')
     {
         return $this->set('useChunk', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

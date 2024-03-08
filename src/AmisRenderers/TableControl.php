@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class TableControl extends BaseRenderer
 {
@@ -50,14 +50,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 是否固底
-     */
-    public function affixFooter($value = true)
-    {
-        return $this->set('affixFooter', $value);
-    }
-
-    /**
      * 是否固定表头
      */
     public function affixHeader($value = true)
@@ -74,17 +66,9 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 表格自动计算高度
-     */
-    public function autoFillHeight($value = '')
-    {
-        return $this->set('autoFillHeight', $value);
-    }
-
-    /**
      * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
      */
-    public function autoGenerateFilter($value = '')
+    public function autoGenerateFilter($value = true)
     {
         return $this->set('autoGenerateFilter', $value);
     }
@@ -210,14 +194,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 懒加载 API，当行数据中用 defer: true 标记了，则其孩子节点将会用这个 API 来拉取数据。
-     */
-    public function deferApi($value = '')
-    {
-        return $this->set('deferApi', $value);
-    }
-
-    /**
      * 删除的 API
      */
     public function deleteApi($value = '')
@@ -322,43 +298,11 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 编辑器配置，运行时可以忽略
-     */
-    public function editorSetting($value = '')
-    {
-        return $this->set('editorSetting', $value);
-    }
-
-    /**
-     * 是否开启 static 状态切换
-     */
-    public function enableStaticTransform($value = true)
-    {
-        return $this->set('enableStaticTransform', $value);
-    }
-
-    /**
-     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
-     */
-    public function extraName($value = '')
-    {
-        return $this->set('extraName', $value);
-    }
-
-    /**
      * 是否开启底部展示功能，适合移动端展示
      */
     public function footable($value = true)
     {
         return $this->set('footable', $value);
-    }
-
-    /**
-     * 底部新增按钮配置
-     */
-    public function footerAddBtn($value = '')
-    {
-        return $this->set('footerAddBtn', $value);
     }
 
     /**
@@ -410,14 +354,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -450,14 +386,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 描述标题
-     */
-    public function labelAlign($value = '')
-    {
-        return $this->set('labelAlign', $value);
-    }
-
-    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -471,30 +399,6 @@ class TableControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
-     * 限制最大个数
-     */
-    public function maxLength($value = '')
-    {
-        return $this->set('maxLength', $value);
-    }
-
-    /**
-     * 限制最小个数
-     */
-    public function minLength($value = '')
-    {
-        return $this->set('minLength', $value);
     }
 
     /**
@@ -519,14 +423,6 @@ class TableControl extends BaseRenderer
     public function needConfirm($value = true)
     {
         return $this->set('needConfirm', $value);
-    }
-
-    /**
-     * 事件动作配置
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
     }
 
     /**
@@ -559,14 +455,6 @@ class TableControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -618,19 +506,19 @@ class TableControl extends BaseRenderer
     }
 
     /**
+     * 显示新增按钮
+     */
+    public function showAddBtn($value = true)
+    {
+        return $this->set('showAddBtn', $value);
+    }
+
+    /**
      * 是否显示底部
      */
     public function showFooter($value = true)
     {
         return $this->set('showFooter', $value);
-    }
-
-    /**
-     * 是否显示底部新增按钮
-     */
-    public function showFooterAddBtn($value = true)
-    {
-        return $this->set('showFooterAddBtn', $value);
     }
 
     /**
@@ -650,14 +538,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 是否显示表格操作栏新增按钮
-     */
-    public function showTableAddBtn($value = true)
-    {
-        return $this->set('showTableAddBtn', $value);
-    }
-
-    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
@@ -671,70 +551,6 @@ class TableControl extends BaseRenderer
     public function source($value = '')
     {
         return $this->set('source', $value);
-    }
-
-    /**
-     * 是否静态展示
-     */
-    public function static($value = true)
-    {
-        return $this->set('static', $value);
-    }
-
-    /**
-     * 静态展示表单项类名
-     */
-    public function staticClassName($value = '')
-    {
-        return $this->set('staticClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Value类名
-     */
-    public function staticInputClassName($value = '')
-    {
-        return $this->set('staticInputClassName', $value);
-    }
-
-    /**
-     * 静态展示表单项Label类名
-     */
-    public function staticLabelClassName($value = '')
-    {
-        return $this->set('staticLabelClassName', $value);
-    }
-
-    /**
-     * 是否静态展示表达式
-     */
-    public function staticOn($value = '')
-    {
-        return $this->set('staticOn', $value);
-    }
-
-    /**
-     * 静态展示空值占位
-     */
-    public function staticPlaceholder($value = '')
-    {
-        return $this->set('staticPlaceholder', $value);
-    }
-
-    /**
-     * 
-     */
-    public function staticSchema($value = '')
-    {
-        return $this->set('staticSchema', $value);
-    }
-
-    /**
-     * 组件样式
-     */
-    public function style($value = '')
-    {
-        return $this->set('style', $value);
     }
 
     /**
@@ -754,14 +570,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * table layout 可选值: fixed | auto
-     */
-    public function tableLayout($value = '')
-    {
-        return $this->set('tableLayout', $value);
-    }
-
-    /**
      * 标题
      */
     public function title($value = '')
@@ -770,7 +578,7 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 底部工具栏CSS样式类
+     * 工具栏 CSS 类名
      */
     public function toolbarClassName($value = '')
     {
@@ -778,7 +586,7 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 表单项类型
      */
     public function type($value = 'input-table')
     {
@@ -791,14 +599,6 @@ class TableControl extends BaseRenderer
     public function updateApi($value = '')
     {
         return $this->set('updateApi', $value);
-    }
-
-    /**
-     * 可以组件级别用来关闭移动端样式
-     */
-    public function useMobileUI($value = true)
-    {
-        return $this->set('useMobileUI', $value);
     }
 
     /**

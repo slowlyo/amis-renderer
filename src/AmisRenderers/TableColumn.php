@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表格列，不指定类型时默认为文本类型。
  * 
  * @author slowlyo
- * @version 6.2.2
+ * @version 1.6.2
  */
 class TableColumn extends BaseRenderer
 {
@@ -30,14 +30,6 @@ class TableColumn extends BaseRenderer
     public function breakpoint($value = '')
     {
         return $this->set('breakpoint', $value);
-    }
-
-    /**
-     * 表格列单元格是否可以获取父级数据域值，默认为true，该配置对当前列内单元格生效
-     */
-    public function canAccessSuperData($value = true)
-    {
-        return $this->set('canAccessSuperData', $value);
     }
 
     /**
@@ -81,14 +73,6 @@ class TableColumn extends BaseRenderer
     }
 
     /**
-     * 单元格内部组件自定义样式 style作为单元格自定义样式的配置
-     */
-    public function innerStyle($value = '')
-    {
-        return $this->set('innerStyle', $value);
-    }
-
-    /**
      * 列标题
      */
     public function label($value = '')
@@ -102,14 +86,6 @@ class TableColumn extends BaseRenderer
     public function labelClassName($value = '')
     {
         return $this->set('labelClassName', $value);
-    }
-
-    /**
-     * 当一次性渲染太多列上有用，默认为 100，可以用来提升表格渲染性能
-     */
-    public function lazyRenderAfter($value = '')
-    {
-        return $this->set('lazyRenderAfter', $value);
     }
 
     /**
