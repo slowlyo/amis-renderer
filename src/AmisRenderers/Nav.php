@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class Nav extends BaseRenderer
 {
@@ -39,6 +39,14 @@ class Nav extends BaseRenderer
     public function collapsed($value = true)
     {
         return $this->set('collapsed', $value);
+    }
+
+    /**
+     * 默认展开层级 小于等于该层数的节点默认全部打开
+     */
+    public function defaultOpenLevel($value = '')
+    {
+        return $this->set('defaultOpenLevel', $value);
     }
 
     /**
@@ -271,6 +279,14 @@ class Nav extends BaseRenderer
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 主题配色 默认light 可选值: light | dark
+     */
+    public function themeColor($value = '')
+    {
+        return $this->set('themeColor', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputGroup 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-group
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class InputGroupControl extends BaseRenderer
 {
@@ -335,6 +335,14 @@ class InputGroupControl extends BaseRenderer
     public function validateOnChange($value = true)
     {
         return $this->set('validateOnChange', $value);
+    }
+
+    /**
+     * 校验提示信息配置
+     */
+    public function validationConfig($value = '')
+    {
+        return $this->set('validationConfig', $value);
     }
 
     /**

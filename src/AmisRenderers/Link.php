@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Link 链接展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/link
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class Link extends BaseRenderer
 {

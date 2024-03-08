@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class Tabs extends BaseRenderer
 {
@@ -18,7 +18,7 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 默认激活的选项卡，hash值或索引值，支持使用表达式
+     * 激活的选项卡，hash值或索引值，支持使用表达式
      */
     public function activeKey($value = '')
     {
@@ -79,6 +79,14 @@ class Tabs extends BaseRenderer
     public function contentClassName($value = '')
     {
         return $this->set('contentClassName', $value);
+    }
+
+    /**
+     * 初始化激活的选项卡，hash值或索引值，支持使用表达式
+     */
+    public function defaultKey($value = '')
+    {
+        return $this->set('defaultKey', $value);
     }
 
     /**

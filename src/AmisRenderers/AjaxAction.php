@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AjaxAction
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class AjaxAction extends BaseRenderer
 {
@@ -200,6 +200,14 @@ $this->set('actionType', 'ajax');
     public function ignoreConfirm($value = true)
     {
         return $this->set('ignoreConfirm', $value);
+    }
+
+    /**
+     * 是否开启请求隔离, 主要用于隔离联动CRUD, Service的请求
+     */
+    public function isolateScope($value = true)
+    {
+        return $this->set('isolateScope', $value);
     }
 
     /**

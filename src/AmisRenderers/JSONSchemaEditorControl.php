@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON Schema Editor 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/json-schema-editor
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class JSONSchemaEditorControl extends BaseRenderer
 {
@@ -226,7 +226,7 @@ class JSONSchemaEditorControl extends BaseRenderer
     }
 
     /**
-     * 占位符
+     * 各属性输入控件的占位提示文本{   key: "key placeholder",   title: "title placeholder",   description: "description placeholder",   default: "default placeholder" }
      */
     public function placeholder($value = '')
     {

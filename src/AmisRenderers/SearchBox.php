@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 搜索框渲染器
  * 
  * @author slowlyo
- * @version v2.7.2
+ * @version v2.8.0
  */
 class SearchBox extends BaseRenderer
 {
@@ -23,6 +23,14 @@ class SearchBox extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 是否开启清空内容后立即重新搜索
+     */
+    public function clearAndSubmit($value = true)
+    {
+        return $this->set('clearAndSubmit', $value);
     }
 
     /**
