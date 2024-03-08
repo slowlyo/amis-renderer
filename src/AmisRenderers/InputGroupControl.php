@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputGroup 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-group
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class InputGroupControl extends BaseRenderer
 {
@@ -167,6 +167,14 @@ class InputGroupControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Group 表单集合渲染器，能让多个表单在一行显示 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/group
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class FormControl extends BaseRenderer
 {
@@ -167,6 +167,14 @@ class FormControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

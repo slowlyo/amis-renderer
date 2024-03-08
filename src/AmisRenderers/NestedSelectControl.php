@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nested Select 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/nested-select
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class NestedSelectControl extends BaseRenderer
 {
@@ -31,6 +31,14 @@ class NestedSelectControl extends BaseRenderer
     public function addControls($value = '')
     {
         return $this->set('addControls', $value);
+    }
+
+    /**
+     * 控制新增弹框设置项
+     */
+    public function addDialog($value = '')
+    {
+        return $this->set('addDialog', $value);
     }
 
     /**
@@ -186,6 +194,14 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
+     * 控制编辑弹框设置项
+     */
+    public function editDialog($value = '')
+    {
+        return $this->set('editDialog', $value);
+    }
+
+    /**
      * 是否可以编辑
      */
     public function editable($value = true)
@@ -319,6 +335,14 @@ class NestedSelectControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
     }
 
     /**

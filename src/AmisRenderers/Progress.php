@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 进度展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/progress
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Progress extends BaseRenderer
 {
@@ -147,6 +147,14 @@ $this->set('mode', 'line');
     }
 
     /**
+     * 是否显示阈值数值
+     */
+    public function showThresholdText($value = true)
+    {
+        return $this->set('showThresholdText', $value);
+    }
+
+    /**
      * 是否显示背景间隔
      */
     public function stripe($value = true)
@@ -160,6 +168,14 @@ $this->set('mode', 'line');
     public function strokeWidth($value = '')
     {
         return $this->set('strokeWidth', $value);
+    }
+
+    /**
+     * 阈值
+     */
+    public function threshold($value = '')
+    {
+        return $this->set('threshold', $value);
     }
 
     /**

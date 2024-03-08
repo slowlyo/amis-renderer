@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Mapping 映射展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/mapping
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Mapping extends BaseRenderer
 {

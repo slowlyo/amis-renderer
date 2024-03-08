@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Table 表格渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/table
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Table extends BaseRenderer
 {
@@ -34,11 +34,27 @@ class Table extends BaseRenderer
     }
 
     /**
+     * 表格自动计算高度
+     */
+    public function autoFillHeight($value = '')
+    {
+        return $this->set('autoFillHeight', $value);
+    }
+
+    /**
      * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
      */
     public function autoGenerateFilter($value = true)
     {
         return $this->set('autoGenerateFilter', $value);
+    }
+
+    /**
+     * 表格是否可以获取父级数据域值，默认为false
+     */
+    public function canAccessSuperData($value = true)
+    {
+        return $this->set('canAccessSuperData', $value);
     }
 
     /**

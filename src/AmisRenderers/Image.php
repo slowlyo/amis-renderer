@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图片展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/image
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Image extends BaseRenderer
 {
@@ -34,7 +34,7 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 
+     * 图片说明文字
      */
     public function caption($value = '')
     {
@@ -154,6 +154,14 @@ class Image extends BaseRenderer
     }
 
     /**
+     * 组件内层 css 类名
+     */
+    public function innerClassName($value = '')
+    {
+        return $this->set('innerClassName', $value);
+    }
+
+    /**
      * 关联字段名，也可以直接配置 src
      */
     public function name($value = '')
@@ -186,7 +194,7 @@ class Image extends BaseRenderer
     }
 
     /**
-     * 图片缩率图外层 css 类名
+     * 图片缩略图外层 css 类名
      */
     public function thumbClassName($value = '')
     {

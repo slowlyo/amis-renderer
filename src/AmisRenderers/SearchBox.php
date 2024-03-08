@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 搜索框渲染器
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class SearchBox extends BaseRenderer
 {

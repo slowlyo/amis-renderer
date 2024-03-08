@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Pagination
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Pagination extends BaseRenderer
 {
@@ -135,6 +135,14 @@ class Pagination extends BaseRenderer
     public function perPageAvailable($value = true)
     {
         return $this->set('perPageAvailable', $value);
+    }
+
+    /**
+     * 弹层挂载节点
+     */
+    public function popOverContainerSelector($value = '')
+    {
+        return $this->set('popOverContainerSelector', $value);
     }
 
     /**

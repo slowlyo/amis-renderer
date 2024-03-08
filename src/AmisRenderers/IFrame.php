@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * IFrame 渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/iframe
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class IFrame extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class IFrame extends BaseRenderer
         $this->set('type', 'iframe');
 
 
+    }
+
+    /**
+     * 
+     */
+    public function allow($value = '')
+    {
+        return $this->set('allow', $value);
     }
 
     /**
@@ -82,11 +90,35 @@ class IFrame extends BaseRenderer
     }
 
     /**
+     * 
+     */
+    public function name($value = '')
+    {
+        return $this->set('name', $value);
+    }
+
+    /**
      * 事件动作配置
      */
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
+    }
+
+    /**
+     *  可选值: no-referrer | no-referrer-when-downgrade | origin | origin-when-cross-origin | same-origin | strict-origin | strict-origin-when-cross-origin | unsafe-url
+     */
+    public function referrerpolicy($value = '')
+    {
+        return $this->set('referrerpolicy', $value);
+    }
+
+    /**
+     * 
+     */
+    public function sandbox($value = '')
+    {
+        return $this->set('sandbox', $value);
     }
 
     /**

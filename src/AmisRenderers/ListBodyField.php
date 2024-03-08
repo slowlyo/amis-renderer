@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 不指定类型默认就是文本
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class ListBodyField extends BaseRenderer
 {

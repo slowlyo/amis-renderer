@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Tabs extends BaseRenderer
 {
@@ -55,6 +55,22 @@ class Tabs extends BaseRenderer
     public function closable($value = true)
     {
         return $this->set('closable', $value);
+    }
+
+    /**
+     * 折叠按钮文字
+     */
+    public function collapseBtnLabel($value = '')
+    {
+        return $this->set('collapseBtnLabel', $value);
+    }
+
+    /**
+     * 超过多少个时折叠按钮
+     */
+    public function collapseOnExceed($value = '')
+    {
+        return $this->set('collapseOnExceed', $value);
     }
 
     /**

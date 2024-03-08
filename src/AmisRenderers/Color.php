@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Color 显示渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/color
  * 
  * @author slowlyo
- * @version v2.1.0
+ * @version v2.2.0
  */
 class Color extends BaseRenderer
 {
