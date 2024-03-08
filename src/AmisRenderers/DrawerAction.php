@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DrawerAction
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class DrawerAction extends BaseRenderer
 {
@@ -376,6 +376,14 @@ $this->set('actionType', 'drawer');
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

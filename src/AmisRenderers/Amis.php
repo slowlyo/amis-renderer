@@ -54,6 +54,11 @@ class Amis
         return Audio::make();
     }
 
+    public function AutoGenerateFilter()
+    {
+        return AutoGenerateFilter::make();
+    }
+
     public function Avatar()
     {
         return Avatar::make();

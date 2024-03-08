@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DateRange 展示渲染器。
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class DateRange extends BaseRenderer
 {
@@ -151,6 +151,14 @@ class DateRange extends BaseRenderer
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

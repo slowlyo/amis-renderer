@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * OtherAction
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class OtherAction extends BaseRenderer
 {
@@ -336,6 +336,14 @@ $this->set('actionType', 'prev');
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

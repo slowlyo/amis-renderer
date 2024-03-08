@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * IconChecked
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class IconChecked extends BaseRenderer
 {
@@ -30,6 +30,14 @@ class IconChecked extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function svg($value = '')
+    {
+        return $this->set('svg', $value);
     }
 
 

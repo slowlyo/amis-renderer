@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 二维布局渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/grid-2d
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Grid2D extends BaseRenderer
 {
@@ -167,6 +167,14 @@ class Grid2D extends BaseRenderer
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

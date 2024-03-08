@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Form 表单渲染器。说明：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/index
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Form extends BaseRenderer
 {
@@ -463,6 +463,14 @@ class Form extends BaseRenderer
     public function stopAutoRefreshWhen($value = '')
     {
         return $this->set('stopAutoRefreshWhen', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

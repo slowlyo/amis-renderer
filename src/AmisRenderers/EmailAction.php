@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * EmailAction
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class EmailAction extends BaseRenderer
 {
@@ -352,6 +352,14 @@ $this->set('actionType', 'email');
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

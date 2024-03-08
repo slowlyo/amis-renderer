@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Table 表格渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/table
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Table extends BaseRenderer
 {
@@ -44,7 +44,7 @@ class Table extends BaseRenderer
     /**
      * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
      */
-    public function autoGenerateFilter($value = true)
+    public function autoGenerateFilter($value = '')
     {
         return $this->set('autoGenerateFilter', $value);
     }
@@ -295,6 +295,14 @@ class Table extends BaseRenderer
     public function staticSchema($value = '')
     {
         return $this->set('staticSchema', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

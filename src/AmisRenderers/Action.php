@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Action 行为按钮 https://aisuda.bce.baidu.com/amis/zh-CN/components/action
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class Action extends BaseRenderer
 {

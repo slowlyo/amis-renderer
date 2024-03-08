@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RangeControl
  * 
  * @author slowlyo
- * @version v2.9.0
+ * @version v3.0.0
  */
 class RangeControl extends BaseRenderer
 {
@@ -383,6 +383,14 @@ class RangeControl extends BaseRenderer
     public function step($value = '')
     {
         return $this->set('step', $value);
+    }
+
+    /**
+     * 组件样式
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**
