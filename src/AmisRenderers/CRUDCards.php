@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDCards
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class CRUDCards extends BaseRenderer
 {
@@ -355,7 +355,7 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 在开启loadDataOnce时，filter时是否去重新请求api
+     * 在开启loadDataOnce时，当修改过滤条件时是否重新请求api如果没有配置，当查询条件表单触发的会重新请求 api，当是列过滤或者是 search-box 触发的则不重新请求 api 如果配置为 true，则不管是什么触发都会重新请求 api 如果配置为 false 则不管是什么触发都不会重新请求 api
      */
     public function loadDataOnceFetchOnFilter($value = true)
     {

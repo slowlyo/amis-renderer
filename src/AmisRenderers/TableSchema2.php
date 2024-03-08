@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableSchema2
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class TableSchema2 extends BaseRenderer
 {
@@ -359,6 +359,14 @@ class TableSchema2 extends BaseRenderer
     public function style($value = '')
     {
         return $this->set('style', $value);
+    }
+
+    /**
+     *  可选值: fixed | auto
+     */
+    public function tableLayout($value = '')
+    {
+        return $this->set('tableLayout', $value);
     }
 
     /**

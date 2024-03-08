@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Divider 分割线渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/divider
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class Divider extends BaseRenderer
 {
@@ -175,6 +175,30 @@ class Divider extends BaseRenderer
     public function style($value = '')
     {
         return $this->set('style', $value);
+    }
+
+    /**
+     * 
+     */
+    public function title($value = '')
+    {
+        return $this->set('title', $value);
+    }
+
+    /**
+     * 
+     */
+    public function titleClassName($value = '')
+    {
+        return $this->set('titleClassName', $value);
+    }
+
+    /**
+     *  可选值: left | center | right
+     */
+    public function titlePosition($value = '')
+    {
+        return $this->set('titlePosition', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Column
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class Column extends BaseRenderer
 {
@@ -150,6 +150,14 @@ class Column extends BaseRenderer
     public function type($value = '')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 
+     */
+    public function width($value = '')
+    {
+        return $this->set('width', $value);
     }
 
 

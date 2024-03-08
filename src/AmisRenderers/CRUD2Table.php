@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2Table
  * 
  * @author slowlyo
- * @version 3.4.2
+ * @version 3.4.3
  */
 class CRUD2Table extends BaseRenderer
 {
@@ -543,6 +543,14 @@ class CRUD2Table extends BaseRenderer
     public function syncResponse2Query($value = true)
     {
         return $this->set('syncResponse2Query', $value);
+    }
+
+    /**
+     *  可选值: fixed | auto
+     */
+    public function tableLayout($value = '')
+    {
+        return $this->set('tableLayout', $value);
     }
 
     /**
