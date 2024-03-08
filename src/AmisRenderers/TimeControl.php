@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Time 时间选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/time
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class TimeControl extends BaseRenderer
 {

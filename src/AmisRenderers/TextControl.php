@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class TextControl extends BaseRenderer
 {

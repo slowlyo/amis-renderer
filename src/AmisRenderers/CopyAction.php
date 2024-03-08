@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CopyAction
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class CopyAction extends BaseRenderer
 {

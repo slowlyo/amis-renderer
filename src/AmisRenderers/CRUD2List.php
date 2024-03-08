@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2List
  * 
  * @author slowlyo
- * @version v2.7.1
+ * @version v2.7.2
  */
 class CRUD2List extends BaseRenderer
 {
