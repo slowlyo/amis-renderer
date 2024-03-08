@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AutoGenerateFilter
  * 
  * @author slowlyo
- * @version v3.6.2
+ * @version v3.6.3
  */
 class AutoGenerateFilter extends BaseRenderer
 {

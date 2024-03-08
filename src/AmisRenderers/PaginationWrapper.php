@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 分页容器功能性渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/pagination-wrapper
  * 
  * @author slowlyo
- * @version v3.6.2
+ * @version v3.6.3
  */
 class PaginationWrapper extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputExcel 解析 Excel
  * 
  * @author slowlyo
- * @version v3.6.2
+ * @version v3.6.3
  */
 class InputExcel extends BaseRenderer
 {
