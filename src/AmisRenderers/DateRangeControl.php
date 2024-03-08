@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DateRange 日期范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/date-range
  * 
  * @author slowlyo
- * @version v3.1.1
+ * @version 3.2.0
  */
 class DateRangeControl extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UrlAction
  * 
  * @author slowlyo
- * @version v3.1.1
+ * @version 3.2.0
  */
 class UrlAction extends BaseRenderer
 {
