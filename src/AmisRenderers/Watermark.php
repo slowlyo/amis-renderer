@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Watermark
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class Watermark extends BaseRenderer
 {

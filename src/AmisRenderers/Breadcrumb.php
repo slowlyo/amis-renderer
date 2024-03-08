@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Breadcrumb 面包屑 https://aisuda.bce.baidu.com/amis/zh-CN/components/breadcrumb
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class Breadcrumb extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 链式下拉框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/chained-select
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class ChainedSelectControl extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TabsTransfer 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tabs-transfer
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class TabsTransferControl extends BaseRenderer
 {
@@ -399,6 +399,14 @@ class TabsTransferControl extends BaseRenderer
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 树形模式下，仅选中子节点
+     */
+    public function onlyChildren($value = true)
+    {
+        return $this->set('onlyChildren', $value);
     }
 
     /**

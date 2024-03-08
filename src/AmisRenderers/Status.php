@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 状态展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/status
  * 
  * @author slowlyo
- * @version v2.8.0
+ * @version v2.9.0
  */
 class Status extends BaseRenderer
 {

@@ -289,6 +289,11 @@ class Amis
         return $instance;
     }
 
+    public function ConditionGroupValue()
+    {
+        return ConditionGroupValue::make();
+    }
+
     public function Container()
     {
         return Container::make();
