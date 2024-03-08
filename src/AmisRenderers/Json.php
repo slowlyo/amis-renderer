@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON 数据展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/json
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class Json extends BaseRenderer
 {
@@ -47,6 +47,14 @@ class Json extends BaseRenderer
     public function displayDataTypes($value = true)
     {
         return $this->set('displayDataTypes', $value);
+    }
+
+    /**
+     * 设置字符串的最大展示长度，超出长度阈值的字符串将被截断，点击value可切换字符串展示方式，默认为false
+     */
+    public function ellipsisThreshold($value = '')
+    {
+        return $this->set('ellipsisThreshold', $value);
     }
 
     /**

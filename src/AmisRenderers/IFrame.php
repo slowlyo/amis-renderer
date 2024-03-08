@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * IFrame 渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/iframe
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class IFrame extends BaseRenderer
 {

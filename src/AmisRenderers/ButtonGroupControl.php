@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 按钮组控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/button-group
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class ButtonGroupControl extends BaseRenderer
 {
@@ -338,6 +338,14 @@ class ButtonGroupControl extends BaseRenderer
     }
 
     /**
+     * label自定义宽度，默认单位为px
+     */
+    public function labelWidth($value = '')
+    {
+        return $this->set('labelWidth', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -474,7 +482,7 @@ class ButtonGroupControl extends BaseRenderer
     }
 
     /**
-     * 表单项类型
+     * 
      */
     public function type($value = 'button-group-select')
     {

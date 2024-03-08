@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ToastAction
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class ToastAction extends BaseRenderer
 {

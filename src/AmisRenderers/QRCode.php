@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 二维码展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/qrcode
  * 
  * @author slowlyo
- * @version 1.10.0
+ * @version v2.0.0
  */
 class QRCode extends BaseRenderer
 {
