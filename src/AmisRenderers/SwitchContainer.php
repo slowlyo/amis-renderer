@@ -3,16 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Calendar
+ * SwitchContainer 状态容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/state-container
  * 
  * @author slowlyo
  * @version v3.5.0
  */
-class Calendar extends BaseRenderer
+class SwitchContainer extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'calendar');
+        $this->set('type', 'switch-container');
 
 
     }
@@ -74,11 +74,11 @@ class Calendar extends BaseRenderer
     }
 
     /**
-     * 是否开启放大模式
+     * 状态项列表
      */
-    public function largeMode($value = true)
+    public function items($value = '')
     {
-        return $this->set('largeMode', $value);
+        return $this->set('items', $value);
     }
 
     /**
@@ -87,30 +87,6 @@ class Calendar extends BaseRenderer
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 日程点击展示
-     */
-    public function scheduleAction($value = '')
-    {
-        return $this->set('scheduleAction', $value);
-    }
-
-    /**
-     * 日程显示颜色自定义
-     */
-    public function scheduleClassNames($value = '')
-    {
-        return $this->set('scheduleClassNames', $value);
-    }
-
-    /**
-     * 日程
-     */
-    public function schedules($value = '')
-    {
-        return $this->set('schedules', $value);
     }
 
     /**
@@ -170,7 +146,7 @@ class Calendar extends BaseRenderer
     }
 
     /**
-     * 组件样式
+     * 自定义样式
      */
     public function style($value = '')
     {
@@ -178,17 +154,9 @@ class Calendar extends BaseRenderer
     }
 
     /**
-     * 今日激活时的自定义样式
+     * 指定为 container 类型
      */
-    public function todayActiveStyle($value = '')
-    {
-        return $this->set('todayActiveStyle', $value);
-    }
-
-    /**
-     * 指定为日历选择控件
-     */
-    public function type($value = 'calendar')
+    public function type($value = 'switch-container')
     {
         return $this->set('type', $value);
     }

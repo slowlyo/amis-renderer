@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * VanillaAction
  * 
  * @author slowlyo
- * @version 3.4.3
+ * @version v3.5.0
  */
 class VanillaAction extends BaseRenderer
 {
@@ -127,6 +127,14 @@ class VanillaAction extends BaseRenderer
     public function disabledTip($value = '')
     {
         return $this->set('disabledTip', $value);
+    }
+
+    /**
+     * 
+     */
+    public function downloadFileName($value = '')
+    {
+        return $this->set('downloadFileName', $value);
     }
 
     /**
