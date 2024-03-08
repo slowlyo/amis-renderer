@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON Schema Editor 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/json-schema-editor
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class JSONSchemaEditorControl extends BaseRenderer
 {

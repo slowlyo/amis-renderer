@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * List 复选框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/list
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class ListControl extends BaseRenderer
 {

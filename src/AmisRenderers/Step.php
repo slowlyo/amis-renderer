@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Step
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class Step extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * tpl 渲染器
  * 
  * @author slowlyo
- * @version v2.6.0
+ * @version v2.7.0
  */
 class Tpl extends BaseRenderer
 {
@@ -207,6 +207,14 @@ class Tpl extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
+    }
+
+    /**
+     * 标签类型
+     */
+    public function wrapperComponent($value = '')
+    {
+        return $this->set('wrapperComponent', $value);
     }
 
 

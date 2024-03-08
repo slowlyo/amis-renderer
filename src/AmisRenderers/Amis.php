@@ -589,6 +589,11 @@ class Amis
         return IconChecked::make();
     }
 
+    public function IconItem()
+    {
+        return IconItem::make();
+    }
+
     public function IconPickerControl($name = '', $label = '')
     {
         $instance = IconPickerControl::make();
