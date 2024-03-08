@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Flex 布局
  * 
  * @author slowlyo
- * @version v3.5.3
+ * @version v3.6.0
  */
 class Flex extends BaseRenderer
 {

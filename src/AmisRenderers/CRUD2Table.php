@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2Table
  * 
  * @author slowlyo
- * @version v3.5.3
+ * @version v3.6.0
  */
 class CRUD2Table extends BaseRenderer
 {
@@ -319,6 +319,14 @@ class CRUD2Table extends BaseRenderer
     public function pageField($value = '')
     {
         return $this->set('pageField', $value);
+    }
+
+    /**
+     * 是否开启Query信息转换，开启后将会对url中的Query进行转换，将字符串格式的布尔值转化为同位类型
+     */
+    public function parsePrimitiveQuery($value = true)
+    {
+        return $this->set('parsePrimitiveQuery', $value);
     }
 
     /**
