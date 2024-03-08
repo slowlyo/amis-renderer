@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图片集展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/images
  * 
  * @author slowlyo
- * @version v3.6.1
+ * @version v3.6.2
  */
 class Images extends BaseRenderer
 {
