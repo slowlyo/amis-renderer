@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListenerAction
  * 
  * @author slowlyo
- * @version v2.3.0
+ * @version v2.3.1
  */
 class ListenerAction extends BaseRenderer
 {
@@ -38,6 +38,14 @@ class ListenerAction extends BaseRenderer
     public function componentId($value = '')
     {
         return $this->set('componentId', $value);
+    }
+
+    /**
+     *  可选值: merge | override
+     */
+    public function dataMergeMode($value = '')
+    {
+        return $this->set('dataMergeMode', $value);
     }
 
     /**
