@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * amis Page 渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/page
  * 
  * @author slowlyo
- * @version 1.5.3
+ * @version 1.6.0
  */
 class Page extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Date 展示渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/date
  * 
  * @author slowlyo
- * @version 1.5.3
+ * @version 1.6.0
  */
 class Date extends BaseRenderer
 {

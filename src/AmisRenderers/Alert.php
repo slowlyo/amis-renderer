@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Alert 提示渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/alert
  * 
  * @author slowlyo
- * @version 1.5.3
+ * @version 1.6.0
  */
 class Alert extends BaseRenderer
 {

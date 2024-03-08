@@ -3,17 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Mapping 映射展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/mapping
+ * TimelineItem
  * 
  * @author slowlyo
  * @version 1.6.0
  */
-class Mapping extends BaseRenderer
+class TimelineItem extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'map');
-
+        
 
     }
 
@@ -23,6 +22,38 @@ class Mapping extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 时间点圆圈颜色
+     */
+    public function color($value = '')
+    {
+        return $this->set('color', $value);
+    }
+
+    /**
+     * 详细内容
+     */
+    public function detail($value = '')
+    {
+        return $this->set('detail', $value);
+    }
+
+    /**
+     * detail折叠时文案
+     */
+    public function detailCollapsedText($value = '')
+    {
+        return $this->set('detailCollapsedText', $value);
+    }
+
+    /**
+     * detail展开时文案
+     */
+    public function detailExpandedText($value = '')
+    {
+        return $this->set('detailExpandedText', $value);
     }
 
     /**
@@ -58,43 +89,27 @@ class Mapping extends BaseRenderer
     }
 
     /**
-     * 配置映射规则，值可以使用模板语法。当 key 为 * 时表示 else，也就是说值没有映射到任何规则时用 * 对应的值展示。
+     * 图标
      */
-    public function map($value = '')
+    public function icon($value = '')
     {
-        return $this->set('map', $value);
+        return $this->set('icon', $value);
     }
 
     /**
-     * 关联字段名。
+     * 时间点
      */
-    public function name($value = '')
+    public function time($value = '')
     {
-        return $this->set('name', $value);
+        return $this->set('time', $value);
     }
 
     /**
-     * 占位符
+     * 时间节点标题
      */
-    public function placeholder($value = '')
+    public function title($value = '')
     {
-        return $this->set('placeholder', $value);
-    }
-
-    /**
-     * 如果想远程拉取字典，请配置 source 为接口。
-     */
-    public function source($value = '')
-    {
-        return $this->set('source', $value);
-    }
-
-    /**
-     * 指定为映射展示控件 可选值: map | mapping
-     */
-    public function type($value = '')
-    {
-        return $this->set('type', $value);
+        return $this->set('title', $value);
     }
 
     /**

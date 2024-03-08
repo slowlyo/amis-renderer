@@ -3,16 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Mapping 映射展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/mapping
+ * Timeline
  * 
  * @author slowlyo
  * @version 1.6.0
  */
-class Mapping extends BaseRenderer
+class Timeline extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'map');
+        $this->set('type', 'timeline');
 
 
     }
@@ -23,6 +23,14 @@ class Mapping extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 展示方向 可选值: horizontal | vertical
+     */
+    public function direction($value = '')
+    {
+        return $this->set('direction', $value);
     }
 
     /**
@@ -58,31 +66,31 @@ class Mapping extends BaseRenderer
     }
 
     /**
-     * 配置映射规则，值可以使用模板语法。当 key 为 * 时表示 else，也就是说值没有映射到任何规则时用 * 对应的值展示。
+     * 节点数据
      */
-    public function map($value = '')
+    public function items($value = '')
     {
-        return $this->set('map', $value);
+        return $this->set('items', $value);
     }
 
     /**
-     * 关联字段名。
+     * 文字相对于时间轴展示方向 可选值: left | right | alternate
      */
-    public function name($value = '')
+    public function mode($value = '')
     {
-        return $this->set('name', $value);
+        return $this->set('mode', $value);
     }
 
     /**
-     * 占位符
+     * 节点倒序
      */
-    public function placeholder($value = '')
+    public function reverse($value = true)
     {
-        return $this->set('placeholder', $value);
+        return $this->set('reverse', $value);
     }
 
     /**
-     * 如果想远程拉取字典，请配置 source 为接口。
+     * API 或 数据映射
      */
     public function source($value = '')
     {
@@ -90,9 +98,9 @@ class Mapping extends BaseRenderer
     }
 
     /**
-     * 指定为映射展示控件 可选值: map | mapping
+     * 指定为 Timeline 时间轴渲染器
      */
-    public function type($value = '')
+    public function type($value = 'timeline')
     {
         return $this->set('type', $value);
     }
