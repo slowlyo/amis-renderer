@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class TableControl extends BaseRenderer
 {
@@ -423,6 +423,14 @@ class TableControl extends BaseRenderer
     public function needConfirm($value = true)
     {
         return $this->set('needConfirm', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

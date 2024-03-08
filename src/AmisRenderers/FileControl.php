@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class FileControl extends BaseRenderer
 {
@@ -174,6 +174,14 @@ class FileControl extends BaseRenderer
     }
 
     /**
+     * 是否为拖拽上传
+     */
+    public function drag($value = true)
+    {
+        return $this->set('drag', $value);
+    }
+
+    /**
      * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
      */
     public function extractValue($value = true)
@@ -331,6 +339,14 @@ class FileControl extends BaseRenderer
     public function nameField($value = '')
     {
         return $this->set('nameField', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

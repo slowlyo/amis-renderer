@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class Tabs extends BaseRenderer
 {
@@ -18,11 +18,27 @@ class Tabs extends BaseRenderer
     }
 
     /**
+     * 是否支持新增
+     */
+    public function addable($value = true)
+    {
+        return $this->set('addable', $value);
+    }
+
+    /**
      * 容器 css 类名
      */
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 是否支持删除
+     */
+    public function closable($value = true)
+    {
+        return $this->set('closable', $value);
     }
 
     /**
@@ -47,6 +63,22 @@ class Tabs extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 是否支持拖拽
+     */
+    public function draggable($value = true)
+    {
+        return $this->set('draggable', $value);
+    }
+
+    /**
+     * 是否可编辑标签名
+     */
+    public function editable($value = true)
+    {
+        return $this->set('editable', $value);
     }
 
     /**
@@ -82,11 +114,27 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 是否支持溢出滚动
+     * 是否导航支持内容溢出滚动。属性废弃，为了兼容暂且保留
      */
     public function scrollable($value = true)
     {
         return $this->set('scrollable', $value);
+    }
+
+    /**
+     * 是否显示提示
+     */
+    public function showTip($value = true)
+    {
+        return $this->set('showTip', $value);
+    }
+
+    /**
+     * tooltip 提示的类名
+     */
+    public function showTipClassName($value = '')
+    {
+        return $this->set('showTipClassName', $value);
     }
 
     /**
@@ -130,7 +178,7 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 展示形式 可选值:  | line | card | radio | vertical | tiled
+     * 展示形式
      */
     public function tabsMode($value = '')
     {
