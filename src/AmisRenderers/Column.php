@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Column
  * 
  * @author slowlyo
- * @version v3.1.0
+ * @version v3.1.1
  */
 class Column extends BaseRenderer
 {
