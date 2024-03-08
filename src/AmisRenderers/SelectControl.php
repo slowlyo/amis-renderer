@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class SelectControl extends BaseRenderer
 {
@@ -367,6 +367,14 @@ class SelectControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

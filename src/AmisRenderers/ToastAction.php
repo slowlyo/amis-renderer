@@ -3,25 +3,25 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * EmailAction
+ * ToastAction
  * 
  * @author slowlyo
  * @version 1.7.0
  */
-class EmailAction extends BaseRenderer
+class ToastAction extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'button');
-$this->set('actionType', 'email');
+$this->set('actionType', 'toast');
 
 
     }
 
     /**
-     * 指定为打开邮箱行为
+     * 指定为打开弹窗，抽出式弹窗
      */
-    public function actionType($value = 'email')
+    public function actionType($value = 'toast')
     {
         return $this->set('actionType', $value);
     }
@@ -51,14 +51,6 @@ $this->set('actionType', 'email');
     }
 
     /**
-     * 匿名抄送邮箱
-     */
-    public function bcc($value = '')
-    {
-        return $this->set('bcc', $value);
-    }
-
-    /**
      * 是否为块状展示，默认为内联。
      */
     public function block($value = true)
@@ -67,19 +59,11 @@ $this->set('actionType', 'email');
     }
 
     /**
-     * 邮件正文
+     * 子内容
      */
     public function body($value = '')
     {
         return $this->set('body', $value);
-    }
-
-    /**
-     * 抄送邮箱
-     */
-    public function cc($value = '')
-    {
-        return $this->set('cc', $value);
     }
 
     /**
@@ -291,14 +275,6 @@ $this->set('actionType', 'email');
     }
 
     /**
-     * 邮件主题
-     */
-    public function subject($value = '')
-    {
-        return $this->set('subject', $value);
-    }
-
-    /**
      * 可以指定让谁来触发这个动作。
      */
     public function target($value = '')
@@ -307,11 +283,11 @@ $this->set('actionType', 'email');
     }
 
     /**
-     * 收件人邮箱
+     * 轻提示详情 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/toast
      */
-    public function to($value = '')
+    public function toast($value = '')
     {
-        return $this->set('to', $value);
+        return $this->set('toast', $value);
     }
 
     /**

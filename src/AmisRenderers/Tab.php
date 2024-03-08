@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tab
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class Tab extends BaseRenderer
 {
@@ -38,6 +38,14 @@ class Tab extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 是否可关闭，优先级高于 tabs 的 closeable
+     */
+    public function closeable($value = true)
+    {
+        return $this->set('closeable', $value);
     }
 
     /**

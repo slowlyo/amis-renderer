@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Link 链接展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/link
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class Link extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class Link extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
+    }
+
+    /**
+     * 链接地址
+     */
+    public function href($value = '')
+    {
+        return $this->set('href', $value);
     }
 
     /**

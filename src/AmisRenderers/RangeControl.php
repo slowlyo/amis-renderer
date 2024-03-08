@@ -3,10 +3,10 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Range 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/range
+ * RangeControl
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class RangeControl extends BaseRenderer
 {
@@ -31,6 +31,14 @@ class RangeControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
+    }
+
+    /**
+     * 分隔符
+     */
+    public function delimiter($value = '')
+    {
+        return $this->set('delimiter', $value);
     }
 
     /**
@@ -122,6 +130,14 @@ class RangeControl extends BaseRenderer
     }
 
     /**
+     * 是否通过分隔符连接
+     */
+    public function joinValues($value = true)
+    {
+        return $this->set('joinValues', $value);
+    }
+
+    /**
      * 描述标题
      */
     public function label($value = '')
@@ -143,6 +159,14 @@ class RangeControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * 刻度
+     */
+    public function marks($value = '')
+    {
+        return $this->set('marks', $value);
     }
 
     /**
@@ -170,11 +194,35 @@ class RangeControl extends BaseRenderer
     }
 
     /**
+     * 是否为双滑块
+     */
+    public function multiple($value = true)
+    {
+        return $this->set('multiple', $value);
+    }
+
+    /**
      * 字段名，表单提交时的 key，支持多层级，用.连接，如： a.b.c
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 分割块数
+     */
+    public function parts($value = '')
+    {
+        return $this->set('parts', $value);
     }
 
     /**
@@ -210,6 +258,22 @@ class RangeControl extends BaseRenderer
     }
 
     /**
+     * 是否展示输入框
+     */
+    public function showInput($value = true)
+    {
+        return $this->set('showInput', $value);
+    }
+
+    /**
+     * 是否展示步长
+     */
+    public function showSteps($value = true)
+    {
+        return $this->set('showSteps', $value);
+    }
+
+    /**
      * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
@@ -231,6 +295,22 @@ class RangeControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
+    }
+
+    /**
+     * 标签方向
+     */
+    public function tooltipPlacement($value = '')
+    {
+        return $this->set('tooltipPlacement', $value);
+    }
+
+    /**
+     * 是否展示标签
+     */
+    public function tooltipVisible($value = true)
+    {
+        return $this->set('tooltipVisible', $value);
     }
 
     /**
@@ -282,7 +362,7 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 默认值，切记只能是静态值，不支持取变量，跟数据关联是通过设置 name 属性来实现的。
+     * 滑块值
      */
     public function value($value = '')
     {

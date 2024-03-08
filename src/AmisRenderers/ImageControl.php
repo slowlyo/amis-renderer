@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * Image 图片上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/image
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class ImageControl extends BaseRenderer
 {
@@ -254,6 +254,14 @@ class ImageControl extends BaseRenderer
     }
 
     /**
+     * 初始化时是否把其他字段同步到表单内部。
+     */
+    public function initAutoFill($value = true)
+    {
+        return $this->set('initAutoFill', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -347,6 +355,14 @@ class ImageControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

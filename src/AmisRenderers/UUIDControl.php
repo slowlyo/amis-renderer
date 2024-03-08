@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * UUID 功能性组件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/uuid
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class UUIDControl extends BaseRenderer
 {
@@ -167,6 +167,14 @@ class UUIDControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

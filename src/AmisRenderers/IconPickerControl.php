@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图标选择器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/icon-picker
  * 
  * @author slowlyo
- * @version 1.6.3
+ * @version 1.7.0
  */
 class IconPickerControl extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class IconPickerControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**
