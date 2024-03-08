@@ -39,7 +39,7 @@ class RendererMap
 		'control' => FormControl::class,
 		'cpp-editor' => EditorControl::class,
 		'crud' => CRUDTable::class,
-		'crud2' => CRUD2Table::class,
+		'crud2' => Component::class,
 		'csharp-editor' => EditorControl::class,
 		'css-editor' => EditorControl::class,
 		'custom' => Custom::class,

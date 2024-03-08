@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaApi
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class SchemaApi extends BaseRenderer
 {
@@ -129,7 +129,7 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * autoFill 是否显示自动填充错误提示
+     * autoFillApi 是否显示自动填充错误提示
      */
     public function silent($value = true)
     {

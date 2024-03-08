@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tag 输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tag
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class TagControl extends BaseRenderer
 {
@@ -186,14 +186,6 @@ class TagControl extends BaseRenderer
     }
 
     /**
-     * 是否开启批量添加模式
-     */
-    public function enableBatchAdd($value = true)
-    {
-        return $this->set('enableBatchAdd', $value);
-    }
-
-    /**
      * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
      */
     public function extractValue($value = true)
@@ -314,35 +306,11 @@ class TagControl extends BaseRenderer
     }
 
     /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
-     * 允许添加的标签的最大数量
-     */
-    public function max($value = '')
-    {
-        return $this->set('max', $value);
-    }
-
-    /**
      * 标签的最大展示数量，超出数量后以收纳浮层的方式展示，仅在多选模式开启后生效
      */
     public function maxTagCount($value = '')
     {
         return $this->set('maxTagCount', $value);
-    }
-
-    /**
-     * 单个标签的最大文本长度
-     */
-    public function maxTagLength($value = '')
-    {
-        return $this->set('maxTagLength', $value);
     }
 
     /**
@@ -463,14 +431,6 @@ class TagControl extends BaseRenderer
     public function selectFirst($value = true)
     {
         return $this->set('selectFirst', $value);
-    }
-
-    /**
-     * 开启批量添加后，输入多个标签的分隔符，支持传入多个符号，默认为"-"
-     */
-    public function separator($value = '')
-    {
-        return $this->set('separator', $value);
     }
 
     /**

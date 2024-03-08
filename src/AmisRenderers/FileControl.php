@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class FileControl extends BaseRenderer
 {
@@ -278,14 +278,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 初始化时是否把其他字段同步到表单内部。
-     */
-    public function initAutoFill($value = true)
-    {
-        return $this->set('initAutoFill', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -339,14 +331,6 @@ class FileControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**

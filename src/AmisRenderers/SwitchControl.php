@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Switch 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/switch
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class SwitchControl extends BaseRenderer
 {
@@ -170,14 +170,6 @@ class SwitchControl extends BaseRenderer
     }
 
     /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
-    }
-
-    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -266,7 +258,7 @@ class SwitchControl extends BaseRenderer
     }
 
     /**
-     * 开关尺寸 可选值: sm | md
+     * 表单项大小 可选值: xs | sm | md | lg | full
      */
     public function size($value = '')
     {

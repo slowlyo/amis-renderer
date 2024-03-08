@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * List 复选框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/list
  * 
  * @author slowlyo
- * @version v2.0.2
+ * @version v2.1.0
  */
 class ListControl extends BaseRenderer
 {
@@ -311,14 +311,6 @@ class ListControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
-    }
-
-    /**
-     * label自定义宽度，默认单位为px
-     */
-    public function labelWidth($value = '')
-    {
-        return $this->set('labelWidth', $value);
     }
 
     /**
