@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * BaseApi
  * 
  * @author slowlyo
- * @version v6.0.0
+ * @version 6.1.0
  */
 class BaseApi extends BaseRenderer
 {
