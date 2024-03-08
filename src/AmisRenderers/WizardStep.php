@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class WizardStep extends BaseRenderer
 {
@@ -94,6 +94,14 @@ class WizardStep extends BaseRenderer
     public function clearPersistDataAfterSubmit($value = true)
     {
         return $this->set('clearPersistDataAfterSubmit', $value);
+    }
+
+    /**
+     * 表单项显示为几列
+     */
+    public function columnCount($value = '')
+    {
+        return $this->set('columnCount', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * amis Page 渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/page
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Page extends BaseRenderer
 {
@@ -31,6 +31,30 @@ class Page extends BaseRenderer
     public function asideClassName($value = '')
     {
         return $this->set('asideClassName', $value);
+    }
+
+    /**
+     * 边栏最小宽度
+     */
+    public function asideMaxWidth($value = '')
+    {
+        return $this->set('asideMaxWidth', $value);
+    }
+
+    /**
+     * 边栏最小宽度
+     */
+    public function asideMinWidth($value = '')
+    {
+        return $this->set('asideMinWidth', $value);
+    }
+
+    /**
+     * 边栏是否允许拖动
+     */
+    public function asideResizor($value = true)
+    {
+        return $this->set('asideResizor', $value);
     }
 
     /**

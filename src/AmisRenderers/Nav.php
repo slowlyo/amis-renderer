@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Nav extends BaseRenderer
 {
@@ -50,6 +50,22 @@ class Nav extends BaseRenderer
     }
 
     /**
+     * 仅允许同层级拖拽
+     */
+    public function dragOnSameLevel($value = true)
+    {
+        return $this->set('dragOnSameLevel', $value);
+    }
+
+    /**
+     * 可拖拽
+     */
+    public function draggable($value = true)
+    {
+        return $this->set('draggable', $value);
+    }
+
+    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -74,11 +90,35 @@ class Nav extends BaseRenderer
     }
 
     /**
+     * 更多操作菜单列表
+     */
+    public function itemActions($value = '')
+    {
+        return $this->set('itemActions', $value);
+    }
+
+    /**
+     * 角标
+     */
+    public function itemBadge($value = '')
+    {
+        return $this->set('itemBadge', $value);
+    }
+
+    /**
      * 链接地址集合
      */
     public function links($value = '')
     {
         return $this->set('links', $value);
+    }
+
+    /**
+     * 保存排序的 api
+     */
+    public function saveOrderApi($value = '')
+    {
+        return $this->set('saveOrderApi', $value);
     }
 
     /**

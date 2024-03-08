@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Audio 音频渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/audio
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Audio extends BaseRenderer
 {

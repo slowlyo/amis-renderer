@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Alert 提示渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/alert
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class Alert extends BaseRenderer
 {
@@ -31,6 +31,14 @@ class Alert extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
+    }
+
+    /**
+     * 关闭按钮CSS类名
+     */
+    public function closeButtonClassName($value = '')
+    {
+        return $this->set('closeButtonClassName', $value);
     }
 
     /**
@@ -66,6 +74,22 @@ class Alert extends BaseRenderer
     }
 
     /**
+     * 左侧图标
+     */
+    public function icon($value = '')
+    {
+        return $this->set('icon', $value);
+    }
+
+    /**
+     * 图标CSS类名
+     */
+    public function iconClassName($value = '')
+    {
+        return $this->set('iconClassName', $value);
+    }
+
+    /**
      * 提示类型 可选值: info | warning | success | error | danger
      */
     public function level($value = '')
@@ -79,6 +103,22 @@ class Alert extends BaseRenderer
     public function showCloseButton($value = true)
     {
         return $this->set('showCloseButton', $value);
+    }
+
+    /**
+     * 是否显示ICON
+     */
+    public function showIcon($value = true)
+    {
+        return $this->set('showIcon', $value);
+    }
+
+    /**
+     * 提示框标题
+     */
+    public function title($value = '')
+    {
+        return $this->set('title', $value);
     }
 
     /**

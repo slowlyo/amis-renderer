@@ -3,18 +3,42 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * 垂直布局控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/vbox
+ * CollapseGroup 折叠渲染器，格式说明。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/collapse
  * 
  * @author slowlyo
  * @version 1.5.2
  */
-class VBox extends BaseRenderer
+class CollapseGroup extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'vbox');
+        $this->set('type', 'collapse-group');
 
 
+    }
+
+    /**
+     * 手风琴模式
+     */
+    public function accordion($value = true)
+    {
+        return $this->set('accordion', $value);
+    }
+
+    /**
+     * 激活面板
+     */
+    public function activeKey($value = '')
+    {
+        return $this->set('activeKey', $value);
+    }
+
+    /**
+     * 内容区域
+     */
+    public function body($value = '')
+    {
+        return $this->set('body', $value);
     }
 
     /**
@@ -42,6 +66,22 @@ class VBox extends BaseRenderer
     }
 
     /**
+     * 自定义切换图标
+     */
+    public function expandIcon($value = '')
+    {
+        return $this->set('expandIcon', $value);
+    }
+
+    /**
+     * 设置图标位置 可选值: left | right
+     */
+    public function expandIconPosition($value = '')
+    {
+        return $this->set('expandIconPosition', $value);
+    }
+
+    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -58,17 +98,9 @@ class VBox extends BaseRenderer
     }
 
     /**
-     * 行集合
+     * 指定为折叠器类型
      */
-    public function rows($value = '')
-    {
-        return $this->set('rows', $value);
-    }
-
-    /**
-     * 
-     */
-    public function type($value = 'vbox')
+    public function type($value = 'collapse-group')
     {
         return $this->set('type', $value);
     }

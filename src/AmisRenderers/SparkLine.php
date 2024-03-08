@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SparkLine
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class SparkLine extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class SparkLine extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 空数据时显示的内容
+     */
+    public function placeholder($value = '')
+    {
+        return $this->set('placeholder', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaApi
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class SchemaApi extends BaseRenderer
 {
@@ -41,6 +41,14 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
+     * 默认数据映射中的key如果带点，或者带大括号，会转成对象比如：{   'a.b': '123' }经过数据映射后变成 {  a: {   b: '123  } }如果想要关闭此功能，请设置 convertKeyToPath 为 false
+     */
+    public function convertKeyToPath($value = true)
+    {
+        return $this->set('convertKeyToPath', $value);
+    }
+
+    /**
      * 用来控制携带数据. 当key 为 `&` 值为 `$$` 时, 将所有原始数据打平设置到 data 中. 当值为 $$ 将所有原始数据赋值到对应的 key 中. 当值为 $ 打头时, 将变量值设置到 key 中.
      */
     public function data($value = '')
@@ -65,7 +73,7 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * API 发送类型 可选值: get | post | put | delete | patch
+     * API 发送类型 可选值: get | post | put | delete | patch | jsonp
      */
     public function method($value = '')
     {

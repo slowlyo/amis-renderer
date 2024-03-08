@@ -3,17 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Wrapper 容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wrapper
+ * 栏目容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/portlet
  * 
  * @author slowlyo
  * @version 1.5.2
  */
-class Wrapper extends BaseRenderer
+class PortletTab extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'wrapper');
-
+        
 
     }
 
@@ -66,27 +65,67 @@ class Wrapper extends BaseRenderer
     }
 
     /**
-     *  可选值: xs | sm | md | lg | none
+     * 按钮图标
      */
-    public function size($value = '')
+    public function icon($value = '')
     {
-        return $this->set('size', $value);
+        return $this->set('icon', $value);
     }
 
     /**
-     * 自定义样式
+     *  可选值: left | right
      */
-    public function style($value = '')
+    public function iconPosition($value = '')
     {
-        return $this->set('style', $value);
+        return $this->set('iconPosition', $value);
     }
 
     /**
-     * 指定为 container 类型
+     * 点开时才加载卡片内容
      */
-    public function type($value = 'wrapper')
+    public function mountOnEnter($value = true)
     {
-        return $this->set('type', $value);
+        return $this->set('mountOnEnter', $value);
+    }
+
+    /**
+     * 设置以后内容每次都会重新渲染
+     */
+    public function reload($value = true)
+    {
+        return $this->set('reload', $value);
+    }
+
+    /**
+     * 内容
+     */
+    public function tab($value = '')
+    {
+        return $this->set('tab', $value);
+    }
+
+    /**
+     * Tab 标题
+     */
+    public function title($value = '')
+    {
+        return $this->set('title', $value);
+    }
+
+    /**
+     * 可以在右侧配置点其他功能按钮，随着tab切换而切换
+     */
+    public function toolbar($value = '')
+    {
+        return $this->set('toolbar', $value);
+    }
+
+    /**
+     * 卡片隐藏就销毁卡片节点。
+     */
+    public function unmountOnExit($value = true)
+    {
+        return $this->set('unmountOnExit', $value);
     }
 
     /**
@@ -103,14 +142,6 @@ class Wrapper extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
-    }
-
-    /**
-     * 
-     */
-    public function wrap($value = true)
-    {
-        return $this->set('wrap', $value);
     }
 
 

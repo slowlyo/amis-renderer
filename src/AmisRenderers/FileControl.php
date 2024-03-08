@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 1.4.0
+ * @version 1.5.2
  */
 class FileControl extends BaseRenderer
 {
@@ -411,6 +411,14 @@ class FileControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
+    }
+
+    /**
+     * 模板下载地址
+     */
+    public function templateUrl($value = '')
+    {
+        return $this->set('templateUrl', $value);
     }
 
     /**
