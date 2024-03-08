@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Spinner
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Spinner extends BaseRenderer
 {
@@ -87,6 +87,14 @@ class Spinner extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**

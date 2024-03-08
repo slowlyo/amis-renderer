@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Cards 卡片集合渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Cards extends BaseRenderer
 {
@@ -151,6 +151,14 @@ class Cards extends BaseRenderer
     public function itemDraggableOn($value = '')
     {
         return $this->set('itemDraggableOn', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**

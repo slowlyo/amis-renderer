@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDList
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class CRUDList extends BaseRenderer
 {
@@ -352,6 +352,14 @@ $this->set('type', 'crud');
     public function loadDataOnceFetchOnFilter($value = true)
     {
         return $this->set('loadDataOnceFetchOnFilter', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**

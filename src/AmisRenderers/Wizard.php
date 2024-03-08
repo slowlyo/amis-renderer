@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表单向导 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wizard
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Wizard extends BaseRenderer
 {
@@ -135,6 +135,14 @@ class Wizard extends BaseRenderer
     public function initApi($value = '')
     {
         return $this->set('initApi', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**

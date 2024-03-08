@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 视频播放器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/video
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class Video extends BaseRenderer
 {
@@ -247,6 +247,14 @@ class Video extends BaseRenderer
     public function stopOnNextFrame($value = true)
     {
         return $this->set('stopOnNextFrame', $value);
+    }
+
+    /**
+     * 
+     */
+    public function style($value = '')
+    {
+        return $this->set('style', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  * 
  * @author slowlyo
- * @version untagged-f5310659bf54075f577b
+ * @version v2.6.0
  */
 class CRUDTable extends BaseRenderer
 {
@@ -359,6 +359,14 @@ class CRUDTable extends BaseRenderer
     public function loadDataOnceFetchOnFilter($value = true)
     {
         return $this->set('loadDataOnceFetchOnFilter', $value);
+    }
+
+    /**
+     * 
+     */
+    public function loadingConfig($value = '')
+    {
+        return $this->set('loadingConfig', $value);
     }
 
     /**
