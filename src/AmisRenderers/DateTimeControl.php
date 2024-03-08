@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Datetime日期时间选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/datetime
  * 
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class DateTimeControl extends BaseRenderer
 {

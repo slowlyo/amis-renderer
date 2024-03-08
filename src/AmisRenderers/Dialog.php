@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Dialog 弹框渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/dialog
  * 
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class Dialog extends BaseRenderer
 {

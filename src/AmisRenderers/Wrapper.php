@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Wrapper 容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wrapper
  * 
  * @author slowlyo
- * @version 1.5.2
+ * @version 1.5.3
  */
 class Wrapper extends BaseRenderer
 {
