@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableSchema2
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class TableSchema2 extends BaseRenderer
 {
@@ -130,6 +130,14 @@ class TableSchema2 extends BaseRenderer
     }
 
     /**
+     * 翻页是否保存数据
+     */
+    public function keepItemSelectionOnPageChange($value = true)
+    {
+        return $this->set('keepItemSelectionOnPageChange', $value);
+    }
+
+    /**
      * 嵌套展开记录的唯一标识
      */
     public function keyField($value = '')
@@ -151,6 +159,14 @@ class TableSchema2 extends BaseRenderer
     public function loading($value = '')
     {
         return $this->set('loading', $value);
+    }
+
+    /**
+     * 批量操作最大限制数
+     */
+    public function maxKeepItemSelectionLength($value = '')
+    {
+        return $this->set('maxKeepItemSelectionLength', $value);
     }
 
     /**

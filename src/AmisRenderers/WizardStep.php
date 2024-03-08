@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class WizardStep extends BaseRenderer
 {
@@ -342,6 +342,14 @@ class WizardStep extends BaseRenderer
     public function persistData($value = '')
     {
         return $this->set('persistData', $value);
+    }
+
+    /**
+     * 开启本地缓存后限制保存哪些 key
+     */
+    public function persistDataKeys($value = '')
+    {
+        return $this->set('persistDataKeys', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Carousel 轮播图渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/carousel
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class Carousel extends BaseRenderer
 {

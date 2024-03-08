@@ -614,6 +614,11 @@ class Amis
         return $instance;
     }
 
+    public function ImageToolbarAction()
+    {
+        return ImageToolbarAction::make();
+    }
+
     public function Images()
     {
         return Images::make();

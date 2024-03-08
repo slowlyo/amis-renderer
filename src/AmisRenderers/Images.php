@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图片集展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/images
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class Images extends BaseRenderer
 {
@@ -146,6 +146,14 @@ class Images extends BaseRenderer
     }
 
     /**
+     * 是否展示图片工具栏
+     */
+    public function showToolbar($value = true)
+    {
+        return $this->set('showToolbar', $value);
+    }
+
+    /**
      * 
      */
     public function source($value = '')
@@ -175,6 +183,14 @@ class Images extends BaseRenderer
     public function thumbRatio($value = '')
     {
         return $this->set('thumbRatio', $value);
+    }
+
+    /**
+     * 工具栏配置
+     */
+    public function toolbarActions($value = '')
+    {
+        return $this->set('toolbarActions', $value);
     }
 
     /**

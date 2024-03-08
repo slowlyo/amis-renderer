@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FeedbackDialog
  * 
  * @author slowlyo
- * @version v2.2.0
+ * @version v2.3.0
  */
 class FeedbackDialog extends BaseRenderer
 {
