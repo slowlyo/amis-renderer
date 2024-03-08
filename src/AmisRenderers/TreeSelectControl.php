@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version v2.4.0
+ * @version v2.5.0
  */
 class TreeSelectControl extends BaseRenderer
 {
@@ -370,6 +370,14 @@ class TreeSelectControl extends BaseRenderer
     }
 
     /**
+     * 标签的最大展示数量，超出数量后以收纳浮层的方式展示，仅在多选模式开启后生效
+     */
+    public function maxTagCount($value = '')
+    {
+        return $this->set('maxTagCount', $value);
+    }
+
+    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -423,6 +431,14 @@ class TreeSelectControl extends BaseRenderer
     public function options($value = '')
     {
         return $this->set('options', $value);
+    }
+
+    /**
+     * 收纳标签的Popover配置
+     */
+    public function overflowTagPopover($value = '')
+    {
+        return $this->set('overflowTagPopover', $value);
     }
 
     /**

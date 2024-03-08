@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version v2.4.0
+ * @version v2.5.0
  */
 class TableControl extends BaseRenderer
 {
@@ -431,6 +431,22 @@ class TableControl extends BaseRenderer
     public function labelWidth($value = '')
     {
         return $this->set('labelWidth', $value);
+    }
+
+    /**
+     * 限制最大个数
+     */
+    public function maxLength($value = '')
+    {
+        return $this->set('maxLength', $value);
+    }
+
+    /**
+     * 限制最小个数
+     */
+    public function minLength($value = '')
+    {
+        return $this->set('minLength', $value);
     }
 
     /**
