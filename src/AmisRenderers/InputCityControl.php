@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * City 城市选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/city
  * 
  * @author slowlyo
- * @version 1.6.1
+ * @version 1.6.2
  */
 class InputCityControl extends BaseRenderer
 {

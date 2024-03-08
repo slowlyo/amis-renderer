@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Hbox 水平布局渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/hbox
  * 
  * @author slowlyo
- * @version 1.6.1
+ * @version 1.6.2
  */
 class HBox extends BaseRenderer
 {
