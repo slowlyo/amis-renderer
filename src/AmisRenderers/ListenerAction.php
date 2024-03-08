@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ListenerAction
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListenerAction extends BaseRenderer
 {
@@ -46,6 +46,14 @@ class ListenerAction extends BaseRenderer
     public function description($value = '')
     {
         return $this->set('description', $value);
+    }
+
+    /**
+     * 
+     */
+    public function execOn($value = '')
+    {
+        return $this->set('execOn', $value);
     }
 
     /**

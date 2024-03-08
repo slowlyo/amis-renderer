@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tag 输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tag
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TagControl extends BaseRenderer
 {
@@ -282,6 +282,14 @@ class TagControl extends BaseRenderer
     }
 
     /**
+     * 描述标题
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
+    }
+
+    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -295,6 +303,14 @@ class TagControl extends BaseRenderer
     public function labelRemark($value = '')
     {
         return $this->set('labelRemark', $value);
+    }
+
+    /**
+     * 标签的最大展示数量，超出数量后以收纳浮层的方式展示，仅在多选模式开启后生效
+     */
+    public function maxTagCount($value = '')
+    {
+        return $this->set('maxTagCount', $value);
     }
 
     /**
@@ -322,7 +338,7 @@ class TagControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 事件动作配置
      */
     public function onEvent($value = '')
     {
@@ -343,6 +359,14 @@ class TagControl extends BaseRenderer
     public function optionsTip($value = '')
     {
         return $this->set('optionsTip', $value);
+    }
+
+    /**
+     * 收纳标签的Popover配置
+     */
+    public function overflowTagPopover($value = '')
+    {
+        return $this->set('overflowTagPopover', $value);
     }
 
     /**

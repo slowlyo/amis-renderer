@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 操作栏渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/operation
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Operation extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class Operation extends BaseRenderer
     public function label($value = '')
     {
         return $this->set('label', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

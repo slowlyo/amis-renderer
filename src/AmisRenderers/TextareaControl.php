@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TextArea 多行文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/textarea
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TextareaControl extends BaseRenderer
 {
@@ -154,6 +154,14 @@ class TextareaControl extends BaseRenderer
     }
 
     /**
+     * 描述标题
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
+    }
+
+    /**
      * 配置 label className
      */
     public function labelClassName($value = '')
@@ -210,7 +218,7 @@ class TextareaControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 事件动作配置
      */
     public function onEvent($value = '')
     {

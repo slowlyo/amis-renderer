@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Portlet
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Portlet extends BaseRenderer
 {
@@ -111,6 +111,14 @@ class Portlet extends BaseRenderer
     public function mountOnEnter($value = true)
     {
         return $this->set('mountOnEnter', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

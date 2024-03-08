@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Dialog 弹框渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/dialog
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Dialog extends BaseRenderer
 {
@@ -143,6 +143,14 @@ class Dialog extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

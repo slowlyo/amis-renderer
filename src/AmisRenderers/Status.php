@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 状态展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/status
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Status extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class Status extends BaseRenderer
     public function map($value = '')
     {
         return $this->set('map', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

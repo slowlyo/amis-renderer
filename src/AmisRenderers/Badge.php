@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Badge 角标。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/badge
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Badge extends BaseRenderer
 {
@@ -94,6 +94,14 @@ class Badge extends BaseRenderer
     public function offset($value = '')
     {
         return $this->set('offset', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

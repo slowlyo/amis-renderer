@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Nav extends BaseRenderer
 {
@@ -119,6 +119,14 @@ class Nav extends BaseRenderer
     public function links($value = '')
     {
         return $this->set('links', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

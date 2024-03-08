@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * tpl 渲染器
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Tpl extends BaseRenderer
 {
@@ -90,11 +90,27 @@ class Tpl extends BaseRenderer
     }
 
     /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
+    }
+
+    /**
      * 
      */
     public function raw($value = '')
     {
         return $this->set('raw', $value);
+    }
+
+    /**
+     * 是否设置外层DOM节点的title属性为文本内容
+     */
+    public function showNativeTitle($value = true)
+    {
+        return $this->set('showNativeTitle', $value);
     }
 
     /**

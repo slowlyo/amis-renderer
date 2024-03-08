@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Column
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Column extends BaseRenderer
 {
@@ -30,6 +30,22 @@ class Column extends BaseRenderer
     public function children($value = '')
     {
         return $this->set('children', $value);
+    }
+
+    /**
+     * 列样式
+     */
+    public function className($value = '')
+    {
+        return $this->set('className', $value);
+    }
+
+    /**
+     * 单元格样式
+     */
+    public function classNameExpr($value = '')
+    {
+        return $this->set('classNameExpr', $value);
     }
 
     /**
@@ -102,6 +118,14 @@ class Column extends BaseRenderer
     public function title($value = '')
     {
         return $this->set('title', $value);
+    }
+
+    /**
+     * 表头单元格样式
+     */
+    public function titleClassName($value = '')
+    {
+        return $this->set('titleClassName', $value);
     }
 
     /**

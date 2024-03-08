@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Steps
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Steps extends BaseRenderer
 {
@@ -87,6 +87,14 @@ class Steps extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

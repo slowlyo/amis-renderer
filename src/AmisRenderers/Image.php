@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 图片展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/image
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Image extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class Image extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

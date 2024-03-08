@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class WizardStep extends BaseRenderer
 {
@@ -273,6 +273,14 @@ class WizardStep extends BaseRenderer
     }
 
     /**
+     * 表单label的对齐方式
+     */
+    public function labelAlign($value = '')
+    {
+        return $this->set('labelAlign', $value);
+    }
+
+    /**
      * 消息文案配置，记住这个优先级是最低的，如果你的接口返回了 msg，接口返回的优先。
      */
     public function messages($value = '')
@@ -294,6 +302,14 @@ class WizardStep extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

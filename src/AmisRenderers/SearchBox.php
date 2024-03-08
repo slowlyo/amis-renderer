@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 搜索框渲染器
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class SearchBox extends BaseRenderer
 {
@@ -26,6 +26,14 @@ class SearchBox extends BaseRenderer
     }
 
     /**
+     * 是否可清除
+     */
+    public function clearable($value = true)
+    {
+        return $this->set('clearable', $value);
+    }
+
+    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -39,6 +47,14 @@ class SearchBox extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 是否为加强样式
+     */
+    public function enhance($value = true)
+    {
+        return $this->set('enhance', $value);
     }
 
     /**
@@ -79,6 +95,14 @@ class SearchBox extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

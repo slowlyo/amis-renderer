@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Timeline
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Timeline extends BaseRenderer
 {
@@ -87,6 +87,14 @@ class Timeline extends BaseRenderer
     public function mode($value = '')
     {
         return $this->set('mode', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

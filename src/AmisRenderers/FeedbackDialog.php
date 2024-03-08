@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FeedbackDialog
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class FeedbackDialog extends BaseRenderer
 {
@@ -142,6 +142,14 @@ class FeedbackDialog extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

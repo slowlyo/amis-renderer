@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Card 卡片渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Card extends BaseRenderer
 {
@@ -95,6 +95,14 @@ class Card extends BaseRenderer
     public function media($value = '')
     {
         return $this->set('media', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

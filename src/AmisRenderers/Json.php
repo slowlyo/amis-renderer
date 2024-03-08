@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON 数据展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/json
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Json extends BaseRenderer
 {
@@ -103,6 +103,14 @@ class Json extends BaseRenderer
     public function mutable($value = true)
     {
         return $this->set('mutable', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**

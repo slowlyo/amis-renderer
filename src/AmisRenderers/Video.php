@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 视频播放器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/video
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.10.0
  */
 class Video extends BaseRenderer
 {
@@ -135,6 +135,14 @@ class Video extends BaseRenderer
     public function muted($value = true)
     {
         return $this->set('muted', $value);
+    }
+
+    /**
+     * 事件动作配置
+     */
+    public function onEvent($value = '')
+    {
+        return $this->set('onEvent', $value);
     }
 
     /**
