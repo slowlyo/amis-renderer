@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tag 输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tag
  * 
  * @author slowlyo
- * @version v2.5.1
+ * @version untagged-f5310659bf54075f577b
  */
 class TagControl extends BaseRenderer
 {

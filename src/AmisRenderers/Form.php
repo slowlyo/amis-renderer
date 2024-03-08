@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Form 表单渲染器。说明：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/index
  * 
  * @author slowlyo
- * @version v2.5.1
+ * @version untagged-f5310659bf54075f577b
  */
 class Form extends BaseRenderer
 {
