@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Property 属性表
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Property extends BaseRenderer
 {

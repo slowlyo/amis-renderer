@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Timeline
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Timeline extends BaseRenderer
 {
@@ -50,6 +50,14 @@ class Timeline extends BaseRenderer
     }
 
     /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -71,6 +79,14 @@ class Timeline extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 节点title自定一展示模板
+     */
+    public function itemTitleSchema($value = '')
+    {
+        return $this->set('itemTitleSchema', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DateRange 日期范围控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/date-range
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class DateRangeControl extends BaseRenderer
 {
@@ -98,6 +98,14 @@ class DateRangeControl extends BaseRenderer
     }
 
     /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
      * 开启后变成非弹出模式，即内联模式。
      */
     public function embed($value = true)
@@ -111,6 +119,14 @@ class DateRangeControl extends BaseRenderer
     public function endPlaceholder($value = '')
     {
         return $this->set('endPlaceholder', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
     }
 
     /**

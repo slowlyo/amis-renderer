@@ -3,10 +3,10 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/number
+ * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-number
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class NumberControl extends BaseRenderer
 {
@@ -95,6 +95,22 @@ class NumberControl extends BaseRenderer
     public function displayMode($value = '')
     {
         return $this->set('displayMode', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
     }
 
     /**
@@ -306,7 +322,7 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 默认当然是
+     * 是否显示上下点击按钮
      */
     public function showSteps($value = true)
     {

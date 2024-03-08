@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Button Group 渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/button-group
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class ButtonGroup extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class ButtonGroup extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

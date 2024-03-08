@@ -6,6 +6,7 @@ class RendererMap
 {
     public static array $map = [
 		'alert' => Alert::class,
+		'amis' => Component::class,
 		'anchor-nav' => AnchorNav::class,
 		'app' => Component::class,
 		'audio' => Audio::class,

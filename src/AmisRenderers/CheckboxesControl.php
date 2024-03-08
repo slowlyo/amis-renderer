@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 复选框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/checkboxes
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class CheckboxesControl extends BaseRenderer
 {
@@ -55,6 +55,14 @@ class CheckboxesControl extends BaseRenderer
     public function checkAll($value = true)
     {
         return $this->set('checkAll', $value);
+    }
+
+    /**
+     * 全选/不选文案
+     */
+    public function checkAllText($value = '')
+    {
+        return $this->set('checkAllText', $value);
     }
 
     /**
@@ -215,6 +223,22 @@ class CheckboxesControl extends BaseRenderer
     public function editable($value = true)
     {
         return $this->set('editable', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
     }
 
     /**

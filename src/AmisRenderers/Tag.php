@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tag
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class Tag extends BaseRenderer
 {
@@ -87,6 +87,14 @@ class Tag extends BaseRenderer
     public function displayMode($value = '')
     {
         return $this->set('displayMode', $value);
+    }
+
+    /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
     }
 
     /**

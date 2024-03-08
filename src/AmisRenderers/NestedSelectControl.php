@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nested Select 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/nested-select
  * 
  * @author slowlyo
- * @version 3.2.0
+ * @version v3.3.0
  */
 class NestedSelectControl extends BaseRenderer
 {
@@ -210,6 +210,22 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
+     * 编辑器配置，运行时可以忽略
+     */
+    public function editorSetting($value = '')
+    {
+        return $this->set('editorSetting', $value);
+    }
+
+    /**
+     * 额外的字段名，当为范围组件时可以用来将另外一个值打平出来
+     */
+    public function extraName($value = '')
+    {
+        return $this->set('extraName', $value);
+    }
+
+    /**
      * 开启后将选中的选项 value 的值封装为数组，作为当前表单项的值。
      */
     public function extractValue($value = true)
@@ -346,6 +362,14 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
+     * 标签的最大展示数量，超出数量后以收纳浮层的方式展示，仅在多选模式开启后生效
+     */
+    public function maxTagCount($value = '')
+    {
+        return $this->set('maxTagCount', $value);
+    }
+
+    /**
      * 弹框的 css 类
      */
     public function menuClassName($value = '')
@@ -407,6 +431,14 @@ class NestedSelectControl extends BaseRenderer
     public function options($value = '')
     {
         return $this->set('options', $value);
+    }
+
+    /**
+     * 收纳标签的Popover配置
+     */
+    public function overflowTagPopover($value = '')
+    {
+        return $this->set('overflowTagPopover', $value);
     }
 
     /**
