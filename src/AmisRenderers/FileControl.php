@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class FileControl extends BaseRenderer
 {
@@ -118,14 +118,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 分块上传的并发数
-     */
-    public function concurrency($value = '')
-    {
-        return $this->set('concurrency', $value);
-    }
-
-    /**
      * 分割符
      */
     public function delimiter($value = '')
@@ -179,14 +171,6 @@ class FileControl extends BaseRenderer
     public function downloadUrl($value = '')
     {
         return $this->set('downloadUrl', $value);
-    }
-
-    /**
-     * 是否为拖拽上传
-     */
-    public function drag($value = true)
-    {
-        return $this->set('drag', $value);
     }
 
     /**
@@ -251,14 +235,6 @@ class FileControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -358,14 +334,6 @@ class FileControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -379,14 +347,6 @@ class FileControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -451,14 +411,6 @@ class FileControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
-    }
-
-    /**
-     * 模板下载地址
-     */
-    public function templateUrl($value = '')
-    {
-        return $this->set('templateUrl', $value);
     }
 
     /**

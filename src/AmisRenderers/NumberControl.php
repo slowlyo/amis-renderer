@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 数字输入框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/number
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class NumberControl extends BaseRenderer
 {
@@ -82,14 +82,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 输入框为基础输入框还是加强输入框 可选值: base | enhance
-     */
-    public function displayMode($value = '')
-    {
-        return $this->set('displayMode', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -122,14 +114,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -143,14 +127,6 @@ class NumberControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
-    }
-
-    /**
-     * 是否启用键盘行为
-     */
-    public function keyboard($value = true)
-    {
-        return $this->set('keyboard', $value);
     }
 
     /**
@@ -218,14 +194,6 @@ class NumberControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -255,14 +223,6 @@ class NumberControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Drawer extends BaseRenderer
 {
@@ -42,7 +42,7 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 配置 外层 className
+     * 容器 css 类名
      */
     public function className($value = '')
     {
@@ -98,35 +98,11 @@ class Drawer extends BaseRenderer
     }
 
     /**
-     * 配置 头部 容器 className
-     */
-    public function footerClassName($value = '')
-    {
-        return $this->set('footerClassName', $value);
-    }
-
-    /**
      * 头部
      */
     public function header($value = '')
     {
         return $this->set('header', $value);
-    }
-
-    /**
-     * 配置 头部 容器 className
-     */
-    public function headerClassName($value = '')
-    {
-        return $this->set('headerClassName', $value);
-    }
-
-    /**
-     * 抽屉的高度 （当position为top | bottom时生效）
-     */
-    public function height($value = '')
-    {
-        return $this->set('height', $value);
     }
 
     /**
@@ -143,14 +119,6 @@ class Drawer extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -183,14 +151,6 @@ class Drawer extends BaseRenderer
     public function resizable($value = true)
     {
         return $this->set('resizable', $value);
-    }
-
-    /**
-     * 是否展示关闭按钮 当值为false时，默认开启closeOnOutside
-     */
-    public function showCloseButton($value = true)
-    {
-        return $this->set('showCloseButton', $value);
     }
 
     /**
@@ -239,14 +199,6 @@ class Drawer extends BaseRenderer
     public function visibleOn($value = '')
     {
         return $this->set('visibleOn', $value);
-    }
-
-    /**
-     * 抽屉的宽度 （当position为left | right时生效）
-     */
-    public function width($value = '')
-    {
-        return $this->set('width', $value);
     }
 
 

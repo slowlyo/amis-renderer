@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SchemaApi
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class SchemaApi extends BaseRenderer
 {
@@ -41,14 +41,6 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * 默认数据映射中的key如果带点，或者带大括号，会转成对象比如：{   'a.b': '123' }经过数据映射后变成 {  a: {   b: '123  } }如果想要关闭此功能，请设置 convertKeyToPath 为 false
-     */
-    public function convertKeyToPath($value = true)
-    {
-        return $this->set('convertKeyToPath', $value);
-    }
-
-    /**
      * 用来控制携带数据. 当key 为 `&` 值为 `$$` 时, 将所有原始数据打平设置到 data 中. 当值为 $$ 将所有原始数据赋值到对应的 key 中. 当值为 $ 打头时, 将变量值设置到 key 中.
      */
     public function data($value = '')
@@ -65,14 +57,6 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * 强制将数据附加在 query，默认只有 api 地址中没有用变量的时候 crud 查询接口才会 自动附加数据到 query 部分，如果想强制附加请设置这个属性。 对于那种临时加了个变量但是又不想全部参数写一遍的时候配置很有用。
-     */
-    public function forceAppendDataToQuery($value = true)
-    {
-        return $this->set('forceAppendDataToQuery', $value);
-    }
-
-    /**
      * 携带 headers，用法和 data 一样，可以用变量。
      */
     public function headers($value = '')
@@ -81,7 +65,7 @@ class SchemaApi extends BaseRenderer
     }
 
     /**
-     * API 发送类型 可选值: get | post | put | delete | patch | jsonp
+     * API 发送类型 可选值: get | post | put | delete | patch
      */
     public function method($value = '')
     {
@@ -126,14 +110,6 @@ class SchemaApi extends BaseRenderer
     public function sendOn($value = '')
     {
         return $this->set('sendOn', $value);
-    }
-
-    /**
-     * autoFillApi 是否显示自动填充错误提示
-     */
-    public function silent($value = true)
-    {
-        return $this->set('silent', $value);
     }
 
     /**

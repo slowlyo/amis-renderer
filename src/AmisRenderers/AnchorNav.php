@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AnchorNav 锚点导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/anchor-nav
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class AnchorNav extends BaseRenderer
 {
@@ -31,14 +31,6 @@ class AnchorNav extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
-    }
-
-    /**
-     *  可选值: vertical | horizontal
-     */
-    public function direction($value = '')
-    {
-        return $this->set('direction', $value);
     }
 
     /**
@@ -71,14 +63,6 @@ class AnchorNav extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 条件组合控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/condition-builder
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class ConditionBuilderControl extends BaseRenderer
 {
@@ -15,14 +15,6 @@ class ConditionBuilderControl extends BaseRenderer
         $this->set('type', 'condition-builder');
 
 
-    }
-
-    /**
-     * 展现模式 可选值: simple | full
-     */
-    public function builderMode($value = '')
-    {
-        return $this->set('builderMode', $value);
     }
 
     /**
@@ -138,14 +130,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -202,14 +186,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -226,14 +202,6 @@ class ConditionBuilderControl extends BaseRenderer
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -247,14 +215,6 @@ class ConditionBuilderControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
-    }
-
-    /**
-     * 是否显示并或切换键按钮，只在简单模式下有用
-     */
-    public function showANDOR($value = true)
-    {
-        return $this->set('showANDOR', $value);
     }
 
     /**

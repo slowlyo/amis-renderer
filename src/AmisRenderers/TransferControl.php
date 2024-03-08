@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Transfer 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/transfer
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class TransferControl extends BaseRenderer
 {
@@ -226,14 +226,6 @@ class TransferControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -314,14 +306,6 @@ class TransferControl extends BaseRenderer
     }
 
     /**
-     * 用来丰富选项展示
-     */
-    public function menuTpl($value = '')
-    {
-        return $this->set('menuTpl', $value);
-    }
-
-    /**
      * 配置当前表单项展示模式 可选值: normal | inline | horizontal
      */
     public function mode($value = '')
@@ -346,14 +330,6 @@ class TransferControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选项集合
      */
     public function options($value = '')
@@ -375,14 +351,6 @@ class TransferControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -575,14 +543,6 @@ class TransferControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
-    }
-
-    /**
-     * 用来丰富值的展示
-     */
-    public function valueTpl($value = '')
-    {
-        return $this->set('valueTpl', $value);
     }
 
     /**

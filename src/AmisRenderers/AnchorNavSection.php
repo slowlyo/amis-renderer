@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AnchorNavSection 锚点区域渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/anchor-nav
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class AnchorNavSection extends BaseRenderer
 {
@@ -70,14 +70,6 @@ class AnchorNavSection extends BaseRenderer
     public function href($value = '')
     {
         return $this->set('href', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RichText 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-rich-text
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class RichTextControl extends BaseRenderer
 {
@@ -82,14 +82,6 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 接收器的字段名
-     */
-    public function fileField($value = '')
-    {
-        return $this->set('fileField', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -119,14 +111,6 @@ class RichTextControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -188,14 +172,6 @@ class RichTextControl extends BaseRenderer
     /**
      * 
      */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * tinymce 或 froala 的配置
-     */
     public function options($value = '')
     {
         return $this->set('options', $value);
@@ -218,15 +194,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
-     * 图片保存 API
+     * 
      */
     public function receiver($value = '')
     {
@@ -314,7 +282,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 编辑器类型 可选值: froala | tinymce
+     *  可选值: froala | tinymce
      */
     public function vendor($value = '')
     {
@@ -322,7 +290,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 视频保存 API
+     * 
      */
     public function videoReceiver($value = '')
     {

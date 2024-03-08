@@ -3,10 +3,10 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * RangeControl
+ * Range 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/range
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class RangeControl extends BaseRenderer
 {
@@ -31,14 +31,6 @@ class RangeControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
-    }
-
-    /**
-     * 分隔符
-     */
-    public function delimiter($value = '')
-    {
-        return $this->set('delimiter', $value);
     }
 
     /**
@@ -114,14 +106,6 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -135,14 +119,6 @@ class RangeControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
-    }
-
-    /**
-     * 是否通过分隔符连接
-     */
-    public function joinValues($value = true)
-    {
-        return $this->set('joinValues', $value);
     }
 
     /**
@@ -170,14 +146,6 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 刻度
-     */
-    public function marks($value = '')
-    {
-        return $this->set('marks', $value);
-    }
-
-    /**
      * 最大值
      */
     public function max($value = '')
@@ -202,35 +170,11 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 是否为双滑块
-     */
-    public function multiple($value = true)
-    {
-        return $this->set('multiple', $value);
-    }
-
-    /**
      * 字段名，表单提交时的 key，支持多层级，用.连接，如： a.b.c
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
-     * 分割块数
-     */
-    public function parts($value = '')
-    {
-        return $this->set('parts', $value);
     }
 
     /**
@@ -250,14 +194,6 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -271,22 +207,6 @@ class RangeControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
-    }
-
-    /**
-     * 是否展示输入框
-     */
-    public function showInput($value = true)
-    {
-        return $this->set('showInput', $value);
-    }
-
-    /**
-     * 是否展示步长
-     */
-    public function showSteps($value = true)
-    {
-        return $this->set('showSteps', $value);
     }
 
     /**
@@ -311,22 +231,6 @@ class RangeControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
-    }
-
-    /**
-     * 标签方向
-     */
-    public function tooltipPlacement($value = '')
-    {
-        return $this->set('tooltipPlacement', $value);
-    }
-
-    /**
-     * 是否展示标签
-     */
-    public function tooltipVisible($value = true)
-    {
-        return $this->set('tooltipVisible', $value);
     }
 
     /**
@@ -378,7 +282,7 @@ class RangeControl extends BaseRenderer
     }
 
     /**
-     * 滑块值
+     * 默认值，切记只能是静态值，不支持取变量，跟数据关联是通过设置 name 属性来实现的。
      */
     public function value($value = '')
     {

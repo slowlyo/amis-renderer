@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Tabs extends BaseRenderer
 {
@@ -18,35 +18,11 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 自定义增加按钮文案
-     */
-    public function addBtnText($value = '')
-    {
-        return $this->set('addBtnText', $value);
-    }
-
-    /**
-     * 是否支持新增
-     */
-    public function addable($value = true)
-    {
-        return $this->set('addable', $value);
-    }
-
-    /**
      * 容器 css 类名
      */
     public function className($value = '')
     {
         return $this->set('className', $value);
-    }
-
-    /**
-     * 是否支持删除
-     */
-    public function closable($value = true)
-    {
-        return $this->set('closable', $value);
     }
 
     /**
@@ -74,22 +50,6 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 是否支持拖拽
-     */
-    public function draggable($value = true)
-    {
-        return $this->set('draggable', $value);
-    }
-
-    /**
-     * 是否可编辑标签名
-     */
-    public function editable($value = true)
-    {
-        return $this->set('editable', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -103,14 +63,6 @@ class Tabs extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -130,35 +82,11 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 是否导航支持内容溢出滚动。属性废弃，为了兼容暂且保留
+     * 是否支持溢出滚动
      */
     public function scrollable($value = true)
     {
         return $this->set('scrollable', $value);
-    }
-
-    /**
-     * 是否显示提示
-     */
-    public function showTip($value = true)
-    {
-        return $this->set('showTip', $value);
-    }
-
-    /**
-     * tooltip 提示的类名
-     */
-    public function showTipClassName($value = '')
-    {
-        return $this->set('showTipClassName', $value);
-    }
-
-    /**
-     * 编辑器模式，侧边的位置 可选值: left | right
-     */
-    public function sidePosition($value = '')
-    {
-        return $this->set('sidePosition', $value);
     }
 
     /**
@@ -202,7 +130,7 @@ class Tabs extends BaseRenderer
     }
 
     /**
-     * 展示形式
+     * 展示形式 可选值:  | line | card | radio | vertical | tiled
      */
     public function tabsMode($value = '')
     {

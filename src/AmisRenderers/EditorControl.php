@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Editor 代码编辑器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/editor
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class EditorControl extends BaseRenderer
 {
@@ -82,14 +82,6 @@ class EditorControl extends BaseRenderer
     }
 
     /**
-     * 获取编辑器底层实例
-     */
-    public function editorDidMount($value = '')
-    {
-        return $this->set('editorDidMount', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -119,14 +111,6 @@ class EditorControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -194,14 +178,6 @@ class EditorControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -215,14 +191,6 @@ class EditorControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**

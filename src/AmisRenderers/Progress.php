@@ -6,14 +6,13 @@ namespace Slowlyo\AmisRenderers;
  * 进度展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/progress
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Progress extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'progress');
-$this->set('mode', 'line');
 
 
     }
@@ -51,22 +50,6 @@ $this->set('mode', 'line');
     }
 
     /**
-     * 仪表盘进度条缺口角度，可取值 0 ~ 295
-     */
-    public function gapDegree($value = '')
-    {
-        return $this->set('gapDegree', $value);
-    }
-
-    /**
-     * 仪表盘进度条缺口位置 可选值: top | bottom | left | right
-     */
-    public function gapPosition($value = '')
-    {
-        return $this->set('gapPosition', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -83,27 +66,11 @@ $this->set('mode', 'line');
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 配置不同的值段，用不同的样式提示用户
+     * 配置不通的值段，用不通的样式提示用户
      */
     public function map($value = '')
     {
         return $this->set('map', $value);
-    }
-
-    /**
-     * 进度条类型。 可选值: line | circle | dashboard
-     */
-    public function mode($value = '')
-    {
-        return $this->set('mode', $value);
     }
 
     /**
@@ -120,6 +87,14 @@ $this->set('mode', 'line');
     public function placeholder($value = '')
     {
         return $this->set('placeholder', $value);
+    }
+
+    /**
+     * 进度外层 CSS 类名
+     */
+    public function progressBarClassName($value = '')
+    {
+        return $this->set('progressBarClassName', $value);
     }
 
     /**
@@ -147,27 +122,11 @@ $this->set('mode', 'line');
     }
 
     /**
-     * 进度条线的宽度
-     */
-    public function strokeWidth($value = '')
-    {
-        return $this->set('strokeWidth', $value);
-    }
-
-    /**
      * 
      */
     public function type($value = 'progress')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 内容的模板函数
-     */
-    public function valueTpl($value = '')
-    {
-        return $this->set('valueTpl', $value);
     }
 
     /**

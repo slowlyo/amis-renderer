@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * VanillaAction
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class VanillaAction extends BaseRenderer
 {
@@ -55,14 +55,6 @@ class VanillaAction extends BaseRenderer
     public function block($value = true)
     {
         return $this->set('block', $value);
-    }
-
-    /**
-     * 子内容
-     */
-    public function body($value = '')
-    {
-        return $this->set('body', $value);
     }
 
     /**
@@ -170,14 +162,6 @@ class VanillaAction extends BaseRenderer
     }
 
     /**
-     * 主要用于用户行为跟踪里区分是哪个按钮
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 按钮文字
      */
     public function label($value = '')
@@ -186,27 +170,11 @@ class VanillaAction extends BaseRenderer
     }
 
     /**
-     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light | secondary
+     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light
      */
     public function level($value = '')
     {
         return $this->set('level', $value);
-    }
-
-    /**
-     * loading 上的css 类名
-     */
-    public function loadingClassName($value = '')
-    {
-        return $this->set('loadingClassName', $value);
-    }
-
-    /**
-     * 是否显示loading效果
-     */
-    public function loadingOn($value = '')
-    {
-        return $this->set('loadingOn', $value);
     }
 
     /**
@@ -215,14 +183,6 @@ class VanillaAction extends BaseRenderer
     public function mergeData($value = true)
     {
         return $this->set('mergeData', $value);
-    }
-
-    /**
-     * 自定义事件处理函数
-     */
-    public function onClick($value = '')
-    {
-        return $this->set('onClick', $value);
     }
 
     /**

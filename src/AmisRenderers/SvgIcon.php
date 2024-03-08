@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SvgIcon
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class SvgIcon extends BaseRenderer
 {

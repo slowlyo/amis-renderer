@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Select 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/select
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class SelectControl extends BaseRenderer
 {
@@ -87,14 +87,6 @@ class SelectControl extends BaseRenderer
     public function clearable($value = true)
     {
         return $this->set('clearable', $value);
-    }
-
-    /**
-     * 当 selectMode 为 table 时定义表格列信息。
-     */
-    public function columns($value = '')
-    {
-        return $this->set('columns', $value);
     }
 
     /**
@@ -250,14 +242,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -330,22 +314,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 当 selectMode 为 associated 时用来定义左侧的选择模式 可选值: tree | list
-     */
-    public function leftMode($value = '')
-    {
-        return $this->set('leftMode', $value);
-    }
-
-    /**
-     * 当 selectMode 为 associated 时用来定义左侧的选项
-     */
-    public function leftOptions($value = '')
-    {
-        return $this->set('leftOptions', $value);
-    }
-
-    /**
      * 可以自定义菜单展示。
      */
     public function menuTpl($value = '')
@@ -378,14 +346,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选项集合
      */
     public function options($value = '')
@@ -407,14 +367,6 @@ class SelectControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -450,38 +402,6 @@ class SelectControl extends BaseRenderer
     }
 
     /**
-     * 当 selectMode 为 associated 时用来定义右侧的选择模式 可选值: table | list | tree | chained
-     */
-    public function rightMode($value = '')
-    {
-        return $this->set('rightMode', $value);
-    }
-
-    /**
-     * 搜索 API
-     */
-    public function searchApi($value = '')
-    {
-        return $this->set('searchApi', $value);
-    }
-
-    /**
-     * 当 searchResultMode 为 table 时定义表格列信息。
-     */
-    public function searchResultColumns($value = '')
-    {
-        return $this->set('searchResultColumns', $value);
-    }
-
-    /**
-     * 搜索结果展示模式 可选值: table | list | tree | chained
-     */
-    public function searchResultMode($value = '')
-    {
-        return $this->set('searchResultMode', $value);
-    }
-
-    /**
      * 是否可搜索
      */
     public function searchable($value = true)
@@ -495,14 +415,6 @@ class SelectControl extends BaseRenderer
     public function selectFirst($value = true)
     {
         return $this->set('selectFirst', $value);
-    }
-
-    /**
-     * 勾选展示模式 可选值: table | group | tree | chained | associated
-     */
-    public function selectMode($value = '')
-    {
-        return $this->set('selectMode', $value);
     }
 
     /**

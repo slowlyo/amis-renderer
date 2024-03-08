@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON 数据展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/json
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Json extends BaseRenderer
 {
@@ -42,22 +42,6 @@ class Json extends BaseRenderer
     }
 
     /**
-     * 是否显示数据类型
-     */
-    public function displayDataTypes($value = true)
-    {
-        return $this->set('displayDataTypes', $value);
-    }
-
-    /**
-     * 是否可复制
-     */
-    public function enableClipboard($value = true)
-    {
-        return $this->set('enableClipboard', $value);
-    }
-
-    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -74,22 +58,6 @@ class Json extends BaseRenderer
     }
 
     /**
-     * 图标风格 可选值: square | circle | triangle
-     */
-    public function iconStyle($value = '')
-    {
-        return $this->set('iconStyle', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 默认展开的级别
      */
     public function levelExpand($value = '')
@@ -103,22 +71,6 @@ class Json extends BaseRenderer
     public function mutable($value = true)
     {
         return $this->set('mutable', $value);
-    }
-
-    /**
-     * 是否显示键的引号
-     */
-    public function quotesOnKeys($value = true)
-    {
-        return $this->set('quotesOnKeys', $value);
-    }
-
-    /**
-     * 是否为键排序
-     */
-    public function sortKeys($value = true)
-    {
-        return $this->set('sortKeys', $value);
     }
 
     /**

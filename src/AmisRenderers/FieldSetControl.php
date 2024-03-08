@@ -6,14 +6,14 @@ namespace Slowlyo\AmisRenderers;
  * FieldSet 表单项集合 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/fieldset
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class FieldSetControl extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'fieldset');
-$this->set('titlePosition', 'top');
+        $this->set('titlePosition', 'top');
+$this->set('type', 'fieldset');
 
 
     }
@@ -56,14 +56,6 @@ $this->set('titlePosition', 'top');
     public function collapsable($value = true)
     {
         return $this->set('collapsable', $value);
-    }
-
-    /**
-     * 收起的标题
-     */
-    public function collapseHeader($value = '')
-    {
-        return $this->set('collapseHeader', $value);
     }
 
     /**
@@ -123,30 +115,6 @@ $this->set('titlePosition', 'top');
     }
 
     /**
-     * 自定义切换图标
-     */
-    public function expandIcon($value = '')
-    {
-        return $this->set('expandIcon', $value);
-    }
-
-    /**
-     * 标题
-     */
-    public function header($value = '')
-    {
-        return $this->set('header', $value);
-    }
-
-    /**
-     * 标题展示位置 可选值: top | bottom
-     */
-    public function headerPosition($value = '')
-    {
-        return $this->set('headerPosition', $value);
-    }
-
-    /**
      * 标题 CSS 类名
      */
     public function headingClassName($value = '')
@@ -187,14 +155,6 @@ $this->set('titlePosition', 'top');
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -208,14 +168,6 @@ $this->set('titlePosition', 'top');
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
-    }
-
-    /**
-     * 标识
-     */
-    public function key($value = '')
-    {
-        return $this->set('key', $value);
     }
 
     /**
@@ -267,14 +219,6 @@ $this->set('titlePosition', 'top');
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -291,14 +235,6 @@ $this->set('titlePosition', 'top');
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -312,14 +248,6 @@ $this->set('titlePosition', 'top');
     public function required($value = true)
     {
         return $this->set('required', $value);
-    }
-
-    /**
-     * 图标是否展示
-     */
-    public function showArrow($value = true)
-    {
-        return $this->set('showArrow', $value);
     }
 
     /**

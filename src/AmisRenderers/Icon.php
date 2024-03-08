@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Icon 图表渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/icon
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Icon extends BaseRenderer
 {
@@ -74,14 +74,6 @@ class Icon extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 
      */
     public function type($value = 'icon')
@@ -90,7 +82,7 @@ class Icon extends BaseRenderer
     }
 
     /**
-     *  可选值: iconfont | fa | 
+     *  可选值: iconfont | fa
      */
     public function vendor($value = '')
     {

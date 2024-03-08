@@ -3,17 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Avatar
+ * Avatar 用户头像显示 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/avatar
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Avatar extends BaseRenderer
 {
     public function __construct()
     {
         $this->set('type', 'avatar');
-$this->set('crossOrigin', 'anonymous');
 
 
     }
@@ -43,14 +42,6 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 图片CORS属性 可选值: anonymous | use-credentials | 
-     */
-    public function crossOrigin($value = '')
-    {
-        return $this->set('crossOrigin', $value);
-    }
-
-    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -67,27 +58,11 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 图片是否允许拖动
-     */
-    public function draggable($value = true)
-    {
-        return $this->set('draggable', $value);
-    }
-
-    /**
      * 图片相对于容器的缩放方式 可选值: fill | contain | cover | none | scale-down
      */
     public function fit($value = '')
     {
         return $this->set('fit', $value);
-    }
-
-    /**
-     * 字符类型距离左右两侧边界单位像素
-     */
-    public function gap($value = '')
-    {
-        return $this->set('gap', $value);
     }
 
     /**
@@ -115,23 +90,7 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 图片加载失败的是否默认处理，字符串函数
-     */
-    public function onError($value = '')
-    {
-        return $this->set('onError', $value);
-    }
-
-    /**
-     * 形状 可选值: circle | square | rounded
+     * 形状 可选值: circle | square
      */
     public function shape($value = '')
     {
@@ -171,7 +130,7 @@ $this->set('crossOrigin', 'anonymous');
     }
 
     /**
-     * 
+     * 指定为用户头像控件
      */
     public function type($value = 'avatar')
     {

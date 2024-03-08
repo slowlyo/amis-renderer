@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class TextControl extends BaseRenderer
 {
@@ -242,14 +242,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -346,14 +338,6 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选项集合
      */
     public function options($value = '')
@@ -370,27 +354,11 @@ class TextControl extends BaseRenderer
     }
 
     /**
-     * 前缀
-     */
-    public function prefix($value = '')
-    {
-        return $this->set('prefix', $value);
-    }
-
-    /**
      * 是否只读
      */
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -463,22 +431,6 @@ class TextControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
-    }
-
-    /**
-     * 后缀
-     */
-    public function suffix($value = '')
-    {
-        return $this->set('suffix', $value);
-    }
-
-    /**
-     * 自动转换值
-     */
-    public function transform($value = '')
-    {
-        return $this->set('transform', $value);
     }
 
     /**

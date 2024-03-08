@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TextArea 多行文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/textarea
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class TextareaControl extends BaseRenderer
 {
@@ -39,14 +39,6 @@ class TextareaControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
-    }
-
-    /**
-     * 输入内容是否可清除
-     */
-    public function clearable($value = true)
-    {
-        return $this->set('clearable', $value);
     }
 
     /**
@@ -119,14 +111,6 @@ class TextareaControl extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**
@@ -210,14 +194,6 @@ class TextareaControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -234,14 +210,6 @@ class TextareaControl extends BaseRenderer
     }
 
     /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
-    }
-
-    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -255,14 +223,6 @@ class TextareaControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
-    }
-
-    /**
-     * 重置值
-     */
-    public function resetValue($value = '')
-    {
-        return $this->set('resetValue', $value);
     }
 
     /**

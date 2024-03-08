@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDCards
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class CRUDCards extends BaseRenderer
 {
@@ -40,22 +40,6 @@ $this->set('type', 'crud');
     public function api($value = '')
     {
         return $this->set('api', $value);
-    }
-
-    /**
-     * 内容区域占满屏幕剩余空间
-     */
-    public function autoFillHeight($value = true)
-    {
-        return $this->set('autoFillHeight', $value);
-    }
-
-    /**
-     * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
-     */
-    public function autoGenerateFilter($value = true)
-    {
-        return $this->set('autoGenerateFilter', $value);
     }
 
     /**
@@ -251,14 +235,6 @@ $this->set('type', 'crud');
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 初始是否拉取
      */
     public function initFetch($value = true)
@@ -384,22 +360,6 @@ $this->set('type', 'crud');
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 默认排序字段
-     */
-    public function orderBy($value = '')
-    {
-        return $this->set('orderBy', $value);
-    }
-
-    /**
-     * 默认排序方向 可选值: asc | desc
-     */
-    public function orderDir($value = '')
-    {
-        return $this->set('orderDir', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tab
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Tab extends BaseRenderer
 {
@@ -38,14 +38,6 @@ class Tab extends BaseRenderer
     public function className($value = '')
     {
         return $this->set('className', $value);
-    }
-
-    /**
-     * 是否可关闭，优先级高于 tabs 的 closable
-     */
-    public function closable($value = true)
-    {
-        return $this->set('closable', $value);
     }
 
     /**
@@ -110,14 +102,6 @@ class Tab extends BaseRenderer
     public function iconPosition($value = '')
     {
         return $this->set('iconPosition', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**

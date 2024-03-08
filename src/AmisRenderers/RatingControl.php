@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Rating 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/rating
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class RatingControl extends BaseRenderer
 {
@@ -26,22 +26,6 @@ class RatingControl extends BaseRenderer
     }
 
     /**
-     * 自定义字符
-     */
-    public function char($value = '')
-    {
-        return $this->set('char', $value);
-    }
-
-    /**
-     * 自定义字符类名
-     */
-    public function charClassName($value = '')
-    {
-        return $this->set('charClassName', $value);
-    }
-
-    /**
      * 容器 css 类名
      */
     public function className($value = '')
@@ -55,14 +39,6 @@ class RatingControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
-    }
-
-    /**
-     * 星星被选中的颜色
-     */
-    public function colors($value = '')
-    {
-        return $this->set('colors', $value);
     }
 
     /**
@@ -154,22 +130,6 @@ class RatingControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
-     * 未被选中的星星的颜色
-     */
-    public function inactiveColor($value = '')
-    {
-        return $this->set('inactiveColor', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -226,14 +186,6 @@ class RatingControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -247,14 +199,6 @@ class RatingControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -287,30 +231,6 @@ class RatingControl extends BaseRenderer
     public function submitOnChange($value = true)
     {
         return $this->set('submitOnChange', $value);
-    }
-
-    /**
-     * 自定义文字类名
-     */
-    public function textClassName($value = '')
-    {
-        return $this->set('textClassName', $value);
-    }
-
-    /**
-     * 文字的位置
-     */
-    public function textPosition($value = '')
-    {
-        return $this->set('textPosition', $value);
-    }
-
-    /**
-     * 星星被选中时的提示文字
-     */
-    public function texts($value = '')
-    {
-        return $this->set('texts', $value);
     }
 
     /**

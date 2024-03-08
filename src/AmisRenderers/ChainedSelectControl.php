@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 级联选择框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/chained-select
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class ChainedSelectControl extends BaseRenderer
 {
@@ -218,14 +218,6 @@ class ChainedSelectControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -314,14 +306,6 @@ class ChainedSelectControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 选项集合
      */
     public function options($value = '')
@@ -343,14 +327,6 @@ class ChainedSelectControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**

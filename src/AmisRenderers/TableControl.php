@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TableControl
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class TableControl extends BaseRenderer
 {
@@ -63,14 +63,6 @@ class TableControl extends BaseRenderer
     public function affixRow($value = '')
     {
         return $this->set('affixRow', $value);
-    }
-
-    /**
-     * 开启查询区域，会根据列元素的searchable属性值，自动生成查询条件表单
-     */
-    public function autoGenerateFilter($value = true)
-    {
-        return $this->set('autoGenerateFilter', $value);
     }
 
     /**
@@ -354,14 +346,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -375,14 +359,6 @@ class TableControl extends BaseRenderer
     public function inputClassName($value = '')
     {
         return $this->set('inputClassName', $value);
-    }
-
-    /**
-     * 行角标
-     */
-    public function itemBadge($value = '')
-    {
-        return $this->set('itemBadge', $value);
     }
 
     /**
@@ -434,14 +410,6 @@ class TableControl extends BaseRenderer
     }
 
     /**
-     * 
-     */
-    public function onEvent($value = '')
-    {
-        return $this->set('onEvent', $value);
-    }
-
-    /**
      * 分页个数，默认不分页
      */
     public function perPage($value = '')
@@ -471,14 +439,6 @@ class TableControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
-    }
-
-    /**
-     * 只读条件
-     */
-    public function readOnlyOn($value = '')
-    {
-        return $this->set('readOnlyOn', $value);
     }
 
     /**

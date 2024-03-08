@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Form 表单渲染器。说明：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/index
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class Form extends BaseRenderer
 {
@@ -98,14 +98,6 @@ class Form extends BaseRenderer
     }
 
     /**
-     * 表单项显示为几列
-     */
-    public function columnCount($value = '')
-    {
-        return $this->set('columnCount', $value);
-    }
-
-    /**
      * 
      */
     public function data($value = '')
@@ -183,14 +175,6 @@ class Form extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
-    }
-
-    /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
     }
 
     /**

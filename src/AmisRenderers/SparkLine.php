@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SparkLine
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class SparkLine extends BaseRenderer
 {
@@ -74,27 +74,11 @@ class SparkLine extends BaseRenderer
     }
 
     /**
-     * 组件唯一 id，主要用于日志采集
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 关联数据变量。
      */
     public function name($value = '')
     {
         return $this->set('name', $value);
-    }
-
-    /**
-     * 空数据时显示的内容
-     */
-    public function placeholder($value = '')
-    {
-        return $this->set('placeholder', $value);
     }
 
     /**

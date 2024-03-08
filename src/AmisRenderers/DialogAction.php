@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * DialogAction
  * 
  * @author slowlyo
- * @version 1.9.0
+ * @version 1.4.0
  */
 class DialogAction extends BaseRenderer
 {
@@ -56,14 +56,6 @@ $this->set('actionType', 'dialog');
     public function block($value = true)
     {
         return $this->set('block', $value);
-    }
-
-    /**
-     * 子内容
-     */
-    public function body($value = '')
-    {
-        return $this->set('body', $value);
     }
 
     /**
@@ -179,14 +171,6 @@ $this->set('actionType', 'dialog');
     }
 
     /**
-     * 主要用于用户行为跟踪里区分是哪个按钮
-     */
-    public function id($value = '')
-    {
-        return $this->set('id', $value);
-    }
-
-    /**
      * 按钮文字
      */
     public function label($value = '')
@@ -195,27 +179,11 @@ $this->set('actionType', 'dialog');
     }
 
     /**
-     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light | secondary
+     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light
      */
     public function level($value = '')
     {
         return $this->set('level', $value);
-    }
-
-    /**
-     * loading 上的css 类名
-     */
-    public function loadingClassName($value = '')
-    {
-        return $this->set('loadingClassName', $value);
-    }
-
-    /**
-     * 是否显示loading效果
-     */
-    public function loadingOn($value = '')
-    {
-        return $this->set('loadingOn', $value);
     }
 
     /**
@@ -232,14 +200,6 @@ $this->set('actionType', 'dialog');
     public function nextCondition($value = '')
     {
         return $this->set('nextCondition', $value);
-    }
-
-    /**
-     * 自定义事件处理函数
-     */
-    public function onClick($value = '')
-    {
-        return $this->set('onClick', $value);
     }
 
     /**
