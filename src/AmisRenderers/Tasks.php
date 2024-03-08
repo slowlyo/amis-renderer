@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tasks 渲染器，格式说明 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tasks
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Tasks extends BaseRenderer
 {
@@ -343,6 +343,14 @@ class Tasks extends BaseRenderer
     public function type($value = 'tasks')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

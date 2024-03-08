@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 条件组合控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/condition-builder
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class ConditionBuilderControl extends BaseRenderer
 {
@@ -28,9 +28,9 @@ class ConditionBuilderControl extends BaseRenderer
     /**
      * 表达式：控制按钮“添加条件组”的显示
      */
-    public function addConditionVisible($value = '')
+    public function addGroupBtnVisibleOn($value = '')
     {
-        return $this->set('addConditionVisible', $value);
+        return $this->set('addGroupBtnVisibleOn', $value);
     }
 
     /**
@@ -143,6 +143,14 @@ class ConditionBuilderControl extends BaseRenderer
     public function fields($value = '')
     {
         return $this->set('fields', $value);
+    }
+
+    /**
+     * 将字段输入控件变成公式编辑器。
+     */
+    public function formula($value = '')
+    {
+        return $this->set('formula', $value);
     }
 
     /**
@@ -423,6 +431,14 @@ class ConditionBuilderControl extends BaseRenderer
     public function type($value = 'condition-builder')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

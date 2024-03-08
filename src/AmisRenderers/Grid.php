@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Grid 格子布局渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/grid
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Grid extends BaseRenderer
 {
@@ -175,6 +175,14 @@ class Grid extends BaseRenderer
     public function type($value = 'grid')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

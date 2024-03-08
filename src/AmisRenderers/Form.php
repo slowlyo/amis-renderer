@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Form 表单渲染器。说明：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/index
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Form extends BaseRenderer
 {
@@ -535,6 +535,14 @@ class Form extends BaseRenderer
     public function type($value = 'form')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

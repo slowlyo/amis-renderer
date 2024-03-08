@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Avatar
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Avatar extends BaseRenderer
 {
@@ -248,6 +248,14 @@ $this->set('crossOrigin', 'anonymous');
     public function type($value = 'avatar')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

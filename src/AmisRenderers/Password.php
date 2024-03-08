@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Password
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Password extends BaseRenderer
 {
@@ -159,6 +159,14 @@ class Password extends BaseRenderer
     public function type($value = 'password')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

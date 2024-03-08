@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 视频播放器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/video
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Video extends BaseRenderer
 {
@@ -279,6 +279,14 @@ class Video extends BaseRenderer
     public function type($value = 'video')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

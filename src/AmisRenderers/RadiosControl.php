@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Radio 单选框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/radios
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class RadiosControl extends BaseRenderer
 {
@@ -546,6 +546,14 @@ class RadiosControl extends BaseRenderer
     }
 
     /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
+    }
+
+    /**
      * 远端校验表单项接口
      */
     public function validateApi($value = '')
@@ -583,6 +591,14 @@ class RadiosControl extends BaseRenderer
     public function value($value = '')
     {
         return $this->set('value', $value);
+    }
+
+    /**
+     * 多选模式，值太多时是否避免折行
+     */
+    public function valuesNoWrap($value = true)
+    {
+        return $this->set('valuesNoWrap', $value);
     }
 
     /**

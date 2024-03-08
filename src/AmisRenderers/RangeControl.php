@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RangeControl
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class RangeControl extends BaseRenderer
 {
@@ -447,6 +447,14 @@ class RangeControl extends BaseRenderer
     public function unit($value = '')
     {
         return $this->set('unit', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

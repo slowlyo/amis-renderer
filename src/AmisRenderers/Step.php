@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Step
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Step extends BaseRenderer
 {
@@ -174,6 +174,14 @@ class Step extends BaseRenderer
     public function title($value = '')
     {
         return $this->set('title', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

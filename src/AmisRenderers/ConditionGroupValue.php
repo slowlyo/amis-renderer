@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ConditionGroupValue
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class ConditionGroupValue extends BaseRenderer
 {
@@ -39,6 +39,14 @@ class ConditionGroupValue extends BaseRenderer
     public function id($value = '')
     {
         return $this->set('id', $value);
+    }
+
+    /**
+     * 
+     */
+    public function if($value = '')
+    {
+        return $this->set('if', $value);
     }
 
     /**

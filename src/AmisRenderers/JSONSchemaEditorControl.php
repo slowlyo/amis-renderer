@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * JSON Schema Editor 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/json-schema-editor
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class JSONSchemaEditorControl extends BaseRenderer
 {
@@ -383,6 +383,14 @@ class JSONSchemaEditorControl extends BaseRenderer
     public function type($value = 'json-schema-editor')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**

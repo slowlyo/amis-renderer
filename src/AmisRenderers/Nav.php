@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nav 导航渲染器 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/nav
  * 
  * @author slowlyo
- * @version v3.3.0
+ * @version v3.4.0
  */
 class Nav extends BaseRenderer
 {
@@ -327,6 +327,14 @@ class Nav extends BaseRenderer
     public function type($value = 'nav')
     {
         return $this->set('type', $value);
+    }
+
+    /**
+     * 可以组件级别用来关闭移动端样式
+     */
+    public function useMobileUI($value = true)
+    {
+        return $this->set('useMobileUI', $value);
     }
 
     /**
