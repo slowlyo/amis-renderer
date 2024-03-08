@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RichText 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-rich-text
  * 
  * @author slowlyo
- * @version 1.6.0
+ * @version 1.6.1
  */
 class RichTextControl extends BaseRenderer
 {
@@ -79,6 +79,14 @@ class RichTextControl extends BaseRenderer
     public function disabledOn($value = '')
     {
         return $this->set('disabledOn', $value);
+    }
+
+    /**
+     * 接收器的字段名
+     */
+    public function fileField($value = '')
+    {
+        return $this->set('fileField', $value);
     }
 
     /**

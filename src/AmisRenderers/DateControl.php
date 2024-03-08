@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Date日期选择控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/date
  * 
  * @author slowlyo
- * @version 1.6.0
+ * @version 1.6.1
  */
 class DateControl extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * HBoxColumn
  * 
  * @author slowlyo
- * @version 1.6.0
+ * @version 1.6.1
  */
 class HBoxColumn extends BaseRenderer
 {
