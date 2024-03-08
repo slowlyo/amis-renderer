@@ -124,6 +124,11 @@ class Amis
         return CRUDTable::make();
     }
 
+    public function Calendar()
+    {
+        return Calendar::make();
+    }
+
     public function Card()
     {
         return Card::make();

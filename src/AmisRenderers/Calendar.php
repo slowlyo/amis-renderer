@@ -3,16 +3,16 @@
 namespace Slowlyo\AmisRenderers;
 
 /**
- * Steps
+ * Calendar
  * 
  * @author slowlyo
  * @version 1.6.3
  */
-class Steps extends BaseRenderer
+class Calendar extends BaseRenderer
 {
     public function __construct()
     {
-        $this->set('type', 'steps');
+        $this->set('type', 'calendar');
 
 
     }
@@ -58,59 +58,35 @@ class Steps extends BaseRenderer
     }
 
     /**
-     * 展示模式 可选值: horizontal | vertical
+     * 日程点击展示
      */
-    public function mode($value = '')
+    public function scheduleAction($value = '')
     {
-        return $this->set('mode', $value);
+        return $this->set('scheduleAction', $value);
     }
 
     /**
-     * 变量映射
+     * 日程显示颜色自定义
      */
-    public function name($value = '')
+    public function scheduleClassNames($value = '')
     {
-        return $this->set('name', $value);
+        return $this->set('scheduleClassNames', $value);
     }
 
     /**
-     * API 或 数据映射
+     * 日程
      */
-    public function source($value = '')
+    public function schedules($value = '')
     {
-        return $this->set('source', $value);
+        return $this->set('schedules', $value);
     }
 
     /**
-     * 
+     * 指定为日历选择控件
      */
-    public function status($value = '')
-    {
-        return $this->set('status', $value);
-    }
-
-    /**
-     * 步骤
-     */
-    public function steps($value = '')
-    {
-        return $this->set('steps', $value);
-    }
-
-    /**
-     * 指定为 Steps 步骤条渲染器
-     */
-    public function type($value = 'steps')
+    public function type($value = 'calendar')
     {
         return $this->set('type', $value);
-    }
-
-    /**
-     * 指定当前步骤
-     */
-    public function value($value = '')
-    {
-        return $this->set('value', $value);
     }
 
     /**

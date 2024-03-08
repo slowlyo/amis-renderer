@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Panel渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/panel
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Panel extends BaseRenderer
 {
