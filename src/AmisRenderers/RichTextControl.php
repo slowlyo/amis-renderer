@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * RichText 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/input-rich-text
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class RichTextControl extends BaseRenderer
 {
@@ -122,6 +122,14 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -186,7 +194,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 
+     * tinymce 或 froala 的配置
      */
     public function options($value = '')
     {
@@ -210,7 +218,15 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
+    }
+
+    /**
+     * 图片保存 API
      */
     public function receiver($value = '')
     {
@@ -298,7 +314,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     *  可选值: froala | tinymce
+     * 编辑器类型 可选值: froala | tinymce
      */
     public function vendor($value = '')
     {
@@ -306,7 +322,7 @@ class RichTextControl extends BaseRenderer
     }
 
     /**
-     * 
+     * 视频保存 API
      */
     public function videoReceiver($value = '')
     {

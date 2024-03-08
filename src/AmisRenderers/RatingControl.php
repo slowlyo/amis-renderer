@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Rating 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/rating
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class RatingControl extends BaseRenderer
 {
@@ -154,6 +154,14 @@ class RatingControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 未被选中的星星的颜色
      */
     public function inactiveColor($value = '')
@@ -239,6 +247,14 @@ class RatingControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

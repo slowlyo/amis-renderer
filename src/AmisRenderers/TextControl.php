@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class TextControl extends BaseRenderer
 {
@@ -242,6 +242,14 @@ class TextControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -378,6 +386,14 @@ class TextControl extends BaseRenderer
     }
 
     /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
+    }
+
+    /**
      * 显示一个小图标, 鼠标放上去的时候显示提示内容
      */
     public function remark($value = '')
@@ -455,6 +471,14 @@ class TextControl extends BaseRenderer
     public function suffix($value = '')
     {
         return $this->set('suffix', $value);
+    }
+
+    /**
+     * 自动转换值
+     */
+    public function transform($value = '')
+    {
+        return $this->set('transform', $value);
     }
 
     /**

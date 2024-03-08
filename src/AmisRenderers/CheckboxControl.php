@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Checkbox 勾选框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/checkbox
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class CheckboxControl extends BaseRenderer
 {
@@ -23,6 +23,14 @@ class CheckboxControl extends BaseRenderer
     public function badge($value = '')
     {
         return $this->set('badge', $value);
+    }
+
+    /**
+     * 
+     */
+    public function checked($value = true)
+    {
+        return $this->set('checked', $value);
     }
 
     /**
@@ -122,6 +130,14 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -194,6 +210,22 @@ class CheckboxControl extends BaseRenderer
     }
 
     /**
+     *  可选值: default | button
+     */
+    public function optionType($value = '')
+    {
+        return $this->set('optionType', $value);
+    }
+
+    /**
+     * 
+     */
+    public function partial($value = true)
+    {
+        return $this->set('partial', $value);
+    }
+
+    /**
      * 占位符
      */
     public function placeholder($value = '')
@@ -207,6 +239,14 @@ class CheckboxControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

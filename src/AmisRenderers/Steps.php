@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Steps
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Steps extends BaseRenderer
 {
@@ -58,6 +58,22 @@ class Steps extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
+     * 标签放置位置 可选值: horizontal | vertical
+     */
+    public function labelPlacement($value = '')
+    {
+        return $this->set('labelPlacement', $value);
+    }
+
+    /**
      * 展示模式 可选值: horizontal | vertical
      */
     public function mode($value = '')
@@ -71,6 +87,14 @@ class Steps extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 点状步骤条
+     */
+    public function progressDot($value = true)
+    {
+        return $this->set('progressDot', $value);
     }
 
     /**

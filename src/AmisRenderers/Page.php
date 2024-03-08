@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * amis Page 渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/page
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Page extends BaseRenderer
 {
@@ -55,6 +55,14 @@ class Page extends BaseRenderer
     public function asideResizor($value = true)
     {
         return $this->set('asideResizor', $value);
+    }
+
+    /**
+     * 边栏内容是否粘住，即不跟随滚动。
+     */
+    public function asideSticky($value = true)
+    {
+        return $this->set('asideSticky', $value);
     }
 
     /**
@@ -154,6 +162,14 @@ class Page extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 页面初始化的时候，可以设置一个 API 让其取拉取，发送数据会携带当前 data 数据（包含地址栏参数），获取得数据会合并到 data 中，供组件内使用。
      */
     public function initApi($value = '')
@@ -207,6 +223,14 @@ class Page extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 下拉刷新配置
+     */
+    public function pullRefresh($value = '')
+    {
+        return $this->set('pullRefresh', $value);
     }
 
     /**

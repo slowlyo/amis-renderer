@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FieldSet 表单项集合 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/fieldset
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class FieldSetControl extends BaseRenderer
 {
@@ -187,6 +187,14 @@ $this->set('titlePosition', 'top');
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -280,6 +288,14 @@ $this->set('titlePosition', 'top');
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

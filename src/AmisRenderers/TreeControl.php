@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class TreeControl extends BaseRenderer
 {
@@ -34,6 +34,14 @@ class TreeControl extends BaseRenderer
     }
 
     /**
+     * ui级联关系，true代表级联选中，false代表不级联，默认为true
+     */
+    public function autoCheckChildren($value = true)
+    {
+        return $this->set('autoCheckChildren', $value);
+    }
+
+    /**
      * 自动填充，当选项被选择的时候，将选项中的其他值同步设置到表单内。
      */
     public function autoFill($value = '')
@@ -42,7 +50,7 @@ class TreeControl extends BaseRenderer
     }
 
     /**
-     * 父子之间是否完全独立。
+     * 该属性代表数据级联关系，autoCheckChildren为true时生效，默认为false，具体数据级联关系如下： 1.casacde为false，ui行为为级联选中子节点，子节点禁用；值只包含父节点的值 2.cascade为false，withChildren为true，ui行为为级联选中子节点，子节点禁用；值包含父子节点的值 3.cascade为true，ui行为级联选中子节点，子节点可反选，值包含父子节点的值，此时withChildren属性失效 4.cascade不论为true还是false，onlyChildren为true，ui行为级联选中子节点，子节点可反选，值只包含子节点的值
      */
     public function cascade($value = true)
     {
@@ -242,6 +250,14 @@ class TreeControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -375,6 +391,14 @@ class TreeControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

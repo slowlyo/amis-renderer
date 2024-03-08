@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Matrix 选择控件。适合做权限勾选。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/matrix
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class MatrixControl extends BaseRenderer
 {
@@ -114,6 +114,14 @@ class MatrixControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -199,6 +207,14 @@ class MatrixControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

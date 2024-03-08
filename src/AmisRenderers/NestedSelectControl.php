@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Nested Select 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/nested-select
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class NestedSelectControl extends BaseRenderer
 {
@@ -242,6 +242,14 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -354,6 +362,14 @@ class NestedSelectControl extends BaseRenderer
     }
 
     /**
+     * 只允许选择叶子节点
+     */
+    public function onlyLeaf($value = true)
+    {
+        return $this->set('onlyLeaf', $value);
+    }
+
+    /**
      * 选项集合
      */
     public function options($value = '')
@@ -375,6 +391,14 @@ class NestedSelectControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

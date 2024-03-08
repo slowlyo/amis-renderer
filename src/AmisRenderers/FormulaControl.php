@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 公式功能控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/formula
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class FormulaControl extends BaseRenderer
 {
@@ -223,6 +223,14 @@ class FormulaControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**
