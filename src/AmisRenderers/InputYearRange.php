@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * InputYearRange 年份范围
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class InputYearRange extends BaseRenderer
 {

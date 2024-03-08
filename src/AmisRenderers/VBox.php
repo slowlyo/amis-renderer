@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 垂直布局控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/vbox
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class VBox extends BaseRenderer
 {
@@ -79,6 +79,62 @@ class VBox extends BaseRenderer
     public function rows($value = '')
     {
         return $this->set('rows', $value);
+    }
+
+    /**
+     * 是否静态展示
+     */
+    public function static($value = true)
+    {
+        return $this->set('static', $value);
+    }
+
+    /**
+     * 静态展示表单项类名
+     */
+    public function staticClassName($value = '')
+    {
+        return $this->set('staticClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Value类名
+     */
+    public function staticInputClassName($value = '')
+    {
+        return $this->set('staticInputClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Label类名
+     */
+    public function staticLabelClassName($value = '')
+    {
+        return $this->set('staticLabelClassName', $value);
+    }
+
+    /**
+     * 是否静态展示表达式
+     */
+    public function staticOn($value = '')
+    {
+        return $this->set('staticOn', $value);
+    }
+
+    /**
+     * 静态展示空值占位
+     */
+    public function staticPlaceholder($value = '')
+    {
+        return $this->set('staticPlaceholder', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticSchema($value = '')
+    {
+        return $this->set('staticSchema', $value);
     }
 
     /**

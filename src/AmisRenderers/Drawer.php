@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Drawer 抽出式弹框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/drawer
  * 
  * @author slowlyo
- * @version v2.3.1
+ * @version v2.4.0
  */
 class Drawer extends BaseRenderer
 {
@@ -215,6 +215,62 @@ class Drawer extends BaseRenderer
     public function size($value = '')
     {
         return $this->set('size', $value);
+    }
+
+    /**
+     * 是否静态展示
+     */
+    public function static($value = true)
+    {
+        return $this->set('static', $value);
+    }
+
+    /**
+     * 静态展示表单项类名
+     */
+    public function staticClassName($value = '')
+    {
+        return $this->set('staticClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Value类名
+     */
+    public function staticInputClassName($value = '')
+    {
+        return $this->set('staticInputClassName', $value);
+    }
+
+    /**
+     * 静态展示表单项Label类名
+     */
+    public function staticLabelClassName($value = '')
+    {
+        return $this->set('staticLabelClassName', $value);
+    }
+
+    /**
+     * 是否静态展示表达式
+     */
+    public function staticOn($value = '')
+    {
+        return $this->set('staticOn', $value);
+    }
+
+    /**
+     * 静态展示空值占位
+     */
+    public function staticPlaceholder($value = '')
+    {
+        return $this->set('staticPlaceholder', $value);
+    }
+
+    /**
+     * 
+     */
+    public function staticSchema($value = '')
+    {
+        return $this->set('staticSchema', $value);
     }
 
     /**

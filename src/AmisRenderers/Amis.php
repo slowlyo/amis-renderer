@@ -324,6 +324,11 @@ class Amis
         return $instance;
     }
 
+    public function DateRange()
+    {
+        return DateRange::make();
+    }
+
     public function DateRangeControl($name = '', $label = '')
     {
         $instance = DateRangeControl::make();
@@ -577,6 +582,11 @@ class Amis
     public function Icon()
     {
         return Icon::make();
+    }
+
+    public function IconChecked()
+    {
+        return IconChecked::make();
     }
 
     public function IconPickerControl($name = '', $label = '')
@@ -849,6 +859,11 @@ class Amis
         return $instance;
     }
 
+    public function MultilineText()
+    {
+        return MultilineText::make();
+    }
+
     public function Nav()
     {
         return Nav::make();
@@ -932,6 +947,11 @@ class Amis
     public function Panel()
     {
         return Panel::make();
+    }
+
+    public function Password()
+    {
+        return Password::make();
     }
 
     public function PickerControl($name = '', $label = '')
@@ -1314,6 +1334,11 @@ class Amis
         return $instance;
     }
 
+    public function Tag()
+    {
+        return Tag::make();
+    }
+
     public function TagControl($name = '', $label = '')
     {
         $instance = TagControl::make();
@@ -1562,6 +1587,11 @@ class Amis
         }
 
         return $instance;
+    }
+
+    public function Words()
+    {
+        return Words::make();
     }
 
     public function Wrapper()
