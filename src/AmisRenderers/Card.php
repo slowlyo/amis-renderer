@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Card 卡片渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/card
  * 
  * @author slowlyo
- * @version v2.5.0
+ * @version v2.5.1
  */
 class Card extends BaseRenderer
 {

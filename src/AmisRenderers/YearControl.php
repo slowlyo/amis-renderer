@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 年份选择控件
  * 
  * @author slowlyo
- * @version v2.5.0
+ * @version v2.5.1
  */
 class YearControl extends BaseRenderer
 {
