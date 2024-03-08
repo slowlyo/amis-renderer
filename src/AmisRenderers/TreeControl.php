@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version v2.0.0
+ * @version v2.0.2
  */
 class TreeControl extends BaseRenderer
 {

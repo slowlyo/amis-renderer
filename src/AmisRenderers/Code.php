@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Code 代码高亮
  * 
  * @author slowlyo
- * @version v2.0.0
+ * @version v2.0.2
  */
 class Code extends BaseRenderer
 {

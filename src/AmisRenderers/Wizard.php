@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表单向导 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/wizard
  * 
  * @author slowlyo
- * @version v2.0.0
+ * @version v2.0.2
  */
 class Wizard extends BaseRenderer
 {

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Text 文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/text
  * 
  * @author slowlyo
- * @version v2.0.0
+ * @version v2.0.2
  */
 class TextControl extends BaseRenderer
 {
@@ -282,6 +282,14 @@ class TextControl extends BaseRenderer
     }
 
     /**
+     * control节点的CSS类名
+     */
+    public function inputControlClassName($value = '')
+    {
+        return $this->set('inputControlClassName', $value);
+    }
+
+    /**
      * 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。
      */
     public function joinValues($value = true)
@@ -359,6 +367,14 @@ class TextControl extends BaseRenderer
     public function name($value = '')
     {
         return $this->set('name', $value);
+    }
+
+    /**
+     * 原生input标签的CSS类名
+     */
+    public function nativeInputClassName($value = '')
+    {
+        return $this->set('nativeInputClassName', $value);
     }
 
     /**
