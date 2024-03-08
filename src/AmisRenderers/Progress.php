@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 进度展示控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/progress
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Progress extends BaseRenderer
 {
@@ -83,7 +83,15 @@ $this->set('mode', 'line');
     }
 
     /**
-     * 配置不通的值段，用不通的样式提示用户
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
+     * 配置不同的值段，用不同的样式提示用户
      */
     public function map($value = '')
     {
@@ -115,14 +123,6 @@ $this->set('mode', 'line');
     }
 
     /**
-     * 进度外层 CSS 类名
-     */
-    public function progressBarClassName($value = '')
-    {
-        return $this->set('progressBarClassName', $value);
-    }
-
-    /**
      * 进度条 CSS 类名
      */
     public function progressClassName($value = '')
@@ -147,7 +147,7 @@ $this->set('mode', 'line');
     }
 
     /**
-     * 圆形进度条线的宽度
+     * 进度条线的宽度
      */
     public function strokeWidth($value = '')
     {

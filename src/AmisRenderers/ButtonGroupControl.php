@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 按钮组控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/button-group
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class ButtonGroupControl extends BaseRenderer
 {
@@ -42,7 +42,7 @@ class ButtonGroupControl extends BaseRenderer
     }
 
     /**
-     * 给选中态 Button 配置 className。
+     * 
      */
     public function btnActiveClassName($value = '')
     {
@@ -58,7 +58,7 @@ class ButtonGroupControl extends BaseRenderer
     }
 
     /**
-     * 给 Button 配置 className。
+     * 
      */
     public function btnClassName($value = '')
     {
@@ -258,6 +258,14 @@ class ButtonGroupControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -375,6 +383,14 @@ class ButtonGroupControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

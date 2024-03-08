@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Picker 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/picker
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class PickerControl extends BaseRenderer
 {
@@ -226,6 +226,14 @@ class PickerControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -375,6 +383,14 @@ class PickerControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

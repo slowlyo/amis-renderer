@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Pagination
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Pagination extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class Pagination extends BaseRenderer
         $this->set('type', 'pagination');
 
 
+    }
+
+    /**
+     * 当前页数
+     */
+    public function activePage($value = '')
+    {
+        return $this->set('activePage', $value);
     }
 
     /**
@@ -42,6 +50,14 @@ class Pagination extends BaseRenderer
     }
 
     /**
+     * 
+     */
+    public function hasNext($value = true)
+    {
+        return $this->set('hasNext', $value);
+    }
+
+    /**
      * 是否隐藏
      */
     public function hidden($value = true)
@@ -58,6 +74,30 @@ class Pagination extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
+     * 最后一页，总页数（如果传入了total，会重新计算lastPage）
+     */
+    public function lastPage($value = '')
+    {
+        return $this->set('lastPage', $value);
+    }
+
+    /**
+     * 通过控制layout属性的顺序，调整分页结构 total,perPage,pager,go
+     */
+    public function layout($value = '')
+    {
+        return $this->set('layout', $value);
+    }
+
+    /**
      * 最多显示多少个分页按钮。
      */
     public function maxButtons($value = '')
@@ -66,11 +106,27 @@ class Pagination extends BaseRenderer
     }
 
     /**
-     * 模式，默认显示多个分页数字，如果只想简单显示可以配置成 `simple`。 可选值: simple | normal
+     * 模式，默认normal，如果只想简单显示可以配置成 `simple`。
      */
     public function mode($value = '')
     {
         return $this->set('mode', $value);
+    }
+
+    /**
+     * 每页显示条数
+     */
+    public function perPage($value = '')
+    {
+        return $this->set('perPage', $value);
+    }
+
+    /**
+     * 指定每页可以显示多少条
+     */
+    public function perPageAvailable($value = true)
+    {
+        return $this->set('perPageAvailable', $value);
     }
 
     /**
@@ -79,6 +135,22 @@ class Pagination extends BaseRenderer
     public function showPageInput($value = true)
     {
         return $this->set('showPageInput', $value);
+    }
+
+    /**
+     * 是否展示分页切换，也同时受layout控制
+     */
+    public function showPerPage($value = true)
+    {
+        return $this->set('showPerPage', $value);
+    }
+
+    /**
+     * 总条数
+     */
+    public function total($value = '')
+    {
+        return $this->set('total', $value);
     }
 
     /**

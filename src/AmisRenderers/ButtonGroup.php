@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Button Group 渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/button-group
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class ButtonGroup extends BaseRenderer
 {
@@ -18,7 +18,7 @@ class ButtonGroup extends BaseRenderer
     }
 
     /**
-     * 给选中态 Button 配置 className。
+     * 
      */
     public function btnActiveClassName($value = '')
     {
@@ -34,7 +34,7 @@ class ButtonGroup extends BaseRenderer
     }
 
     /**
-     * 给 Button 配置 className。
+     * 
      */
     public function btnClassName($value = '')
     {
@@ -95,6 +95,14 @@ class ButtonGroup extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
+    }
+
+    /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
     }
 
     /**

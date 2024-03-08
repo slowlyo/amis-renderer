@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 栏目容器渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/portlet
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class PortletTab extends BaseRenderer
 {
@@ -78,6 +78,14 @@ class PortletTab extends BaseRenderer
     public function iconPosition($value = '')
     {
         return $this->set('iconPosition', $value);
+    }
+
+    /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
     }
 
     /**

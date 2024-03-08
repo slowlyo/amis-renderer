@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * Image 图片上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/image
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class ImageControl extends BaseRenderer
 {
@@ -246,6 +246,14 @@ class ImageControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 默认展示图片的类名
      */
     public function imageClassName($value = '')
@@ -387,6 +395,14 @@ class ImageControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * AjaxAction
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class AjaxAction extends BaseRenderer
 {
@@ -211,7 +211,7 @@ $this->set('actionType', 'ajax');
     }
 
     /**
-     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light
+     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light | secondary
      */
     public function level($value = '')
     {

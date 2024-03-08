@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SparkLine
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class SparkLine extends BaseRenderer
 {
@@ -71,6 +71,14 @@ class SparkLine extends BaseRenderer
     public function hiddenOn($value = '')
     {
         return $this->set('hiddenOn', $value);
+    }
+
+    /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
     }
 
     /**

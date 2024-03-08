@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 选项卡控件。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/tabs
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class Tabs extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class Tabs extends BaseRenderer
         $this->set('type', 'tabs');
 
 
+    }
+
+    /**
+     * 自定义增加按钮文案
+     */
+    public function addBtnText($value = '')
+    {
+        return $this->set('addBtnText', $value);
     }
 
     /**
@@ -98,6 +106,14 @@ class Tabs extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 链接外层类名
      */
     public function linksClassName($value = '')
@@ -135,6 +151,14 @@ class Tabs extends BaseRenderer
     public function showTipClassName($value = '')
     {
         return $this->set('showTipClassName', $value);
+    }
+
+    /**
+     * 编辑器模式，侧边的位置 可选值: left | right
+     */
+    public function sidePosition($value = '')
+    {
+        return $this->set('sidePosition', $value);
     }
 
     /**

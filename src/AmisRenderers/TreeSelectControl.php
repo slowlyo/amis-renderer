@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Tree 下拉选择框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tree
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class TreeSelectControl extends BaseRenderer
 {
@@ -258,6 +258,14 @@ class TreeSelectControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 配置 source 接口初始拉不拉取。
      */
     public function initFetch($value = true)
@@ -370,6 +378,14 @@ class TreeSelectControl extends BaseRenderer
     }
 
     /**
+     * 单选时，只运行选择叶子节点
+     */
+    public function onlyLeaf($value = true)
+    {
+        return $this->set('onlyLeaf', $value);
+    }
+
+    /**
      * 选项集合
      */
     public function options($value = '')
@@ -399,6 +415,14 @@ class TreeSelectControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**
@@ -479,6 +503,14 @@ class TreeSelectControl extends BaseRenderer
     public function showIcon($value = true)
     {
         return $this->set('showIcon', $value);
+    }
+
+    /**
+     * 是否显示展开线
+     */
+    public function showOutline($value = true)
+    {
+        return $this->set('showOutline', $value);
     }
 
     /**

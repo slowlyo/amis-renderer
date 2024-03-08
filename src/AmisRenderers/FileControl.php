@@ -8,7 +8,7 @@ use Slowlyo\OwlAdmin\Traits\UploadTrait;
  * File 文件上传控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/file
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class FileControl extends BaseRenderer
 {
@@ -115,6 +115,14 @@ class FileControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
+    }
+
+    /**
+     * 分块上传的并发数
+     */
+    public function concurrency($value = '')
+    {
+        return $this->set('concurrency', $value);
     }
 
     /**
@@ -246,6 +254,14 @@ class FileControl extends BaseRenderer
     }
 
     /**
+     * 组件唯一 id，主要用于日志采集
+     */
+    public function id($value = '')
+    {
+        return $this->set('id', $value);
+    }
+
+    /**
      * 表单 control 是否为 inline 模式。
      */
     public function inline($value = true)
@@ -363,6 +379,14 @@ class FileControl extends BaseRenderer
     public function readOnly($value = true)
     {
         return $this->set('readOnly', $value);
+    }
+
+    /**
+     * 只读条件
+     */
+    public function readOnlyOn($value = '')
+    {
+        return $this->set('readOnlyOn', $value);
     }
 
     /**

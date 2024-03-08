@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * LinkAction
  * 
  * @author slowlyo
- * @version 1.7.0
+ * @version 1.9.0
  */
 class LinkAction extends BaseRenderer
 {
@@ -187,7 +187,7 @@ $this->set('actionType', 'link');
     }
 
     /**
-     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light
+     * 按钮样式 可选值: info | success | warning | danger | link | primary | dark | light | secondary
      */
     public function level($value = '')
     {
