@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * WizardStep
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class WizardStep extends BaseRenderer
 {
@@ -129,6 +129,14 @@ class WizardStep extends BaseRenderer
     }
 
     /**
+     * 描述
+     */
+    public function description($value = '')
+    {
+        return $this->set('description', $value);
+    }
+
+    /**
      * 是否禁用
      */
     public function disabled($value = true)
@@ -190,6 +198,14 @@ class WizardStep extends BaseRenderer
     public function horizontal($value = '')
     {
         return $this->set('horizontal', $value);
+    }
+
+    /**
+     * 图标
+     */
+    public function icon($value = '')
+    {
+        return $this->set('icon', $value);
     }
 
     /**
@@ -497,6 +513,14 @@ class WizardStep extends BaseRenderer
     }
 
     /**
+     * 子标题
+     */
+    public function subTitle($value = '')
+    {
+        return $this->set('subTitle', $value);
+    }
+
+    /**
      * 修改的时候是否直接提交表单。
      */
     public function submitOnChange($value = true)
@@ -542,6 +566,14 @@ class WizardStep extends BaseRenderer
     public function title($value = '')
     {
         return $this->set('title', $value);
+    }
+
+    /**
+     * 
+     */
+    public function value($value = '')
+    {
+        return $this->set('value', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 季度选择控件
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class QuarterControl extends BaseRenderer
 {
@@ -271,6 +271,14 @@ class QuarterControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
+    }
+
+    /**
+     * 日期快捷键
+     */
+    public function shortcuts($value = '')
+    {
+        return $this->set('shortcuts', $value);
     }
 
     /**

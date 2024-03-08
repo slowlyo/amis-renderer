@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2List
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class CRUD2List extends BaseRenderer
 {
@@ -107,6 +107,14 @@ $this->set('type', 'crud2');
     }
 
     /**
+     * 底部区域CSS类名
+     */
+    public function footerToolbarClassName($value = '')
+    {
+        return $this->set('footerToolbarClassName', $value);
+    }
+
+    /**
      * 顶部区域
      */
     public function header($value = '')
@@ -128,6 +136,14 @@ $this->set('type', 'crud2');
     public function headerToolbar($value = '')
     {
         return $this->set('headerToolbar', $value);
+    }
+
+    /**
+     * 顶部区域CSS类名
+     */
+    public function headerToolbarClassName($value = '')
+    {
+        return $this->set('headerToolbarClassName', $value);
     }
 
     /**

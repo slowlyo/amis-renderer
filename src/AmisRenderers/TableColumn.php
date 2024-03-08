@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 表格列，不指定类型时默认为文本类型。
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class TableColumn extends BaseRenderer
 {

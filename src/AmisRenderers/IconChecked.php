@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * IconChecked
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class IconChecked extends BaseRenderer
 {

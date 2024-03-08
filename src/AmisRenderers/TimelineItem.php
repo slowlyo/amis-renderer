@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TimelineItem
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class TimelineItem extends BaseRenderer
 {

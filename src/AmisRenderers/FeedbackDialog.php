@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * FeedbackDialog
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class FeedbackDialog extends BaseRenderer
 {
@@ -70,6 +70,14 @@ class FeedbackDialog extends BaseRenderer
     public function confirm($value = true)
     {
         return $this->set('confirm', $value);
+    }
+
+    /**
+     * 弹框类型 confirm 确认弹框
+     */
+    public function dialogType($value = 'confirm')
+    {
+        return $this->set('dialogType', $value);
     }
 
     /**
@@ -158,6 +166,14 @@ class FeedbackDialog extends BaseRenderer
     public function onEvent($value = '')
     {
         return $this->set('onEvent', $value);
+    }
+
+    /**
+     * 是否显示蒙层
+     */
+    public function overlay($value = true)
+    {
+        return $this->set('overlay', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Button Group 渲染器。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/button-group
  * 
  * @author slowlyo
- * @version v3.0.0
+ * @version v3.1.0
  */
 class ButtonGroup extends BaseRenderer
 {
