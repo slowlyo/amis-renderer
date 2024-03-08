@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Markdown 渲染
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class Markdown extends BaseRenderer
 {

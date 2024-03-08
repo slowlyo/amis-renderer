@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUDTable
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class CRUDTable extends BaseRenderer
 {
@@ -434,6 +434,14 @@ class CRUDTable extends BaseRenderer
     }
 
     /**
+     * 设置分页方向的字段名。单位简单分页时清楚时向前还是向后翻页。
+     */
+    public function pageDirectionField($value = '')
+    {
+        return $this->set('pageDirectionField', $value);
+    }
+
+    /**
      * 设置分页页码字段名。
      */
     public function pageField($value = '')
@@ -655,6 +663,14 @@ class CRUDTable extends BaseRenderer
     public function tableClassName($value = '')
     {
         return $this->set('tableClassName', $value);
+    }
+
+    /**
+     * table layout 可选值: fixed | auto
+     */
+    public function tableLayout($value = '')
+    {
+        return $this->set('tableLayout', $value);
     }
 
     /**

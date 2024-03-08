@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * CRUD2List
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class CRUD2List extends BaseRenderer
 {
@@ -328,6 +328,14 @@ $this->set('type', 'crud2');
     public function placeholder($value = '')
     {
         return $this->set('placeholder', $value);
+    }
+
+    /**
+     * 行标识符，默认为id
+     */
+    public function primaryField($value = '')
+    {
+        return $this->set('primaryField', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * SubForm 子表单 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/subform
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class SubFormControl extends BaseRenderer
 {

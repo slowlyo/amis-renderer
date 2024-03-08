@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Control 表单项包裹 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/control
  * 
  * @author slowlyo
- * @version v3.4.0
+ * @version 3.4.1
  */
 class FormControl extends BaseRenderer
 {
