@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TextArea 多行文本输入框。 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/textarea
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class TextareaControl extends BaseRenderer
 {
@@ -39,6 +39,14 @@ class TextareaControl extends BaseRenderer
     public function clearValueOnHidden($value = true)
     {
         return $this->set('clearValueOnHidden', $value);
+    }
+
+    /**
+     * 输入内容是否可清除
+     */
+    public function clearable($value = true)
+    {
+        return $this->set('clearable', $value);
     }
 
     /**
@@ -223,6 +231,14 @@ class TextareaControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
+    }
+
+    /**
+     * 重置值
+     */
+    public function resetValue($value = '')
+    {
+        return $this->set('resetValue', $value);
     }
 
     /**

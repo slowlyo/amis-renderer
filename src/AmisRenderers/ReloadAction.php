@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * ReloadAction
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ReloadAction extends BaseRenderer
 {

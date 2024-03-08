@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 条件组合控件 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/condition-builder
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ConditionBuilderControl extends BaseRenderer
 {
@@ -15,6 +15,14 @@ class ConditionBuilderControl extends BaseRenderer
         $this->set('type', 'condition-builder');
 
 
+    }
+
+    /**
+     * 展现模式 可选值: simple | full
+     */
+    public function builderMode($value = '')
+    {
+        return $this->set('builderMode', $value);
     }
 
     /**
@@ -215,6 +223,14 @@ class ConditionBuilderControl extends BaseRenderer
     public function required($value = true)
     {
         return $this->set('required', $value);
+    }
+
+    /**
+     * 是否显示并或切换键按钮，只在简单模式下有用
+     */
+    public function showANDOR($value = true)
+    {
+        return $this->set('showANDOR', $value);
     }
 
     /**

@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * Avatar
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class Avatar extends BaseRenderer
 {

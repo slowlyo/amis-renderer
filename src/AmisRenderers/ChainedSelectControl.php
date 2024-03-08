@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * 级联选择框 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/chained-select
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class ChainedSelectControl extends BaseRenderer
 {

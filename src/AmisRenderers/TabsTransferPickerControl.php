@@ -6,7 +6,7 @@ namespace Slowlyo\AmisRenderers;
  * TabsTransferPicker 穿梭器的弹框形态 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/tabs-transfer-picker
  * 
  * @author slowlyo
- * @version 1.6.2
+ * @version 1.6.3
  */
 class TabsTransferPickerControl extends BaseRenderer
 {
